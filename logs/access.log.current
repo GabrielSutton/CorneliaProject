@@ -1,0 +1,5 @@
+201.163.245.182 - - [06/Jun/2007:04:34:39 +0200] "GET / HTTP/1.1" 200 6605 www.corneliagilbert.com "-" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)" "-"
+201.163.245.182 - - [06/Jun/2007:04:34:40 +0200] "GET /defaultsite HTTP/1.1" 302 273 www.corneliagilbert.com "http://www.corneliagilbert.com/" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)" "-"
+88.8.67.112 - - [06/Jun/2007:16:18:40 +0200] "GET / HTTP/1.1" 200 6605 s205782398.websitehome.co.uk "-" "Mozilla/5.0 (Macintosh; U; PPC Mac OS X; de-de) AppleWebKit/419 (KHTML, like Gecko) Safari/419.3" "-"
+88.8.67.112 - - [06/Jun/2007:16:18:40 +0200] "GET /favicon.ico HTTP/1.1" 404 2306 s205782398.websitehome.co.uk "-" "Mozilla/5.0 (Macintosh; U; PPC Mac OS X; de-de) AppleWebKit/419 (KHTML, like Gecko) Safari/419.3" "-"
+88.8.67.112 - - [06/Jun/2007:16:18:40 +0200] "GET /defaultsite HTTP/1.1" 302 278 s205782398.websitehome.co.uk "http://s205782398.websitehome.co.uk/" "Mozilla/5.0 (Macintosh; U; PPC Mac OS X; de-de) AppleWebKit/419 (KHTML, like Gecko) Safari/419.3" "-"
