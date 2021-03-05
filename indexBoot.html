@@ -34,7 +34,6 @@
         /*this is the styling for the navbar*/
         li.nav-item {
             text-align: center;
-
         }
 
             li.nav-item > a.nav-link {
@@ -55,54 +54,48 @@
                     opacity: 0.9;
                 }
 
-        div.TabTextContent {
+        div.tab-content {
             background: #643E55;
             padding: 10px;
             background: -webkit-radial-gradient(bottom right, #643E55, #D8CBD4);
             background: -moz-radial-gradient(bottom right, #643E55, #D8CBD4);
             background: radial-gradient(to bottom right, #643E55, #D8CBD4);
         }
+
         div.TabImageContent {
             width: 260px;
             height: 99vh;
             padding: 10px;
-            background: #D8CBD4;
-            background: -webkit-linear-gradient(right, #D8CBD4, #653F55);
-            background: -moz-linear-gradient(right, #D8CBD4, #653F55);
-            background: linear-gradient(to left, #D8CBD4, #653F55);
         }
+
         div.PagePadding {
-            background: #D8CBD4;
-            background: -webkit-linear-gradient(bottom #D8CBD4, #653F55);
-            background: -moz-linear-gradient(bottom, #D8CBD4, #653F55);
-            background: linear-gradient(to bottom, #D8CBD4, #653F55);
         }
 
         @font-face {
             font-family: Juni;
             src: url('int/structure/JUNISBI_.TTF');
         }
-        @font-face{
+
+        @font-face {
             font-family: Garamond;
-            src: url('int/structure/EBGaramond-Regular.ttf') 
-        } 
+            src: url('int/structure/EBGaramond-Regular.ttf')
+        }
     </style>
 
 
     <!-- Custom styles for this template -->
-    <link href="navbar-top.css"  rel="stylesheet">
+    <link href="navbar-top.css" rel="stylesheet">
 </head>
 <body>
 
-    <div id="Header" style="width:99vw; height:230px; display:-webkit-inline-box; ">
-        <div id="HeaderImage" style=" height:100%; text-shadow:4px 4px 6px black; vertical-align:central; width: 1300px; background-image:url(../int/images/CG-Flowers-DSC03100.jpg); background-repeat:no-repeat; background-size:80%;">
+    <div id="Header" style="width:99vw; height:230px; display:-webkit-inline-box; background: #D8CBD4;">
+        <div id="HeaderImage" style=" height:100%; text-shadow:4px 4px 6px black; vertical-align:central; width: 1500px; background-image:url(../int/images/CG-Flowers-DSC03100.jpg); background-repeat:no-repeat; background-size:80%;">
             <a style="font-family:Garamond; font-variant:small-caps; font-size: 40px; position:relative; left: 40px; top:50px; color:white;">Cornelia Gilbert</a>
         </div>
-        <div id="HeaderTransition" style="display:block; width:600px; margin-left: -800px; background: #D8CBD4; background: -webkit-linear-gradient(bottom #D8CBD4, #653F55); background: -moz-linear-gradient(bottom, #D8CBD4, #653F55); -webkit-mask-image: -webkit-gradient(linear, left top , right top, from(rgba(228,203,212,0)), to(rgba(101,63,85,1))) "></div>
-        <div id="HeaderPadd" style="background: #D8CBD4;  width:100%;"></div>
+        <div id="HeaderTransition" style="display:block; width:600px; margin-left: -900px; background: #D8CBD4; background: -webkit-linear-gradient(bottom #D8CBD4, #653F55); background: -moz-linear-gradient(bottom, #D8CBD4, #653F55); -webkit-mask-image: -webkit-gradient(linear, left top , right top, from(rgba(228,203,212,0)), to(rgba(101,63,85,1))) "></div>
     </div>
 
-    <ul class="nav nav-pills bd-3" id="pills-tab" role="tablist" style=" margin-top: -45px;">
+    <ul class="nav nav-pills bd-3" id="pills-tab" role="tablist" style=" margin-top: -43px;">
         <li class="nav-item" role="presentation">
             <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#HomeContainer" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
         </li>
@@ -130,15 +123,15 @@
         <div class="tab-pane fade show active" id="HomeContainer" role="tabpanel" aria-labelledby="pills-home-tab">
 
             <div class="row">
-                <div class="TabImageContent">
+                <div class="col-3">
                     <img src="int/images/portrait.jpg" width="260" height="440" alt="">
                 </div>
-                <div class="TabTextContent col">
+                <div class="col-5">
                     <h1>
                         Cornelia Gilbert, Dip. I.R.C.<br>
                         <b>Spiritual Counselling and Psychotherapy</b>
                     </h1>
-                    <span class="text-normal">
+                    <span class="text-normal col-5">
                         <br>
                         I would like to warmly welcome you to this site. <br>
                         <br>
@@ -167,68 +160,73 @@
                         </i>
                     </span>
                 </div>
-                <div class="PagePadding col-2" ></div>
+                <div class="PagePadding col-2"></div>
             </div>
         </div>
-    </div>
 
-    <div class="tab-pane fade" id="WorkContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
-        <div style="display:flex;">
-            <div class="TabImageContent">
-                <img src="../int/images/sunset.jpg" width="260" height="440" alt="">
+        <div class="tab-pane fade" id="WorkContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div clas="row">
+                <div class="TabImageContent">
+                    <img src="../int/images/sunset.jpg" width="260" height="440" alt="">
+                </div>
+                <div class="TabTextContent">
+                    <span class="text-normal">
+                        <br>
+                        I provide professional and caring help during life's challenges and
+                        conflicts that we encounter. This could be in the following areas:<br>
+                        <br>
+                        &#8226; Love and Relationship<br>
+                        &#8226;
+                        Parenting<br>
+                        &#8226;
+                        Family &amp; Children<br>
+                        <br>
+                        You may experience:<br>
+                        <br>&#8226;
+                        Feelings of Guilt<br>
+                        &#8226;
+                        Feelings of Worthlessness<br>
+                        &#8226;
+                        General Irritability<br>
+                        &#8226;
+                        Lack of Joy in your Life<br>
+                        &#8226;
+                        Fears that Reduce your Quality of Life<br>
+                        &#8226;
+                        Loneliness<br>
+                        &#8226;
+                        Despair<br>
+                        <br>
+                        You may have or are encountering an acute crisis:<br>
+                        <br>&#8226;
+                        Abuse<br>
+                        &#8226;
+                        Depression<br>
+                        &#8226;
+                        Traumas<br>
+                        &#8226;
+                        Anxiety<br>
+                        &#8226;
+                        A Loved One gone missing<br>
+                        &#8226;
+                        Death of a Loved One<br>
+                        &#8226;
+                        Loss of Job<br>
+                    </span>
+                </div>
+                <div class="d-none col-xl-2">YO</div>
             </div>
-            <div class="TabTextContent">
-                <span class="text-normal">
-                    <br>
-                    I provide professional and caring help during life's challenges and
-                    conflicts that we encounter. This could be in the following areas:<br>
-                    <br>
-                    &#8226; Love and Relationship<br>
-                    &#8226;
-                    Parenting<br>
-                    &#8226;
-                    Family &amp; Children<br>
-                    <br>
-                    You may experience:<br>
-                    <br>&#8226;
-                    Feelings of Guilt<br>
-                    &#8226;
-                    Feelings of Worthlessness<br>
-                    &#8226;
-                    General Irritability<br>
-                    &#8226;
-                    Lack of Joy in your Life<br>
-                    &#8226;
-                    Fears that Reduce your Quality of Life<br>
-                    &#8226;
-                    Loneliness<br>
-                    &#8226;
-                    Despair<br>
-                    <br>
-                    You may have or are encountering an acute crisis:<br>
-                    <br>&#8226;
-                    Abuse<br>
-                    &#8226;
-                    Depression<br>
-                    &#8226;
-                    Traumas<br>
-                    &#8226;
-                    Anxiety<br>
-                    &#8226;
-                    A Loved One gone missing<br>
-                    &#8226;
-                    Death of a Loved One<br>
-                    &#8226;
-                    Loss of Job<br>
-                </span>
-            </div>
-            <div class="d-none col-xl-2">YO</div>
         </div>
+
+        <div class="tab-pane fade" id="BioContainer" role="tabpanel" aria-labelledby="pills-contact-tab">
+            This is the Briography Page!
+
+        </div>
+
+
     </div>
 
-    <div class="tab-pane fade" id="BioContainer" role="tabpanel" aria-labelledby="pills-contact-tab">This is the Briography Page!</div>
-
-    </div>
+    
 
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
