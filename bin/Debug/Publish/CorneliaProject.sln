@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CorneliaProject", ".", "{66AD6F03-E551-4A25-BA96-0838B8906630}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62838"
+		Debug.AspNetCompiler.PhysicalPath = "..\CorneliaProject\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62838\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62838"
+		Release.AspNetCompiler.PhysicalPath = "..\CorneliaProject\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62838\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62838"
+		SlnRelativePath = "..\CorneliaProject\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66AD6F03-E551-4A25-BA96-0838B8906630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66AD6F03-E551-4A25-BA96-0838B8906630}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE767A5C-FF91-4C1C-8FF6-298A85313801}
+	EndGlobalSection
+EndGlobal
