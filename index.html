@@ -10,6 +10,7 @@
     <meta name="revisit-after" content="1 day">
     <meta name="copyright" content="Cornelia Gilbert">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbar-static/">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
 
 
@@ -31,15 +32,18 @@
             margin-left: auto;
         }
 
-        .row {
-            width: 100%;
+        .img-fluid {
+            object-fit: cover;
+            object-position: center;
+            max-height: 600px;
         }
 
 
 
 
-
         /*this is the styling for the navbar*/
+
+
         li.nav-item {
             text-align: center;
             border-right: 4px purple;
@@ -65,17 +69,40 @@
             background: -webkit-linear-gradient(152deg, rgba(216,203,212,1) 0%, rgba(214,198,209,1) 42%, rgba(100,62,85,1) 89%, rgba(100,62,85,1) 100%);
         }
 
+
+        .hrRight {
+
+            background-image: -webkit-linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 80%, rgba(255,255,255,0.6) 95%, rgba(255,255,255,0) 100%);
+            height: 5px;
+            width: 100%;
+        }
+
+        .hrLeft {
+            background-image: -webkit-linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 80%, rgba(255,255,255,0.6) 95%, rgba(255,255,255,0) 100%);
+            height: 5px;
+            width: 100%;
+        }
+
         div.layer2 {
             background: -webkit-linear-gradient(21deg, rgba(216,203,212,0) 0%, rgba(216,203,212,0) 75%, rgba(136,103,123,0.5) 90%, rgba(136,103,123,0.8) 100%);
         }
 
+        /*div.container{
+            margin-left:0px;
+            margin-right:0px;
+        }*/
+
         div.TabTextContent {
-            padding: 100px; 
-            font-family: sans-serif;
+            padding: 20px;
+            padding-top: 100px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-variant: normal;
             width: 100%;
             background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.25) 75%, rgba(255,255,255,0) 90%);
+            color: #47283a;
         }
+
+
 
         @font-face {
             font-family: Juni;
@@ -86,11 +113,108 @@
             font-family: Garamond;
             src: url('int/structure/EBGaramond-Regular.ttf')
         }
+
+        div {
+            width: 100%;
+            height: 100%;
+        }
+
+        .layer-1 {
+            width: 200px;
+            height: 200px;
+        }
+
+        .layer-1 {
+            width: 100%;
+            height: 100%;
+            background: -moz-linear-gradient(230deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
+            background: -webkit-linear-gradient(230deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
+            background: -o-linear-gradient(230deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
+            background: -ms-linear-gradient(230deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
+            background: linear-gradient(220deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
+        }
+
+        .layer-2 {
+            width: 100%;
+            height: 100%;
+            background: -moz-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 49%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+            background: -webkit-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 49%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+            background: -o-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 49%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+            background: -ms-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 49%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+            background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 49%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+        }
+
+        .layer-3 {
+            width: 100%;
+            height: 100%;
+            background: -moz-linear-gradient(135deg, rgba(7,7,7,0) 0%, rgba(3,3,3,0) 50%, rgba(0,0,0,1) 100%);
+            background: -webkit-linear-gradient(135deg, rgba(7,7,7,0) 0%, rgba(3,3,3,0) 50%, rgba(0,0,0,1) 100%);
+            background: -o-linear-gradient(135deg, rgba(7,7,7,0) 0%, rgba(3,3,3,0) 50%, rgba(0,0,0,1) 100%);
+            background: -ms-linear-gradient(135deg, rgba(7,7,7,0) 0%, rgba(3,3,3,0) 50%, rgba(0,0,0,1) 100%);
+            background: linear-gradient(315deg, rgba(7,7,7,0) 0%, rgba(3,3,3,0) 50%, rgba(0,0,0,1) 100%);
+        }
+
+        .noStyleButton {
+            background-color: transparent;
+            border: none;
+            font-weight: lighter;
+        }
+
+            .noStyleButton:hover {
+                text-shadow: 5px 5px 10px black
+            }
     </style>
 
 
     <!-- Custom styles for this template -->
     <link href="navbar-top.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        function navigateToPage(elem, destinationPage) {
+            try {
+                //debugger;
+                let someTabTriggerEl;
+
+                switch (destinationPage) {
+                    case '#pills-work-tab':
+                        someTabTriggerEl = document.querySelector('#pills-work-tab')
+                        break;
+
+                    case '#pills-biography-tab':
+                        someTabTriggerEl = document.querySelector('#pills-biography-tab')
+                        break;
+
+                    case '#pills-testimonials-tab':
+                        someTabTriggerEl = document.querySelector('#pills-testimonials-tab')
+                        break;
+
+                    case '#pills-philosophy-tab':
+                        someTabTriggerEl = document.querySelector('#pills-philosophy-tab')
+                        break;
+
+                    case '#pills-courses-tab':
+                        someTabTriggerEl = document.querySelector('#pills-courses-tab')
+                        break;
+
+                    case '#pills-contact-tab':
+                        someTabTriggerEl = document.querySelector('#pills-Contact-tab')
+                        break;
+
+                    default:
+                        throw "Unknown destination page: " + destinationPage;
+                };
+
+                const tab = new bootstrap.Tab(someTabTriggerEl)
+                tab.show()
+
+                $("html").scrollTop(100);
+
+            } catch (e) {
+                alert("An error occurred! " + e.message);
+            };
+        }
+    </script>
 </head>
 <body>
 
@@ -103,20 +227,22 @@
     <div style="height:500px; line-height:500px; background-color:bisque; width:2000px; overflow-x:hidden;">This is some text</div> -->
 
     <div id="Header" style="width:99vw; height:230px; text-shadow: 4px 4px 6px black; display:-webkit-inline-box; background:#eaeff6; overflow:hidden;">
-        <img src="int/images/CG-Flowers-DSC03100.jpg" height="500" width="1100" />
-        <a style="font-family:Garamond; font-variant:small-caps; font-size: 40px; position:absolute; left: 80px; top:80px; color:white;">Cornelia Gilbert</a>
+        <img src="int/images/CG-Flowers-DSC03100-extended.jpg" height="426" width="1704" style="top:-100px; position:relative;" />
+        <a class="d-none d-lg-block" style="font-family:Garamond;  text-decoration: none;font-variant:small-caps; font-size: 45px; position:absolute; left: 80px; top:80px; color:white;">Cornelia Gilbert</a>
+        <a class="d-block d-lg-none" style="font-family:Garamond; text-decoration: none; font-variant:small-caps; font-size: 45px; position:absolute; left: 20px; top:80px; color:white;">Cornelia Gilbert</a>
         <div id="HeaderTransition" style="display:block; width:600px; margin-left: -600px; background: -webkit-linear-gradient(bottom, #eaeff6, #eaeff6); background: -moz-linear-gradient(bottom, #D8CBD4, #653F55); -webkit-mask-image: -webkit-gradient(linear, left top , right top, from(rgba(228,203,212,0)), to(rgba(101,63,85,1))) "></div>
 
     </div>
-    <div class="container-fluid" style="margin-top: -74px; opacity: 0.99; background-color: rgba(255, 255, 255, 0.65); width:99vw;">
-        <div class="row" style="width:100%;">
+    <div class="container-fluid" style="margin-top: -44px; opacity: 0.99; background-color: rgba(255, 255, 255, 0.65); width:99vw;">
+        <div class="row justify-content-start" style="width:100%;">
             <div class="col-12">
                 <ul class="nav nav-pills" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#HomeContainer" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="pills-work-tab" data-bs-toggle="pill" href="#WorkContainer" role="tab" aria-controls="pills-profile" aria-selected="false">Work</a>
+                        <a class="nav-link" id="pills-work-tab" data-bs-toggle="pill" href="#WorkContainer" role="tab" aria-controls="pills-profile" aria-selected="false"
+                           title="Click to show Cornelia's work information">Work</a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" id="pills-biography-tab" data-bs-toggle="pill" href="#BioContainer" role="tab" aria-controls="pills-contact" aria-selected="false">Biography</a>
@@ -140,446 +266,646 @@
         </div>
     </div>
 
-
     <div class="tab-content-layer1 ">
-        <div class="tab-content layer2">
+        <div class="tab-content layer2" style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
 
             <div class="tab-pane fade show active" id="HomeContainer" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                <div class="container-fluid pt-5 pb-5">
+                    <div class="row justify-content-center pt-lg-3 pb-lg-3" style="opacity:1;">
+                        <div class="d-none d-lg-block col-lg-3" style="height:65vh; text-align:center;">
+
+
+                            <img class="img-fluid" src="int/images/HomeImage.jpg">
+
+                        </div>
+                        <div class="d-block d-lg-none col-8" style="text-align:center;">
+
+
+                            <img class="img-fluid" src="int/images/HomeImage.jpg">
+
+                        </div>
+                        <div class="col-lg-5" style="font-family:Juni; font-style:normal; margin-top:10vh;  opacity:1; color:lavenderblush;">
+
+                            <h2 class="display-4 offset-1">Spiritual Life Coach</h2>
+                            <br />
+                            <br />
+
+                            <span class="offset-lg-3" style="display:block; font-family:Juni; margin-left: 120px;  width: 100%; font-size:x-large; ">
+                                spir·it<br>
+                                /ˈspirit/ …<br>
+                                Latin: spirare = to breathe<br>
+
+                            </span>
+                            <br />
+                            <br />
+                            <h4 class="display-4 offset-3" style="font-family:Garamond; font-variant:small-caps; font-weight:500; text-shadow: 2px 2px 30px white;">because you matter ...</h4>
+
+                        </div>
+                    </div>
+                </div>
+                <section>
+                    <div class="row">
+                        <div class="col-12" style="height:35px; background:-webkit-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 100%); margin-right:-20px;"></div>
+                    </div>
+                </section>
+
                 <section>
                     <div class="container-fluid">
-                        <div class="row align-items-center">
-                            <div class="d-none d-lg-block col-1"></div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-3">
+                                <div class="p-5" style="text-align:center;">
+                                    <img class="img-fluid" src="int/images/WorkImage.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-10 col-lg-5 d-flex align-items-start flex-column " style="height:auto;">
+                                <div class="mb-auto pt-lg-5 ps-lg-5 pe-lg-5" style="height:auto;">
+                                    <h4 class="display-3">Work</h4>
+                                    <p>
+                                        Cornelia provides professional and Spiritual Life Coaching during times of challenges. <br />
+                                        This could be in the following areas:<br />
+                                        <br />
+                                        ⦁	Pandemic Fatigue<br />
+                                        ⦁	Stress Relief<br />
+                                        ⦁	Anxiety Reduction<br />
+                                        ⦁	Energy Cleansing<br />
+                                        ⦁	Spiritual Crisis<br />
+                                        ⦁	Burnout Prevention<br />
+                                        ⦁	Conflict Management<br />
+                                        ⦁	Confidence Coaching<br />
+                                        ⦁	Loss and Grief<br />
+                                        ⦁	Personal Growth<br />
+                                        <br />
+                                    </p>
+                                </div>
+                                <div class="display-6 offset-2" style=" height:auto;">
+                                    <button type="button" onclick="navigateToPage( this, '#pills-work-tab' );" title="Click to read more" class="noStyleButton">
+                                        Read More ...
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mt-5">
+                            <div class="col-8">
+                                <div>
+                                    <hr />
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                    </div>
+
+                </section>
+
+                <section>
+                    <div>
+                        <div class="container-fluid">
+                            <div class="row justify-content-center">
+                                <div class="col-xxl-3 col-xl-4 col-lg-5 order-lg-2 mt-auto mb-auto">
+                                    <div class="p-5" style="text-align:center;">
+                                        <img class="img-fluid" src="int/images/TestimonialImage.jpg">
+                                    </div>
+                                </div>
+                                <div class="col-10 col-lg-5 d-flex align-items-start flex-column order-lg-1" style="height:auto;">
+                                    <div class="mb-auto pt-lg-5 ps-lg-5 pe-lg-5" style="height:auto;">
+                                        <h4 class="display-3">Testimonials</h4>
+                                        <p>
+                                            <br />
+                                            « Cornelia has a special gift to coalesce her energies with nature and the divine principle.
+                                            Therefore, she mediates the truth of the Higher Self. This is how people, who come into contact
+                                            with her, are able to profoundly connect with their hearts. »
+                                            <br />
+                                            Pat Edith Werner<br />
+                                            Psychotherapist and Medium<br />
+                                            Berlin, Germany<br />
+                                            <br />
+                                            « Through Cornelia’s intuitive and empathetic guidance, clients are able to identify and release
+                                            the root cause of any obstacles that may stand in their way. Her technique is not only subtle and
+                                            far reaching, it’s also profoundly effective. Highly recommended! »
+                                            <br />
+                                            Dr. Kevin Poulston BS, DC<br />
+                                            Indian Harbor Beach, Florida<br />
+
+                                            <br>
+                                        </p>
+                                    </div>
+                                    <div class="display-6 offset-2" style=" height:auto;">
+                                        <button type="button" onclick="navigateToPage( this, '#pills-testimonials-tab' );" title="Click to read more" class="noStyleButton">
+                                            Read More ...
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-center mt-5">
+                                <div class="col-8">
+                                    <div>
+                                        <hr />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-5 mt-auto mb-auto">
+                                <div class="p-5 col-lg-8" style="text-align:center;">
+                                    <img class="img-fluid" src="int/images/PhilosophyImage.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-10 col-lg-5 d-flex align-items-start flex-column " style="height:auto;">
+                                <div class="mb-auto pt-lg-5 ps-lg-5 pe-lg-5" style="height:auto;">
+
+                                    <h2 class="display-4">Philosophy</h2>
+                                    <p>Cornelia subscribes to an interdisciplinary approach. She trained both in Europe and the US uses a variety of techniques, to name a few: cognitive behavioral coaching, breath work, therapeutic metaphors, guided visualization, guided imagery, thought refocusing, positive affirmation, gratitude and appreciation … </p>
+                                </div>
+                                <div class="display-6 offset-2" style=" height:auto;">
+                                    <button type="button" onclick="navigateToPage( this, '#pills-philosophy-tab' );" title="Click to read more" class="noStyleButton">
+                                        Read More ...
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mt-5">
+                            <div class="col-8">
+                                <div>
+                                    <hr />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-3 order-lg-2">
+                                <div class="pt-5" style="text-align:center;">
+                                    <img class="img-fluid" src="int/images/BiographyImage.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-10 col-lg-5 d-flex align-items-start flex-column order-lg-1" style="height:auto;">
+                                <div class="mb-auto pt-lg-5 ps-lg-5 pe-lg-5" style="height:auto;">
+
+                                    <h2 class="display-4">Biography</h2>
+                                    <p>Cornelia was born and raised in Munich, Germany. Soon life's journey took her to London UK, Spain, and the US. She is a certified Life Coach and an Ordained Minister.</p>
+                                </div>
+                                <div class="display-6 offset-2" style=" height:auto;">
+                                    <button type="button" onclick="navigateToPage( this, '#pills-biography-tab' );" title="Click to read more" class="noStyleButton">
+                                        Read More ...
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row justify-content-center mt-5">
+                            <div class="col-8">
+                                <div>
+                                    <hr />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-3">
+                                <div class="p-5" style="text-align:center;">
+                                    <img class="img-fluid" src="int/images/CoursesImage.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-10 col-lg-5 d-flex align-items-start flex-column " style="height:auto;">
+
+                                <div class="mb-auto pt-lg-5 ps-lg-5 pe-lg-5" style="height:auto;">
+
+                                    <h2 class="display-4">Courses</h2>
+                                    <p>Due to Covid-19, no group work or workshops are currently offered. </p>
+                                </div>
+                                <div class="display-6 offset-2" style=" height:auto;">
+                                    <button type="button" onclick="navigateToPage( this, '#pills-courses-tab' );" title="Click to read more" class="noStyleButton">
+                                        Read More ...
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mt-5">
+                            <div class="col-8">
+                                <div>
+                                    <hr />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="container-fluid">
+                        <div class="row justify-content-center">
                             <div class="col-lg-5 order-lg-2">
-                                <div class="p-6">
-                                    <img class="img-fluid rounded-circle" src="int/images/BiographyImage.jpg" style="width:300px">
+                                <div class="p-5" style="text-align:center;">
+                                    <img class="img-fluid" src="int/images/ContactImage.jpg" alt="">
                                 </div>
                             </div>
-                            <div class="col-lg-5 order-lg-1">
-                                <div class="p-2">
-                                    <div class="TabTextContent">
-                                        <h2 class="display-6">Summary</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-none d-lg-block col-1"></div>
-                        </div>
-                        </div>
-                </section>
+                            <div class="col-10 col-lg-5 d-flex align-items-start flex-column order-lg-1" style="height:auto;">
+                                <div class="mb-auto pt-lg-5 ps-lg-5 pe-lg-5" style="height:auto;">
 
-                <section>
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
-                            <div class="d-none d-lg-block col-1"></div>
-                            <div class="col-lg-5">
-                                <div class="p-2">
-                                    <img class="img-fluid rounded-circle" src="int/images/BiographyImage.jpg" style="width:140px">
+                                    <h2 class="display-4">Contact</h2>
+                                    <p>
+                                        <br />
+                                        Cornelia Gilbert<br />
+                                        <br />
+                                        Tel: 321 504 8188<br />
+                                        mail@corneliagilbert.com<br />
+                                        www.corneliagilbert.com<br />
+                                        <br />
+                                        First Initial Consultation (30 min.) - free<br />
+                                    </p>
                                 </div>
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="p-2">
-                                    <div class="TabTextContent">
-                                        <h2 class="display-4">WorkContainer</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
-                                    </div>
+                                <div class="display-6 offset-2" style=" height:auto;">
+                                    <button type="button" onclick="navigateToPage( this, '#pills-contact-tab' );" title="Click to read more" class="noStyleButton">
+                                        Read More ...
+                                    </button>
                                 </div>
-                            </div>
-                            <div class="d-none d-lg-block col-1"></div>
-                        </div>
-                    </div>
-                </section>
 
-                <section>
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
-                            <div class="d-none d-lg-block col-1"></div>
-                            <div class="col-lg-5 order-lg-2">
-                                <div class="p-2">
-                                    <img class="img-fluid rounded-circle" src="int/images/BiographyImage.jpg" style="width:140px">
+                            </div>
+
+                        </div>
+                        <div class="row justify-content-center mt-5">
+                            <div class="col-8">
+                                <div>
+                                    <hr />
                                 </div>
                             </div>
-                            <div class="col-lg-5 order-lg-1">
-                                <div class="p-2">
-                                    <div class="TabTextContent">
-                                        <h2 class="display-4">For those about to rock...</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-none d-lg-block col-1"></div>
                         </div>
                     </div>
-                </section>
-            </div>
+            </section>
 
-            <div class="tab-pane fade" id="WorkContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <div class="row">
-                    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; ">
-                        <img src="int/images/WorkImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
-                    </div>
-                    <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
-                    <div class="col-12 col-xl-6" style="padding-top:30px;">
-                        <div class="d-none d-xl-block" style="background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
 
-                        <div class="offset-xl-1">
-                            <div class="TabTextContent">
-                                <h1><b>Work 1</b></h1>
-                                <span class="text-normal">
-                                    <br />
-                                    Cornelia provides professional and caring life coaching during life's challenges and conflicts. This could be in the following areas:<br />
-                                    <br />
-                                    • Love and Relationship<br />
-                                    • Parenting<br />
-                                    • Work and Career<br />
-                                    <br />
-                                    You may experience:<br />
-                                    <br />
-                                    • Feelings of isolation<br />
-                                    • Feelings of worthlessness<br />
-                                    • Feelings of guilt<br />
-                                    • General irritability<br />
-                                    • Death of a loved one<br />
-                                    • Lack of joy in your life<br />
-                                    • Fears and anxiety that reduce your quality of life<br />
-                                    • Loneliness<br />
-                                    • Despair<br />
-                                    <br />
-                                    Individual sessions can help help you with:<br />
-                                    <br />
-                                    • Encouraging personal growth<br />
-                                    • Nurturing yourself<br />
-                                    • Creating boundaries<br />
-                                    • Becoming aware of self-induced obstacles<br />
-                                    • Gaining clarity in your thoughts and feelings<br />
-                                    • Increasing your overall energy level<br />
-                                    • Managing inner conflicts<br />
-                                    • Professional growth & direction<br />
-                                    <br />
-                                </span>
-                                <h1><b>Work 2</b></h1>
-                                <span class="text-normal">
-                                    <br />
-                                    Cornelia subscribes to an interdisciplinary approach. Her interests lie in a variety of techniques and energy work. She has many years experience of coaching and supporting clients in Germany, U.K., Spain, and USA. She has run workshops and ongoing groups for meditation, inner child, women’s empowerment, and personal growth. She is a certified life coach and ordained minister.<br />
-                                    <br />
-                                    First initial consultation (30 min.) - free<br />
-                                    Individual session (60 min.) - $ 70.00<br />
-                                    <br />
-                                    <br />
-                                    Covid-19 safety:<br />
-                                    <br />
-                                    • For individual sessions or group work in person, CDC guidelines are being followed, and masks are being worn.<br />
-                                    • All sessions can be conducted via Skype, Zoom, WhatsApp, FaceTime, or Facebook Messenger.<br />
-                                </span>
-                            </div>
+            <br />
+            <br />
+
+        </div>
+
+        <div class="tab-pane fade" id="WorkContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="row" style="min-height: calc(100vh - 225px);">
+                <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; ">
+                    <img src="int/images/WorkImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
+                </div>
+                <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
+                <div class="col-12 col-xl-6" style="padding-top:30px;">
+                    <div class="d-none d-xl-block" style="background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
+
+                    <div class="offset-xl-1">
+                        <div class="TabTextContent">
+                            <h1><b>Work</b></h1>
+                            <span class="text-normal">
+                                <br />
+                                Cornelia provides professional and caring life coaching during life's challenges and conflicts. This could be in the following areas:<br />
+                                <br />
+                                • Love and Relationship<br />
+                                • Parenting<br />
+                                • Work and Career<br />
+                                <br />
+                                You may experience:<br />
+                                <br />
+                                • Feelings of isolation<br />
+                                • Feelings of worthlessness<br />
+                                • Feelings of guilt<br />
+                                • General irritability<br />
+                                • Death of a loved one<br />
+                                • Lack of joy in your life<br />
+                                • Fears and anxiety that reduce your quality of life<br />
+                                • Loneliness<br />
+                                • Despair<br />
+                                <br />
+                                Individual sessions can help help you with:<br />
+                                <br />
+                                • Encouraging personal growth<br />
+                                • Nurturing yourself<br />
+                                • Creating boundaries<br />
+                                • Becoming aware of self-induced obstacles<br />
+                                • Gaining clarity in your thoughts and feelings<br />
+                                • Increasing your overall energy level<br />
+                                • Managing inner conflicts<br />
+                                • Professional growth & direction<br />
+                                <br />
+                            </span>
+                            <h1><b>Work 2</b></h1>
+                            <span class="text-normal">
+                                <br />
+                                Cornelia subscribes to an interdisciplinary approach. Her interests lie in a variety of techniques and energy work. She has many years experience of coaching and supporting clients in Germany, U.K., Spain, and USA. She has run workshops and ongoing groups for meditation, inner child, women’s empowerment, and personal growth. She is a certified life coach and ordained minister.<br />
+                                <br />
+                                First initial consultation (30 min.) - free<br />
+                                Individual session (60 min.) - $ 70.00<br />
+                                <br />
+                                <br />
+                                Covid-19 safety:<br />
+                                <br />
+                                • For individual sessions or group work in person, CDC guidelines are being followed, and masks are being worn.<br />
+                                • All sessions can be conducted via Skype, Zoom, WhatsApp, FaceTime, or Facebook Messenger.<br />
+                            </span>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="tab-pane fade" id="BioContainer" role="tabpanel" aria-labelledby="pills-contact-tab">
-                <div class="row">
-                    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; ">
-                        <img src="int/images/BiographyImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
-                    </div>
-                    <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
-                    <div class="col-12 col-xl-6" style="padding-top:30px;">
-                        <div class="d-none d-xl-block" style="background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
-                        <div class="offset-xl-1">
-                            <div class="TabTextContent">
-                                <h1><b>Biography</b></h1>
-                                <span class="text-normal">
-                                    <br>
-                                    Very early in my life, I was drawn to everything that cannot be seen
-                                    nor explained and in my early teens, I became fascinated with the mysticism
-                                    that lies in England and took the first opportunity that arose, left
-                                    Germany	and began a new life in London. <br>
-                                    <br>
-                                    Quite soon during my journey of studying and delving deeper into psychology,
-                                    I felt a strong interest to learn more about metaphysics and the etheric and
-                                    subtle energy systems. This interest turned into a desire and then a passion.
-                                    The purpose of my life started to unfold and it became clear to me that helping
-                                    children and adults are to be my task. In particular parents whose children
-                                    have gone missing, as well as children, who are now adults, who have experienced
-                                    or are experiencing severe traumas. <br>
-                                    <br>
-                                    In 1999, I left Europe with my American husband and continued to live
-                                    in several parts of the U.S. for six years. I gave birth to my son and continued
-                                    my practice in America. <br>
-                                    <br>
-                                    During this time there were a few years where I had forgotten my true
-                                    purpose in my work, to help parents and children, but was reminded of it by
-                                    my own son. <br>
-                                    Meanwhile, life turned out to have a different plan with my marriage
-                                    and soon after separating from my husband, I felt this similar attraction towards
-                                    England yet again. <br>
-                                    Now I have resumed my activity to help parents, children (big and small)
-                                    and their loved ones during hardship and difficult times in their lives.<br>
-                                </span>
-                                <span class="text-normal">
-                                    In my years of studying subtle energy systems and
-                                    meditation, I have managed to fine-tune my own perceptions and am now able
-                                    to help people
-                                    specifically by drawing their energy centres (chakras) and aura fields
-                                    through	an energy
-                                    analysis. This is how I am able to assess traumas in someone else&#8217;s life.
-                                    It is then possible to transform these energy blockages, which enables
-                                    the person to live a more stress-free life and experience less fears and anxiety.
-                                    The energies that have become stuck, due to a past trauma or shock to
-                                    the system
-                                    are able to flow freely again.<br>
-                                    <br>
-                                    Children in particular, are extremely receptive for traumas, different
-                                    forms of abuse and shock experiences like sexual abuse, physical abuse or energetic
-                                    abuse. The reality and effect of such abuse, often stretches undetected over
-                                    a period of two or three generations, due to their traumatic nature. <br>
-                                    <br>
-                                    Children are open towards these encounters, simply because they completely
-                                    depend on their parents, caretakers and adults around them and are not equipped
-                                    with the necessary means to fend off the penetrating energies of the perpetrator,
-                                    to whom they are connected via an energetic string. <br>
-                                    <br>
-                                    Any form and level of abuse can cause anger, uncertainty, self-despise,
-                                    feelings of guilt and shame, inexplicable depression, loss of confidence, loss
-                                    of personal power, loss of vitality, chronic fatigue, blocked creativity and
-                                    sexual problems, just to name a few. <br>
-                                    <br>
-                                    I have specialised myself to resolve and transform injuries that were
-                                    caused in someone&#8217;s energy system, in a very gentle and careful manner.<br>
-                                    <br>
-                                </span>
+        <div class="tab-pane fade" id="BioContainer" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <div class="row" style="min-height: calc(100vh - 225px);">
+                <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; ">
+                    <img src="int/images/BiographyImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
+                </div>
+                <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
+                <div class="col-12 col-xl-6" style="padding-top:30px;">
+                    <div class="d-none d-xl-block" style="background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
+                    <div class="offset-xl-1">
+                        <div class="TabTextContent">
+                            <h1><b>Biography</b></h1>
 
-                            </div>
+                            <span class="text-normal">
+                                Cornelia has a unique ability to create an atmosphere that accelerates the individual's healing process, and she is dedicated to helping people of all backgrounds find their best version of themselves, with unconditional and positive regard.
+                                <br />
+                                After more than 15 years’ experience working with clients individually, she also ran groups and workshops for inner child work, woman's shamanic groups, meditation groups, chakra work, encounter groups, and energy groups.
+                                <br />
+                                Cornelia lives in Brevard County since 2014, enjoys the outdoors, cooking, baking, and reading,
+                                She has a background as an ICU and hospice nurse.
+                                <br />
+                                <br />
+                            </span>
+
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="tab-pane fade" id="PhilContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <div class="row">
-                    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; ">
-                        <img src="int/images/PhilosophyImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
-                    </div>
-                    <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
-                    <div class="col-12 col-xl-6" style="padding-top:30px;">
-                        <div class="d-none d-xl-block" style="background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
-                        <div class="offset-xl-1">
-                            <div class="TabTextContent">
-                                <h1><b>Philosophy</b></h1>
-                                <span class="text-normal">
-                                    <br>
-                                    There are times in life when we simply feel that there is no way out, there is no cure and there is no remedy. We battle on and are determined to manage or solve everything alone.
-                                    <br />
-                                    And sometimes, we have learned how to survive in this world, but we are neither happy nor fulfilled with our lives, we just follow a routine and are functioning.<br />
-                                    Working with a life coach can be like a journey of finding out who you are, what you really need and what makes you really happy. You are the one who is in control of your process and you are the one who holds the key to solve your own inner puzzle.<br />
-                                    With me at your side, and accompanying and supporting you on that journey, wherever this journey might take you, may ease the feeling of isolation, and of not being understood or accepted for who you are. You will learn new skills how to improve, integrate change, or simply learn to be with a given situation.<br />
-                                    <br />
-                                    I am never in the position to heal your wounds, but I will do everything in my power to help you learn how to set your own innate healing abilities into motion, which can be an extremely empowering process and experience for you. Your own transformation will come from within yourself.<br />
-                                    <br />
-                                    In my work with people for over 15 years, I have come to realize, that the spiritual aspect is vital for healing. We are not merely flesh nor emotions; we are also spirit and soul. If looked at these dimensions in their entirety, we are able to become integral, wholesome beings and truly healthy on every level. This enables us to fulfill our true life's task or destiny ... the written plan of the purpose why we are here at this specific time.<br />
-                                </span>
+        <div class="tab-pane fade" id="PhilContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="row" style="min-height: calc(100vh - 225px);">
+                <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; ">
+                    <img src="int/images/PhilosophyImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
+                </div>
+                <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
+                <div class="col-12 col-xl-6" style="padding-top:30px;">
+                    <div class="d-none d-xl-block" style="background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
+                    <div class="offset-xl-1">
+                        <div class="TabTextContent">
+                            <h1><b>Philosophy</b></h1>
+                            <span class="text-normal">
+                                <br>
+                                Cornelia combines the classical coaching approach with a gift of working spiritually and intuitively.<br>
+                                <br>
+                                There are times in life when we see no way out, there is no cure and there is no remedy. We battle on and have somehow learned how to survive in this world. We are functioning routinely from day to day, but are neither happy nor fulfilled.<br>
+                                <br>
+                                Working with a Spiritual Life Coach at your side, supporting, encouraging, and motivating you on your journey, can help you to identify to making the right choices for your life. You can learn new skills how to improve, change, or simply be with the given situation.<br>
+                                <br>
+                                You can experience that the relationship with yourself and ultimately with your surrounding can undergo paradigm shifts and you are able to connect to and view your life in a different light. This can be a very empowering process and experience for you. Your own transformation will come from within yourself.<br>
+                                <br>
+                                In my work with people for over 15 years, I have come to realize, that the spiritual aspect is vital for healing. We are not merely flesh nor emotions; we are also spirit and soul. If looked at these dimensions in their entirety, we are able to become integral, wholesome beings and truly healthy on every level. This enables us to fulfill our true life's task or destiny ... or the written plan of the purpose why we are here at this specific time.<br>
+                                <br>
+                            </span>
 
-                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="tab-pane fade" id="TestimonialContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <div class="row">
-                    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; ">
-                        <img src="int/images/TestimonialImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
-                    </div>
-                    <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
-                    <div class="col-12 col-xl-6" style="padding-top:30px;">
-                        <div class="d-none d-xl-block" style="background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
-                        <div class="offset-xl-1">
-                            <div class="TabTextContent">
-                                <h1><b>Testimonials</b></h1>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="TestimonialContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="row" style="min-height: calc(100vh - 225px);">
+                <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; ">
+                    <img src="int/images/TestimonialImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
+                </div>
+                <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
+                <div class="col-12 col-xl-6" style="padding-top:30px;">
+                    <div class="d-none d-xl-block" style="background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
+                    <div class="offset-xl-1">
+                        <div class="TabTextContent">
+                            <h1><b>Testimonials</b></h1>
+                            <span class="text-normal">
+                                <br>
+                                &laquo; I met Cornelia through her London based practice in the mid 1990s.
+                                I attended groups she facilitated as well as individual sessions with
+                                her &#8211; she
+                                was skilled, experienced and extremely supportive at a time when I was
+                                experiencing quite a bit of change and difficulty in my life. I particularly
+                                appreciated
+                                that Cornelia trained overseas in an established and respected school
+                                with which I had not become familiar through working in the UK caring
+                                professions. The freshness of the approach and the warmth, skill, humour
+                                and	patience
+                                Cornelia
+                                brings to her work with me helped me to find my feet after a very &quot;rough
+                                patch&quot;. It's a pleasure to recommend her services to other people. &raquo;
+                                <br>
+                                <br>
+                                <i>
+                                    Diana Breadmore<br>
+                                    Administrator<br>
+                                    Southampton, UK
+                                </i>
+                                <br>
+                                <br>
+                                <img src="../int/structure/47283A.gif" width="100" height="1" alt=""><br>
+                                <br>
+                                &laquo; I met Cornelia when she lived in Minneapolis, US. She first became
+                                a customer of mine thru my hair salon. As time went on I turned to her and
+                                started Counselling when I was in need of lots of help and she helped me get
+                                thru some very tough and difficult moments. She took the time to listen when
+                                I needed it the most even when I did not have an appointment or when I called
+                                she was always willing and able to listen. I miss her support very much and
+                                I know who ever looks for her services will be grateful for the help and understanding
+                                she will give. &raquo;<br>
+                                <br>
+                                <i>
+                                    Aleata Dauwalter<br>
+                                    Hair Stylist<br>
+                                    Minneapolis, USA
+                                </i>		<br>
+                                <img src="int/structure/47283A.gif" width="100" height="1" alt=""><br>
                                 <span class="text-normal">
                                     <br>
-                                    &laquo; I met Cornelia through her London based practice in the mid 1990s.
-                                    I attended groups she facilitated as well as individual sessions with
-                                    her &#8211; she
-                                    was skilled, experienced and extremely supportive at a time when I was
-                                    experiencing quite a bit of change and difficulty in my life. I particularly
-                                    appreciated
-                                    that Cornelia trained overseas in an established and respected school
-                                    with which I had not become familiar through working in the UK caring
-                                    professions. The freshness of the approach and the warmth, skill, humour
-                                    and	patience
-                                    Cornelia
-                                    brings to her work with me helped me to find my feet after a very &quot;rough
-                                    patch&quot;. It's a pleasure to recommend her services to other people. &raquo;
-                                    <br>
+                                    &laquo; Cornelia has a unique metaphysical approach towards Counselling
+                                    that she complements with her warm and healing presence. &raquo;<br>
                                     <br>
                                     <i>
-                                        Diana Breadmore<br>
-                                        Administrator<br>
-                                        Southampton, UK
+                                        Anne Geraghty,
+                                        <br>
+                                        Psychotherapist and Author of        &#8249;
+                                        How Loving Relationships Work: Understanding Love's Living Force&#8250;<br>Cumbria,
+                                        UK
                                     </i>
                                     <br>
                                     <br>
-                                    <img src="../int/structure/47283A.gif" width="100" height="1" alt=""><br>
+                                    <img src="int/structure/47283A.gif" width="100" height="1" alt=""><br>
                                     <br>
-                                    &laquo; I met Cornelia when she lived in Minneapolis, US. She first became
-                                    a customer of mine thru my hair salon. As time went on I turned to her and
-                                    started Counselling when I was in need of lots of help and she helped me get
-                                    thru some very tough and difficult moments. She took the time to listen when
-                                    I needed it the most even when I did not have an appointment or when I called
-                                    she was always willing and able to listen. I miss her support very much and
-                                    I know who ever looks for her services will be grateful for the help and understanding
-                                    she will give. &raquo;<br>
-                                    <br>
+                                    &laquo; Cornelia has a special gift to coalesce her energies with
+                                    nature and the divine principle. Therefore, she mediates the truth of the Higher
+                                    Self. This is how people, who come into contact with her, are able to profoundly
+                                    connect with their hearts. &raquo; <br><br>
                                     <i>
-                                        Aleata Dauwalter<br>
-                                        Hair Stylist<br>
-                                        Minneapolis, USA
+                                        Pat Edith Werner<br>
+                                        Psychotherapist and Medium<br>
+                                        Marbella, Spain
                                     </i>		<br>
-                                    <img src="int/structure/47283A.gif" width="100" height="1" alt=""><br>
-                                    <span class="text-normal">
-                                        <br>
-                                        &laquo; Cornelia has a unique metaphysical approach towards Counselling
-                                        that she complements with her warm and healing presence. &raquo;<br>
-                                        <br>
-                                        <i>
-                                            Anne Geraghty,
-                                            <br>
-                                            Psychotherapist and Author of        &#8249;
-                                            How Loving Relationships Work: Understanding Love's Living Force&#8250;<br>Cumbria,
-                                            UK
-                                        </i>
-                                        <br>
-                                        <br>
-                                        <img src="int/structure/47283A.gif" width="100" height="1" alt=""><br>
-                                        <br>
-                                        &laquo; Cornelia has a special gift to coalesce her energies with
-                                        nature and the divine principle. Therefore, she mediates the truth of the Higher
-                                        Self. This is how people, who come into contact with her, are able to profoundly
-                                        connect with their hearts. &raquo; <br><br>
-                                        <i>
-                                            Pat Edith Werner<br>
-                                            Psychotherapist and Medium<br>
-                                            Marbella, Spain
-                                        </i>		<br>
-                                        <br>
+                                    <br>
 
-                                        <br>
+                                    <br>
 
 
-                                    </span>
                                 </span>
+                            </span>
 
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="tab-pane fade" id="CoursesContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <div class="row">
-                    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; ">
-                        <img src="int/images/CoursesImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
-                    </div>
-                    <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
-                    <div class="col-12 col-xl-6" style="padding-top:30px;">
-                        <div class="d-none d-xl-block" style="background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
-                        <div class="offset-xl-1">
-                            <div class="TabTextContent">
-                                <h1><b>Courses</b></h1>
-                                <span class="text-normal">
-                                    <br>
-                                    <b>Meditation Course &#8211; 7 weeks</b><br>
-                                    <br>
-                                    9th November 2007 &#8211; 21st December 2007<br>
-                                    <br>
-                                    Fridays 10:00 &#8211; 11:00<br>
-                                    <br>
-                                    Benefits of Meditation:<br>
-                                    &#8226;
-                                    Stronger focus and concentration<br>
-                                    &#8226;
-                                    Reduced tension, anxiety and stress<br>
-                                    &#8226;
-                                    Clearer thinking and less emotional turmoil<br>
-                                    &#8226;
-                                    Lower blood pressure and cholesterol<br>
-                                    &#8226;
-                                    Support in kicking addictions and other self-defeating behaviours<br>
-                                    &#8226;
-                                    Increased self-understanding and self-acceptance<br>
-                                    &#8226;
-                                    Deeper sense of meaning and purpose<br>
-                                    &#8226;
-                                    Glimpses of a spiritual dimension of being<br>
-                                    &#8226; ... and it may just help you keep a 'cool head' in midst of
-                                    all
-                                    the Christmas preparations<br>
-                                    <br>
-                                    Please wear comfortable clothing to all classes
-                                    and call early, as spaces are limited. <br>
-                                    <br>
-                                    Suggested offering &pound; 5.00 per sitting.
-                                </span>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tab-pane fade" id="ContactContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <div class="row">
-                    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; ">
-                        <img src="int/images/ContactImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
-                    </div>
-                    <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
-                    <div class="col-12 col-xl-6" style="padding-top:30px;">
-                        <div class="d-none d-xl-block" style="background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
-                        <div class="offset-xl-1">
-                            <div class="TabTextContent">
-                                <h1><b>Contact</b></h1>
-                                <span class="text-normal">
-                                    <br>
-                                    <b>Cornelia Gilbert, Dip. I.R.C.</b><br>
-                                    1 Elmhurst Heights<br>
-                                    15 Studland Road<br>
-                                    Bournemouth BH4 8HL<br>
-                                    &#84;&#x65;&#x6c;&#x3a;&#x20;&#x30;&#49;&#x32;&#48;&#50;&#x2e;&#55;&#53;&#50;&#x37;&#52;&#54;<br>
-                                    &#x4d;&#x6f;&#x62;&#x3a;&#32;&#48;&#x37;&#57;&#56;&#51;&#46;&#49;&#48;&#x36;&#x31;&#49;&#49;<br>
-                                    <br>
-                                    <a href="index.html" class="link">www.corneliagilbert.com</a><br>
-                                    <br>
-
-                                    First Initial Consultation 	(30 min.)      -   	free<br>
-                                    Individual Session (90 min.) - &pound; 45.00<br>
-                                    Relationship Session (60 min.) - &pound; 55.00 <br>
-                                    <br>
-                                    Concessions are available on
-                                    request<br>
-                                    Sessions in English or German<br>
-                                    <br>
-                                    <img src="int/structure/47283A.gif" width="100" height="1" alt=""><br>
-                                    <br>
-                                </span>
-                                <h1><b>Links</b></h1>
-                                <span class="text-normal">
-                                    <br>
-                                    (None)
-                                </span>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
+
+        <div class="tab-pane fade" id="CoursesContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="row" style="min-height: calc(100vh - 225px);">
+                <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; ">
+                    <img src="int/images/CoursesImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
+                </div>
+                <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
+                <div class="col-12 col-xl-6" style="padding-top:30px;">
+                    <div class="d-none d-xl-block" style="background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
+                    <div class="offset-xl-1">
+                        <div class="TabTextContent">
+                            <h1><b>Courses</b></h1>
+                            <span class="text-normal">
+                                Watch this space for continuous news and updates.
+
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="ContactContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="row" style="min-height: calc(100vh - 225px);">
+                <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; ">
+                    <img src="int/images/ContactImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
+                </div>
+                <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
+                <div class="col-12 col-xl-6" style="padding-top:30px;">
+                    <div class="d-none d-xl-block" style="background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
+                    <div class="offset-xl-1">
+                        <div class="TabTextContent">
+                            <h1><b>Contact</b></h1>
+                            <span class="text-normal">
+                                <br />
+                                Cornelia Gilbert<br />
+                                <br />
+                                Tel: 321 504 8188<br />
+                                mail@corneliagilbert.com<br />
+                                www.corneliagilbert.com<br />
+                                <br />
+                                First Initial Consultation (30 min.) - free<br />
+                                <br>
+                                Individual Session (60 min.) - $ 75.00<br>
+                                Discounts for block sessions available upon inquiry<br>
+                                <br>
+                                Sessions available in English or German<br>
+                                <br>
+                                CDC Guidelines are being adhered to. Sessions can be conducted via Zoom, Skype, Messenger, and FaceTime.<br>
+                                <br>
+                                <br>
+                                <img src="int/structure/47283A.gif" width="100" height="1" alt=""><br>
+                                <br>
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="text-center text-white" style="background-color: rgba(241, 241, 241, 0.5)">
+            <!-- Grid container -->
+            <div class="container pt-4">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+                       href="#!"
+                       role="button"
+                       data-mdb-ripple-color="dark">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+                       href="#!"
+                       role="button"
+                       data-mdb-ripple-color="dark">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <!-- Google -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+                       href="#!"
+                       role="button"
+                       data-mdb-ripple-color="dark">
+                        <i class="fab fa-google"></i>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+                       href="#!"
+                       role="button"
+                       data-mdb-ripple-color="dark">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+                       href="#!"
+                       role="button"
+                       data-mdb-ripple-color="dark">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <!-- Github -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+                       href="#!"
+                       role="button"
+                       data-mdb-ripple-color="dark">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+            <!-- Copyright -->
+            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2021 Cornelia Gilbert, LLC | Photograph by Chris Comstock Photography | Bootstrap design by Gabriel Sutton
+
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+
+    </div>
     </div>
 
 
 
-    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 
+
+
+
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
