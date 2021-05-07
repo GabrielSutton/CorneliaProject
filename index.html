@@ -256,28 +256,29 @@
 
                 <div class="container-fluid pt-5 pb-5">
                     <div class="row justify-content-center pt-lg-3 pb-lg-3" style="opacity:1;">
-                        <div class="d-none d-lg-block col-lg-3" style="height:65vh; text-align:center;">
+                        <div class="d-none d-lg-block col-lg-3" style="height:65vh; text-align:left;">
 
 
                             <img class="img-fluid" src="int/images/HomeImage.jpg">
+                            <span style="font-size:11px; text-align:left;">Photo by Chris Comstock, <a href="https://www.comstockphotography.net">Chris Comstock Photography</a></span>
 
                         </div>
                         <div class="d-block d-lg-none col-8" style="text-align:center; margin-bottom:40px;">
 
-
                             <img class="img-fluid" src="int/images/HomeImage.jpg">
+                            <span style="font-size:11px; text-align:left;">Photo by Chris Comstock, <a href="https://www.comstockphotography.net">Chris Comstock Photography</a></span>
 
                         </div>
                         <div class="col-10 col-lg-6 mt-lg-5" style="font-family: Juni; font-style: normal; color: lavenderblush;">
-                            <h2 class="display-5 offset-1" style="padding-bottom: 50px;">Spiritual <wbr>Life Coach</h2>
+                            <h2 class="display-5 offset-0 offset-lg-1" style="padding-bottom: 50px;">Spiritual <wbr>Life Coach</h2>
 
-                            <span class="offset-1 offset-lg-2" style="display:block; font-family:Juni; padding-bottom:50px; font-size:x-large; ">
+                            <span class="offset-0 offset-lg-2" style="display:block; font-family:Juni; padding-bottom:50px; font-size:x-large; ">
                                 spir·it<br>
                                 /ˈspirit/ …<br>
                                 Latin: spirare = to breathe<br>
                             </span>
 
-                            <h4 class="display-4 offset-1 offset-lg-3 flex-grow-1" style="font-family:Garamond;  font-variant:small-caps; text-shadow: 2px 2px 30px white;">because you matter ...</h4>
+                            <h4 class="display-4 offset-0 offset-lg-3 flex-grow-1" style="font-family:Garamond;  font-variant:small-caps; text-shadow: 2px 2px 30px white;">because you matter ...</h4>
 
                         </div>
                     </div>
@@ -291,11 +292,13 @@
                 <section>
                     <div class="container-fluid">
                         <div class="row justify-content-center pt-5 pb-5">
-                            <div class="pb-3 col-lg-3 pb-lg-0 mt-auto mb-auto">
-                                <div style="text-align:center;">
+                            <div class="text-center text-lg-start col-12 col-lg-3 pb-3 pb-lg-0 mt-auto mb-auto">
+                                <div>
                                     <img class="img-fluid" src="int/images/WorkImage.jpg" alt="">
                                 </div>
+                                <span style="font-size:11px;">Photo by javardh on <a href="https://unsplash.com">Unsplash</a></span>
                             </div>
+
                             <div class="col-10 col-lg-5 d-flex align-items-start flex-column " style="height:auto;">
                                 <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
                                     <h4 class="display-3">Work</h4>
@@ -337,19 +340,85 @@
                 </section>
 
                 <section>
+                    <div class="container-fluid">
+                        <div class="row justify-content-center pt-5 pb-5">
+                            <div class="text-center text-lg-start pb-3 col-lg-3 pb-lg-0 order-lg-2 mt-auto mb-auto">
+                                <div >
+                                    <img class="img-fluid" src="int/images/BiographyImage.jpg" alt="">
+                                </div>
+                                <span style="text-align:left; font-size:11px;">Photo by Cornelia Gilbert</span>
+                            </div>
+                            <div class="col-10 col-lg-5 d-flex align-items-start flex-column order-lg-1" style="height:auto;">
+                                <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
+
+                                    <h2 class="display-4">Biography</h2>
+                                    <p>Cornelia was born and raised in Munich, Germany. Soon life's journey took her to London UK, Spain, and the US. She is a certified Life Coach and an Ordained Minister.</p>
+                                </div>
+                                <div class="display-6 offset-2 pt-3" style=" height:auto;">
+                                    <button type="button" onclick="navigateToPage( this, '#pills-biography-tab' );" title="Click to read more" class="noStyleButton">
+                                        Read More ...
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <div>
+                                    <hr />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="container-fluid">
+                        <div class="row justify-content-center pt-5 pb-5 pb-5">
+                            <div class="text-center text-lg-start pb-3 col-lg-3 pb-lg-0 mt-auto mb-auto">
+                                <div >
+                                    <img class="img-fluid" src="int/images/PhilosophyImage.jpg" alt="">
+                                </div>
+                                <span style="text-align:left; font-size:11px;">Photo by javardh on <a href="https://unsplash.com">Unsplash</a></span>
+                            </div>
+                            <div class="col-10 col-lg-5 d-flex align-items-start flex-column " style="height:auto;">
+                                <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
+
+                                    <h2 class="display-4">Philosophy</h2>
+                                    <p>I subscribe to an interdisciplinary approach. I was trained both in Europe and the US and use a variety of techniques, to name a few: cognitive behavioral coaching, breath work, therapeutic metaphors, guided visualization, guided imagery, thought refocusing, positive affirmation, effective goal-setting, gratitude and appreciation … </p>
+                                </div>
+                                <div class="display-6 offset-2 pt-3" style=" height:auto;">
+                                    <button type="button" onclick="navigateToPage( this, '#pills-philosophy-tab' );" title="Click to read more" class="noStyleButton">
+                                        Read More ...
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <div>
+                                    <hr />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
                     <div>
                         <div class="container-fluid">
                             <div class="row justify-content-center pt-5 pb-5">
-                                <div class="pb-3 col-lg-3 order-lg-2 pb-lg-0 mt-auto mb-auto order-lg-2">
-                                    <div style="text-align:center;">
+                                <div class="text-center text-lg-start pb-3 col-lg-3 order-lg-2 pb-lg-0 mt-auto mb-auto order-lg-2">
+                                    <div >
                                         <img class="img-fluid" src="int/images/TestimonialImage.jpg">
                                     </div>
+                                    <span style="text-align:left; font-size:11px;">Photo by nima-sarram  on <a href="https://unsplash.com">Unsplash</a></span>
                                 </div>
                                 <div class="col-10 col-lg-5 d-flex align-items-start flex-column order-lg-1" style="height:auto;">
                                     <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
                                         <h4 class="display-3">Testimonials</h4>
                                         <p>
-                                            <br />
                                             « Cornelia has a special gift to coalesce her energies with nature and the divine principle.
                                             Therefore, she mediates the truth of the Higher Self. This is how people, who come into contact
                                             with her, are able to profoundly connect with their hearts. »
@@ -364,11 +433,9 @@
                                             <br />
                                             Dr. Kevin Poulston BS, DC<br />
                                             Indian Harbor Beach, Florida<br />
-
-                                            <br>
                                         </p>
                                     </div>
-                                    <div class="display-6 offset-2" style=" height:auto;">
+                                    <div class="display-6 offset-2 pt-3" style=" height:auto;">
                                         <button type="button" onclick="navigateToPage( this, '#pills-testimonials-tab' );" title="Click to read more" class="noStyleButton">
                                             Read More ...
                                         </button>
@@ -389,75 +456,12 @@
 
                 <section>
                     <div class="container-fluid">
-                        <div class="row justify-content-center pt-5 pb-5 pb-5">
-                            <div class="pb-3 col-lg-3 pb-lg-0 mt-auto mb-auto">
-                                <div style="text-align:center;">
-                                    <img class="img-fluid" src="int/images/PhilosophyImage.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="col-10 col-lg-5 d-flex align-items-start flex-column " style="height:auto;">
-                                <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
-
-                                    <h2 class="display-4">Philosophy</h2>
-                                    <p>I subscribe to an interdisciplinary approach. I was trained both in Europe and the US and use a variety of techniques, to name a few: cognitive behavioral coaching, breath work, therapeutic metaphors, guided visualization, guided imagery, thought refocusing, positive affirmation, effective goal-setting, gratitude and appreciation … </p>
-                                </div>
-                                <div class="display-6 offset-2" style=" height:auto;">
-                                    <button type="button" onclick="navigateToPage( this, '#pills-philosophy-tab' );" title="Click to read more" class="noStyleButton">
-                                        Read More ...
-                                    </button>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-8">
-                                <div>
-                                    <hr />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <div class="container-fluid">
                         <div class="row justify-content-center pt-5 pb-5">
-                            <div class="pb-3 col-lg-3 pb-lg-0 order-lg-2 mt-auto mb-auto">
-                                <div style="text-align:center;">
-                                    <img class="img-fluid" src="int/images/BiographyImage.jpg" alt="">
+                            <div class="text-center text-lg-start pb-3 col-lg-3 pb-lg-0 mt-auto mb-auto">
+                                <div >
+                                    <img class="img-fluid" src="int/images/CoursesImage.jpg" aria-hidden="true">
                                 </div>
-                            </div>
-                            <div class="col-10 col-lg-5 d-flex align-items-start flex-column order-lg-1" style="height:auto;">
-                                <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
-
-                                    <h2 class="display-4">Biography</h2>
-                                    <p>Cornelia was born and raised in Munich, Germany. Soon life's journey took her to London UK, Spain, and the US. She is a certified Life Coach and an Ordained Minister.</p>
-                                </div>
-                                <div class="display-6 offset-2" style=" height:auto;">
-                                    <button type="button" onclick="navigateToPage( this, '#pills-biography-tab' );" title="Click to read more" class="noStyleButton">
-                                        Read More ...
-                                    </button>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-8">
-                                <div>
-                                    <hr />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <div class="container-fluid">
-                        <div class="row justify-content-center pt-5 pb-5">
-                            <div class="pb-3 col-lg-3 pb-lg-0 mt-auto mb-auto">
-                                <div style="text-align:center;">
-                                    <img class="img-fluid" src="int/images/CoursesImage.jpg" alt="">
-                                </div>
+                                <span style="text-align:left; font-size:11px;">Photo by andre-tan on <a href="https://unsplash.com">Unsplash</a></span>
                             </div>
                             <div class="col-10 col-lg-5 d-flex align-items-start flex-column " style="height:auto;">
 
@@ -466,7 +470,7 @@
                                     <h2 class="display-4">Courses</h2>
                                     <p>Due to Covid-19, no group work or workshops are currently offered. </p>
                                 </div>
-                                <div class="display-6 offset-2" style=" height:auto;">
+                                <div class="display-6 offset-2 pt-3" style=" height:auto;">
                                     <button type="button" onclick="navigateToPage( this, '#pills-courses-tab' );" title="Click to read more" class="noStyleButton">
                                         Read More ...
                                     </button>
@@ -486,10 +490,11 @@
                 <section>
                     <div class="container-fluid">
                         <div class="row justify-content-center pt-5 pb-5">
-                            <div class="pb-3 col-lg-3 pb-lg-0 order-lg-2 mt-auto mb-auto">
-                                <div style="text-align:center;">
+                            <div class=" text-center text-lg-start pb-3 col-lg-3 pb-lg-0 order-lg-2 mt-auto mb-auto">
+                                <div >
                                     <img class="img-fluid" src="int/images/ContactImage.jpg" alt="">
                                 </div>
+                                <span class="text-center text-lg-start" style="font-size:11px;">Photo by dave-hoefler on <a href="https://unsplash.com">Unsplash</a></span>
                             </div>
                             <div class="col-10 col-lg-5 d-flex align-items-start flex-column order-lg-1" style="height:auto;">
                                 <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
@@ -503,10 +508,10 @@
                                         mail@corneliagilbert.com<br />
                                         www.corneliagilbert.com<br />
                                         <br />
-                                        <b>First Initial Consultation (30 min.) - free</b><br />
+                                        <b>First Consultation (30 min.) - free</b>
                                     </p>
                                 </div>
-                                <div class="display-6 offset-2" style=" height:auto;">
+                                <div class="display-6 offset-2 pt-3" style=" height:auto;">
                                     <button type="button" onclick="navigateToPage( this, '#pills-contact-tab' );" title="Click to read more" class="noStyleButton">
                                         Read More ...
                                     </button>
@@ -533,8 +538,11 @@
 
             <div class="tab-pane fade" id="WorkContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <div class="row" style="min-height: calc(100vh - 225px);">
-                    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; ">
+                    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; overflow-x:hidden;">
                         <img src="int/images/WorkImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
+                        <span class="d-block mx-auto float-none float-xl-end mx-xl-0" style="text-align:center; font-size:11px;">Photo by javardh on <a href="https://unsplash.com">Unsplash</a></span>
+
+
                     </div>
                     <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
                     <div class="col-12 col-xl-6" style="padding-top:30px;">
@@ -574,8 +582,8 @@
                                 <br />
                                 Cornelia subscribes to an interdisciplinary approach. Her interests lie in a variety of techniques and energy work. She has many years experience of coaching and supporting clients in Germany, U.K., Spain, and USA. She has run workshops and ongoing groups for meditation, inner child, women’s empowerment, and personal growth. She is a certified life coach and ordained minister.<br />
 
-                                <p style="margin-left: 4rem;">
-                                    First initial consultation (30 min.) - free<br />
+                                <p style="margin-left: 2rem;">
+                                    First consultation (30 min.) - free<br />
                                     Individual session (60 min.) - $ 70.00<br />
                                 </p>
 
@@ -593,8 +601,9 @@
 
             <div class="tab-pane fade"  id="BioContainer" style="min-height: calc(100vh - 225px);" role="tabpanel" aria-labelledby="pills-contact-tab">
                 <div class="row">
-                    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; ">
+                    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; overflow-x:hidden;">
                         <img src="int/images/BiographyImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
+                        <span class="d-block mx-auto float-none float-xl-end mx-xl-0" style="text-align:center; font-size:11px;">Photo by Cornelia Gilbert</span>
                     </div>
                     <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
                     <div class="col-12 col-xl-6" style="padding-top:30px;">
@@ -622,8 +631,9 @@
 
             <div class="tab-pane fade" id="PhilContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <div class="row" style="min-height: calc(100vh - 225px);">
-                    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; ">
+                    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; overflow-x:hidden;">
                         <img src="int/images/PhilosophyImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
+                        <span class="d-block mx-auto float-none float-xl-end mx-xl-0" style="text-align:center; font-size:11px;">Photo by javardh on <a href="https://unsplash.com">Unsplash</a></span>
                     </div>
                     <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
                     <div class="col-12 col-xl-6" style="padding-top:30px;">
@@ -654,8 +664,9 @@
 
             <div class="tab-pane fade" id="TestimonialContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <div class="row" style="min-height: calc(100vh - 225px);">
-                    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; ">
+                    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; overflow-x:hidden;">
                         <img src="int/images/TestimonialImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
+                        <span class="d-block mx-auto float-none float-xl-end mx-xl-0" style="text-align:center; font-size:11px;">Photo by nima-sarram  on <a href="https://unsplash.com">Unsplash</a></span>
                     </div>
                     <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
                     <div class="col-12 col-xl-6" style="padding-top:30px;">
@@ -730,10 +741,6 @@
                                             Marbella, Spain
                                         </i>		<br>
                                         <br>
-
-                                        <br>
-
-
                                     </span>
                                 </span>
 
@@ -745,8 +752,9 @@
 
             <div class="tab-pane fade" id="CoursesContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <div class="row" style="min-height: calc(100vh - 225px);">
-                    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; ">
+                    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; overflow-x:hidden;">
                         <img src="int/images/CoursesImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
+                        <span class="d-block mx-auto float-none float-xl-end mx-xl-0" style="text-align:center; font-size:11px;">Photo by andre-tan on <a href="https://unsplash.com">Unsplash</a></span>
                     </div>
                     <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
                     <div class="col-12 col-xl-6" style="padding-top:30px;">
@@ -756,9 +764,7 @@
                                 <h1><b>Courses</b></h1>
                                 <span class="text-normal">
                                     Watch this space for continuous news and updates.
-
                                 </span>
-
                             </div>
                         </div>
                     </div>
@@ -767,8 +773,9 @@
 
             <div class="tab-pane fade" id="ContactContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <div class="row" style="min-height: calc(100vh - 225px);">
-                    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; ">
+                    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; overflow-x:hidden;">
                         <img src="int/images/ContactImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
+                        <span class="d-block mx-auto float-none float-xl-end mx-xl-0" style="text-align:center; font-size:11px;">Photo by dave-hoefler on <a href="https://unsplash.com">Unsplash</a></span>
                     </div>
                     <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
                     <div class="col-12 col-xl-6" style="padding-top:30px;">
@@ -805,7 +812,7 @@
             </div>
 
 
-            <footer class="text-center text-white" style="background-color: rgba(241, 241, 241, 0.5)">
+            <footer class="text-center text-white" style="background-color: rgba(241, 241, 241, 0)">
                 <!-- Grid container -->
                 <div class="container pt-4">
                     <!-- Section: Social media -->
@@ -843,7 +850,7 @@
                         </a>
 
                         <!-- Linkedin -->
-                        <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+                        <a class="d-none btn btn-link btn-floating btn-lg text-dark m-1"
                            href="#!"
                            role="button"
                            data-mdb-ripple-color="dark">
