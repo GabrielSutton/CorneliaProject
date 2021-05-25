@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -43,6 +43,7 @@
         li.nav-item {
             text-align: center;
             border-right: 4px purple;
+            
         }
 
             li.nav-item > a.nav-link {
@@ -52,6 +53,7 @@
                 font-size: larger;
                 padding-left: 16px !important;
                 padding-right: 16px !important;
+                
             }
 
                 li.nav-item > a.nav-link.active,
@@ -166,44 +168,83 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript">
 
+        $(document).ready(function () {
+            // Handler for .ready() called.
+        
+            click_event = new CustomEvent('click');
+            btn_element = document.querySelector('#pills-home-tab');
+            btn_element.dispatchEvent(click_event);
+
+        });
+
         function navigateToPage(elem, destinationPage) {
 
             try {
                 //debugger;
-                var someTabTriggerEl;
+                var someTabTriggerEl = $(elem).is("button");
+
+                history.pushState({
+                    sender: $(elem).is("button"),
+                    tab_item: destinationPage
+                }, null, "/" + $(destinationPage).attr('href'));
+
+                loadPage(someTabTriggerEl, destinationPage);
+
+
+            } catch (e) {
+                alert("An error occurred in navigateToPage! " + e.message + "      | Input: " + destinationPage);
+            };
+        }
+
+        function loadPage(elem, destinationPage) {
+            try {
+                var tid;
+
                 $(".nav-link").removeClass('active');
                 $(destinationPage).addClass('active');
-                let tid = $(destinationPage).attr('href');
+                tid = $(destinationPage).attr('href');
                 $('.tab-pane').removeClass('active');
                 $('.tab-pane').removeClass('show');
 
                 $(tid).addClass('active show');
 
-                if ($(elem).is("button")) {
+                if (elem) {
                     window.scrollTo(0, 160);
                 };
-
-
             } catch (e) {
-                alert("An error occurred! " + e.message + "      | Input: " + destinationPage);
+                alert("An error occurred in loadPage! " + e.message + "      | Input: " + destinationPage);
+            };
+        }
+
+        window.onpopstate = function (event) {
+            try {
+                var sender;
+                var destinationPage = "";
+                if (event.state) {
+                    sender = event.state.sender;
+                    destinationPage = event.state.tab_item;
+                }
+                loadPage(sender, destinationPage);
+            } catch (e) {
+                alert("An error occurred in popstate! " + e.message);
             };
         }
 
     </script>
 </head>
-<body>
+<body style="background-color:#653f55;">
 
 
 
     <div id="Header" style="width:100%; height:250px; text-shadow: 4px 4px 6px black; display:-webkit-inline-box; background:#eaeff6; overflow:hidden;">
         <img src="int/images/CG-Flowers-DSC03100-extended.jpg" height="426" width="1704" style="top:-100px; position:relative;" />
-        <a class="d-none d-lg-block" style="font-family:Garamond;  text-decoration: none;font-variant:small-caps; font-size: 45px; position:absolute; left: 80px; top:80px; color:white;">Cornelia Gilbert</a>
-        <a class="d-block d-lg-none" style="font-family:Garamond; text-decoration: none; font-variant:small-caps; font-size: 45px; position:absolute; left: 20px; top:80px; color:white;">Cornelia Gilbert</a>
+        <a class="d-none d-lg-block" style="font-family:Garamond;  text-decoration: none;font-variant:small-caps; font-size: 45px; position:absolute; left: 80px; top:80px; color:white;">Cornelia Gilberts</a>
+        <a class="d-block d-lg-none" style="font-family:Garamond; text-decoration: none; font-variant:small-caps; font-size: 45px; position:absolute; left: 20px; top:80px; color:white;">Cornelia Gilberts</a>
         <div id="HeaderTransition" style="display:block; width:600px; margin-left: -600px; background: -webkit-linear-gradient(bottom, #eaeff6, #eaeff6); background: -moz-linear-gradient(bottom, #D8CBD4, #653F55); -webkit-mask-image: -webkit-gradient(linear, left top , right top, from(rgba(228,203,212,0)), to(rgba(101,63,85,1))) "></div>
 
     </div>
 
-    <nav class="navbar navbar-expand-lg pb-auto pt-1  p-lg-0" style="margin-top: -44px; margin-bottom:0px; background-color: rgba(255, 255, 255, 0.65); width:100%;">
+    <nav class="navbar navbar-expand-lg p-lg-0" style="padding:0px; margin-top: -44px; margin-bottom:0px; background-color: rgba(255, 255, 255, 0.65); width:100%;">
         <!-- Container wrapper -->
         <div class="container-fluid">
             <!-- Navbar brand -->
@@ -216,15 +257,15 @@
                     aria-controls="navbarSupportedContent"
                     aria-expanded="false"
                     aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
+                <i style="padding-top:7px; padding-bottom:7px;" class="fas fa-bars"></i>
             </button>
 
             <!-- Collapsible wrapper -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Left links -->
                 <ul class="navbar-nav me-auto" id="myTab" role="tablist">
-                    <li class="nav-item active" role="presentation">
-                        <a class="nav-link active" onclick="navigateToPage(this, '#' + id)" id="pills-home-tab" data-bs-toggle="pill" href="#HomeContainer" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" onclick="navigateToPage(this, '#' + id)" id="pills-home-tab" data-bs-toggle="pill" href="#HomeContainer" role="tab" aria-controls="pills-home" aria-selected="false">Home</a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link"  onclick="navigateToPage(this, '#' + id)" id="pills-work-tab" data-bs-toggle="pill" href="#WorkContainer" role="tab" aria-controls="pills-profile" aria-selected="false" title="Click to show Cornelia's work information">Work</a>
@@ -259,7 +300,7 @@
     <div class="tab-content-layer1 ">
         <div class="tab-content layer2"  style="font-family:Verdana, Geneva, Tahoma, sans-serif; color:#47283a;">
 
-            <div class="tab-pane fade show active" id="HomeContainer" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="tab-pane fade" id="HomeContainer" role="tabpanel" aria-labelledby="pills-home-tab">
 
                 <div class="container-fluid pt-5 pb-5">
                     <div class="row justify-content-center pt-lg-3 pb-lg-3" style="opacity:1;">
