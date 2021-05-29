@@ -170,11 +170,23 @@
 
         $(document).ready(function () {
             // Handler for .ready() called.
-        
-            click_event = new CustomEvent('click');
-            btn_element = document.querySelector('#pills-home-tab');
-            btn_element.dispatchEvent(click_event);
+            try {
 
+                var isiDevice = /ipad|iphone|ipod/i.test(navigator.userAgent.toLowerCase());
+
+                if (isiDevice) {
+                    $('#pills-home-tab').on("touchstart", function () {
+                        $(this).click();
+                    });
+                    $('#pills-home-tab').trigger('touchstart');
+                } else {
+                    click_event = new CustomEvent('click');
+                    btn_element = document.querySelector('#pills-home-tab');
+                    btn_element.dispatchEvent(click_event);
+                }
+            } catch (e) {
+                alert("An error occoured while trying to load the home container in document.ready: " + e.message);
+            };
         });
 
         function navigateToPage(elem, destinationPage) {
