@@ -177,18 +177,12 @@
             // Handler for .ready() called.
             try {
 
-                var isiDevice = /ipad|iphone|ipod/i.test(navigator.userAgent.toLowerCase());
+                window.history.replaceState({
+                    sender: true,
+                    tab_item: "#pills-home-tab"
+                }, null);
 
-                if (isiDevice) {
-                    $('#pills-home-tab').on("touchstart", function () {
-                        $(this).click();
-                    });
-                    $('#pills-home-tab').trigger('touchstart');
-                } else {
-                    click_event = new CustomEvent('click');
-                    btn_element = document.querySelector('#pills-home-tab');
-                    btn_element.dispatchEvent(click_event);
-                }
+
             } catch (e) {
                 alert("An error occoured while trying to load the home container in document.ready: " + e.message);
             };
@@ -226,7 +220,7 @@
                 $(tid).addClass('active show');
 
                 if (elem) {
-                    window.scrollTo(0, 160);
+                    window.scrollTo(0, 240);
                 };
             } catch (e) {
                 alert("An error occurred in loadPage! " + e.message + "      | Input: " + destinationPage);
@@ -282,7 +276,7 @@
                 <!-- Left links -->
                 <ul class="navbar-nav me-auto" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" onclick="navigateToPage(this, '#' + id)" id="pills-home-tab" data-bs-toggle="pill" href="#HomeContainer" role="tab" aria-controls="pills-home" aria-selected="false">Home</a>
+                        <a class="nav-link active" onclick="navigateToPage(this, '#' + id)" id="pills-home-tab" data-bs-toggle="pill" href="#HomeContainer" role="tab" aria-controls="pills-home" aria-selected="false">Home</a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link"  onclick="navigateToPage(this, '#' + id)" id="pills-work-tab" data-bs-toggle="pill" href="#WorkContainer" role="tab" aria-controls="pills-profile" aria-selected="false" title="Click to show Cornelia's work information">Work</a>
@@ -317,7 +311,7 @@
     <div class="tab-content-layer1 ">
         <div class="tab-content layer2"  style="font-family:Verdana, Geneva, Tahoma, sans-serif; color:#47283a;">
 
-            <div class="tab-pane fade" id="HomeContainer" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="tab-pane fade active show" id="HomeContainer" role="tabpanel" aria-labelledby="pills-home-tab">
 
                 <div class="container-fluid pt-5 pb-5">
                     <div class="row justify-content-center pt-lg-3 pb-lg-3" style="opacity:1;">
