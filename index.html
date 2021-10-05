@@ -24,6 +24,13 @@
     <!-- Bootstrap core CSS and Styling -->
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
+
+    <!-- CSS Imports -->
+    <style type="text/css">
+      @import url("css/Music.css");
+    </style>
+
+    <!-- Normal CSS -->
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -33,7 +40,7 @@
             user-select: none;
         }
 
-        /* unga*/
+
 
         .img-fluid {
             object-fit: cover;
@@ -44,7 +51,7 @@
 
 
 
-        /*this is the styling for the navbar ok*/
+        /*this is the styling for the navbar*/
 
 
         li.nav-item {
@@ -69,7 +76,7 @@
                     opacity: 0.85;
                 }
 
-        /*this is the styling for the Pages TEST*/
+        /*this is the styling for the Pages*/
         div.tab-content-layer1 {
             background: -webkit-linear-gradient(152deg, rgba(216,203,212,1) 0%, rgba(214,198,209,1) 42%, rgba(100,62,85,1) 89%, rgba(100,62,85,1) 100%);
         }
@@ -251,6 +258,7 @@
     <link href="navbar-top.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelement-and-player.min.js"></script>
     <script type="text/javascript">
 
         $(document).ready(function () {
@@ -324,6 +332,34 @@
     </script>
 </head>
 <body style="background-color:#653f55;">
+  <script type="text/javascript" >
+        var audio = {    
+          init: function() {        
+        var $that = this;        
+            $(function() {            
+                $that.components.media();        
+            });    
+        },
+          components: {        
+            media: function(target) {            
+                var media = $('audio.fc-media', (target !== undefined) ? target : 'body');            
+                if (media.length) {                
+                    media.mediaelementplayer({                    
+                        audioHeight: 40,
+                          features : ['playpause', 'current', 'duration', 'progress', 'volume', 'tracks', 'fullscreen'],
+                        alwaysShowControls      : true,
+                        timeAndDurationSeparator: '<span></span>',
+                        iPadUseNativeControls: true,
+                        iPhoneUseNativeControls: true,
+                        AndroidUseNativeControls: true                
+                    });            
+                }        
+            },
+                
+        },
+      };
+      audio.init();
+  </script>
 
 
 
@@ -409,7 +445,7 @@
 
                         </div>
                         <div class="col-11 col-lg-6 mt-lg-5" style="font-family: Juni; font-style: normal; color: lavenderblush;">
-                            <h2 class="display-5 offset-0 offset-lg-1" style="padding-bottom: 50px;">Spiritual <wbr>Life Coach</h2>
+                            <h2 class="display-5 offset-0 offset-lg-1" style="padding-bottom: 50px;">Transformative <wbr> Coach</h2>
 
                             <span class="offset-0 offset-lg-1" style="display:block; font-family:Juni; padding-bottom:50px; font-size:x-large; ">
                                 spir·it<br>
@@ -441,7 +477,7 @@
                             <div class="col-10 col-lg-5 d-flex align-items-start flex-column " style="height:auto;">
                                 <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
                                     <h4 class="display-3">Work</h4>
-                                        Cornelia provides Life Coaching with a holistic approach during times of personal challenges. <br />
+                                        Cornelia provides Transformative h Coaching with a holistic approach during times of personal challenges. <br />
                                         <br />
                                         Special areas include:<br />
                                         <p class="QuickList">
@@ -523,7 +559,24 @@
                                 <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
 
                                     <h2 class="display-4">Philosophy</h2>
-                                    <p>I subscribe to an interdisciplinary approach and was trained both in Europe and the US and use a variety of techniques, to name a few: cognitive behavioral coaching, breath work, therapeutic metaphors, guided visualization, guided imagery, thought refocusing, positive affirmation, effective goal-setting, gratitude and appreciation. </p>
+
+
+                                    <div class="music-player">
+                                        <div class="cover">
+                                            <img src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/kygo.png" alt="">   
+                                        </div>
+                                        <div class="titre">
+                                            <h3>Kygo</h3>
+                                            <h1>Stole the show</h1>
+                                        </div>
+                                        <div class="lecteur">
+                                            <audio style="width: 100%;" class="fc-media">
+                                                <source src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/kygo-stole-the-show.mp3" type="audio/mp3"/>
+                                            </audio>
+                                        </div>
+                                    </div>
+
+
                                 </div>
                                 <div class="display-6 ps-lg-5 pt-5" style=" height:auto;">
                                     <button type="button" onclick="navigateToPage( this, '#pills-philosophy-tab' );" title="Click to read more" class="noStyleButton3">
@@ -779,20 +832,10 @@
                         <div class="d-none d-xl-block" style="pointer-events: none; background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
                         <div class="offset-xl-1">
                             <div class="TabTextContent">
-                                <h1><b>Philosophy</b></h1>
-                                <span class="text-normal">
-                                    <br>
-                                    Combining classical Life Coaching with an interdisciplinary approach, I also work intuitively.<br>
-                                    <br>
-                                    There are times in life when we see no way out, there is no cure and there is no remedy. We battle on and have somehow learned how to survive in this world. We are functioning routinely from day to day, but are neither happy nor fulfilled.<br>
-                                    <br>
-                                    Working with a Life Coach at your side, supporting, encouraging, and motivating you on your journey, can help you learn to make the right choices for your life. You can master new skills how to improve, change, or simply be with the given situation.<br>
-                                    <br>
-                                    You can experience that the relationship with yourself and ultimately with your surrounding can undergo paradigm shifts and you are able to connect to and view your life in a different light. This can be a very empowering process and experience for you. Your own transformation will come from within yourself.<br>
-                                    <br>
-                                    In my work with people for over 15 years, one of my focuses has always been the spiritual aspect, which is vital for healing. We are not merely flesh nor emotions; we are also spirit and soul. When looking at these dimensions in their entirety, we are able to become integral, wholesome beings and truly healthy on every level. This enables us to fulfill our true life's task or destiny ... or the written plan of the purpose why we are here at this specific time.<br>
-                                    <br>
-                                </span>
+
+
+
+
 
                             </div>
                         </div>
