@@ -11,6 +11,7 @@
     <meta name="copyright" content="Cornelia Gilbert">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbar-static/">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelementplayer.min.css">
 
     <!-- Newschool Tagging for Open Graph, and Twitter card Support -->
     <meta property="og:image" content="int/images/OGBannerImage.png" />
@@ -213,39 +214,6 @@
 
 
 
-        .noStyleButton2 {
-            background-color: transparent;
-            border: none;
-            font-family: Juni,'Mongolian Baiti';
-            font-weight: lighter;
-            color: #47283a;
-            padding-left: 0;
-            margin-left: 0;
-        }
-
-            .noStyleButton2:hover {
-                text-shadow: 5px 5px 10px black
-            }
-
-        .noStyleButton3 {
-            background-color: transparent;
-            border: none;
-            font-family: Juni;
-            font-weight: lighter;
-            color: white;
-            padding-left: 0;
-            margin-left: 0;
-        }
-
-            .noStyleButton3:hover {
-                text-shadow: 5px 5px 10px black
-            }
-
-        .noStyleLink {
-            color: inherit;
-            text-decoration: none;
-        }
-
         .noStyleLink {
             color: inherit;
             text-decoration: none;
@@ -258,7 +226,6 @@
     <link href="navbar-top.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelement-and-player.min.js"></script>
     <script type="text/javascript">
 
         $(document).ready(function () {
@@ -332,6 +299,9 @@
     </script>
 </head>
 <body style="background-color:#653f55;">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelement-and-player.min.js"></script>
+
   <script type="text/javascript" >
         var audio = {    
           init: function() {        
@@ -529,7 +499,7 @@
                                     <p>Cornelia was born and raised in Munich, Germany. Soon life's journey took her to London UK, Spain, and the US.</p>
                                 </div>
                                 <div class="display-6 ps-lg-5 pt-5" style=" height:auto;">
-                                    <button type="button" onclick="navigateToPage( this, '#pills-biography-tab' );" title="Click to read more" class="noStyleButton2">
+                                    <button type="button" onclick="navigateToPage( this, '#pills-biography-tab' );" title="Click to read more" class="noStyleButton">
                                         Read More ...
                                     </button>
                                 </div>
@@ -579,7 +549,7 @@
 
                                 </div>
                                 <div class="display-6 ps-lg-5 pt-5" style=" height:auto;">
-                                    <button type="button" onclick="navigateToPage( this, '#pills-philosophy-tab' );" title="Click to read more" class="noStyleButton3">
+                                    <button type="button" onclick="navigateToPage( this, '#pills-philosophy-tab' );" title="Click to read more" class="noStyleButton">
                                         Read More ...
                                     </button>
                                 </div>
@@ -637,7 +607,7 @@
                                         </p>
                                     </div>
                                     <div class="display-6 ps-lg-5 pt-5" style=" height:auto;">
-                                        <button type="button" onclick="navigateToPage( this, '#pills-testimonials-tab' );" title="Click to read more" class="style-3">
+                                        <button type="button" onclick="navigateToPage( this, '#pills-testimonials-tab' );" title="Click to read more" class="noStyleButton">
                                             Read More ...
                                         </button>
                                     </div>
@@ -672,7 +642,7 @@
                                     <p>Due to Covid-19, no group work or workshops are currently offered. </p>
                                 </div>
                                 <div class="display-6 ps-lg-5 pt-5" style=" height:auto;">
-                                    <button type="button" onclick="navigateToPage( this, '#pills-courses-tab' );" title="Click to read more" class="style-4">
+                                    <button type="button" onclick="navigateToPage( this, '#pills-courses-tab' );" title="Click to read more" class="noStyleButton">
                                         Read More ...
                                     </button>
                                 </div>
