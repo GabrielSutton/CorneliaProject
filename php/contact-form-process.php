@@ -18,22 +18,21 @@ if (isset($_POST['Email'])) {
     // validation expected data exists
     if (
         !isset($_POST['Name']) ||
-        !isset($_POST['Email']) ||
+        !isset($_POST['Phone']) ||
         !isset($_POST['Message'])
     ) {
         problem('We are sorry, but there appears to be a problem with the form you submitted.');
     }
 
     $name = $_POST['Name']; // required
-    $email = $_POST['Email']; // required
+    $phone = $_POST['Phone']; // required
     $message = $_POST['Message']; // required
 
-    $error_message = "";
-    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 
-    if (!preg_match($email_exp, $email)) {
-        $error_message .= 'The Email address you entered does not appear to be valid.<br>';
-    }
+
+    $error_message = "";
+
+    $justNums = preg_replace("/[^0-9]/", '', $phone);
 
     $string_exp = "/^[A-Za-z .'-]+$/";
 
@@ -58,7 +57,7 @@ if (isset($_POST['Email'])) {
     }
 
     $email_message .= "Name: " . clean_string($name) . "\n";
-    $email_message .= "Email: " . clean_string($email) . "\n";
+    $email_message .= "Phone: " . clean_string($phone) . "\n";
     $email_message .= "Message: " . clean_string($message) . "\n";
 
     // create email headers

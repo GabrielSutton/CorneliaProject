@@ -618,11 +618,50 @@
                                       <br />
                                       Cornelia Gilbert<br />
                                       <br />
-                                      Tel: 321 504 8188<br />
+
                                       <a class="noStyleLink" href="mailto:mail@corneliagilbert.com">mail@corneliagilbert.com</a><br />
                                       <br />
                                       <b>Free 1st Consultation (15 min)</b>
                                   </p>
+                                </div>
+                                <link href="css/contact-form.css" rel="stylesheet">
+                                <div class="col-12 col-sm-8 col-xl-10 fcf-body">
+                                  <div id="fcf-form">
+                                  <h3 class="fcf-h3">Contact me!</h3>
+
+                                  <form id="fcf-form-id" class="fcf-form-class" method="post" action="php/contact-form-process.php">
+
+                                      <div class="fcf-form-group">
+                                          <label for="Name" class="fcf-label">Your name</label>
+                                          <div class="fcf-input-group">
+                                              <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                                          </div>
+                                      </div>
+
+                                      <div class="fcf-form-group">
+                                          <label for="Phone" class="fcf-label">Your phone number</label>
+                                          <div class="fcf-input-group">
+                                              <input type="tel" id="Phone" name="Phone" class="fcf-form-control" required>
+                                          </div>
+                                      </div>
+
+                                      <div class="fcf-form-group">
+                                          <label for="Message" class="fcf-label">Your message</label>
+                                          <div class="fcf-input-group">
+                                              <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                                          </div>
+                                      </div>
+
+                                      <div class="fcf-form-group">
+                                          <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                                      </div>
+
+                                      <div class="fcf-credit" id="fcf-credit">
+                                      Simple HTML email form provided by: <a href="https://www.freecontactform.com" target="_blank">FreeContactForm.com</a>
+                                      </div>
+
+                                  </form>
+                                  </div>
                                 </div>
                                 <div class="display-6 ps-lg-5 pt-5" style=" height:auto;">
                                     <button type="button" onclick="navigateToPage( this, '#pills-contact-tab' );" title="Click to read more" class="noStyleButton">
