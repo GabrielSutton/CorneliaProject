@@ -923,15 +923,13 @@
                     <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
                     <div class="col-12 col-xl-6" style="padding-top:30px;">
                         <div class="d-none d-xl-block" style="pointer-events: none; background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
-                        <div class="offset-xl-1">
-                            <div class="TabTextContent">
+                        <div class="offset-xl-1 TabTextContent">
+                          <div class="row">
                                 <h1><b>Contact</b></h1>
                                 <span class="text-normal">
                                     <br />
                                     Cornelia Gilbert<br />
                                     <br />
-                                    Tel: 321 504 8188<br />
-                                    <a class="noStyleLink" href="mailto:mail@corneliagilbert.com">mail@corneliagilbert.com</a><br />
                                     Office in Indian Harbour Beach, FL<br>
                                     <br />
                                     <b>Free 1st Consultation (15 min)</b><br />
@@ -945,11 +943,53 @@
 
                                     <br>
                                 </span>
+                              </div>
+                              <div class="row">
+                                <link href="css/contact-form.css" rel="stylesheet">
+                                <div class="col-10 col-xl-6 fcf-body">
+                                  <div id="fcf-form">
+                                  <h3 class="fcf-h3">Contact us</h3>
 
-                            </div>
+                                  <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+
+                                      <div class="fcf-form-group">
+                                          <label for="Name" class="fcf-label">Your name</label>
+                                          <div class="fcf-input-group">
+                                              <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                                          </div>
+                                      </div>
+
+                                      <div class="fcf-form-group">
+                                          <label for="Email" class="fcf-label">Your email address</label>
+                                          <div class="fcf-input-group">
+                                              <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                                          </div>
+                                      </div>
+
+                                      <div class="fcf-form-group">
+                                          <label for="Message" class="fcf-label">Your message</label>
+                                          <div class="fcf-input-group">
+                                              <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                                          </div>
+                                      </div>
+
+                                      <div class="fcf-form-group">
+                                          <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                                      </div>
+
+                                      <div class="fcf-credit" id="fcf-credit">
+                                      Simple HTML email form provided by: <a href="https://www.freecontactform.com" target="_blank">FreeContactForm.com</a>
+                                      </div>
+
+                                  </form>
+                                  </div>
+                              </div>
+
                         </div>
                     </div>
+
                 </div>
+
             </div>
 
 
