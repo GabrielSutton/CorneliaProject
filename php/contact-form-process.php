@@ -3,7 +3,7 @@ if (isset($_POST['Email'])) {
 
     // Stolen from https://www.freecontactform.com/form-guides/html-email-form
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "you@yourdomain.com";
+    $email_to = "gabriel.sutton@knights.ucf.edu";
     $email_subject = "New form submissions";
 
     function problem($error)
@@ -32,7 +32,6 @@ if (isset($_POST['Email'])) {
 
     $error_message = "";
 
-    $justNums = preg_replace("/[^0-9]/", '', $phone);
 
     $string_exp = "/^[A-Za-z .'-]+$/";
 
@@ -61,8 +60,7 @@ if (isset($_POST['Email'])) {
     $email_message .= "Message: " . clean_string($message) . "\n";
 
     // create email headers
-    $headers = 'From: ' . $email . "\r\n" .
-        'Reply-To: ' . $email . "\r\n" .
+    $headers = 
         'X-Mailer: PHP/' . phpversion();
     @mail($email_to, $email_subject, $email_message, $headers);
 ?>
