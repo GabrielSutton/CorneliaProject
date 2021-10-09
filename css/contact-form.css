@@ -8,9 +8,9 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: rgb(198 182 192);
+    color: #47283a;
     text-align: left;
-    background-color: #fff;
+    background-color: rgb(198 182 192);
     padding: 30px;
     padding-bottom: 10px;
     border: 1px solid #ced4da;
@@ -122,20 +122,20 @@ label.fcf-label {
 
 .fcf-btn-primary {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #baa2b2;
+    border-color: #000000;
 }
 
 .fcf-btn-primary:hover {
     color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
+    background-color: #dec9d9;
+    border-color: #282323;
 }
 
 .fcf-btn-primary:focus, .fcf-btn-primary.focus {
     color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
+    background-color: #baa2b2;
+    border-color: ##282323;
     box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
