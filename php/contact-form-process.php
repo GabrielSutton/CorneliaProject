@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST['Email'])) {
+if (isset($_POST['Phone'])) {
 
     // Stolen from https://www.freecontactform.com/form-guides/html-email-form
     // EDIT THE 2 LINES BELOW AS REQUIRED
