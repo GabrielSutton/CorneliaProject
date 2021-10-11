@@ -181,16 +181,34 @@
             font-family: Juni,'Mongolian Baiti';
         }
 
+        .contactButton{
+          background-color: transparent;
+          border: none;
+          display:block;
+          font-family:Juni;
+          color: white;
+          padding-left: 0;
+          margin-left: 0;
+          font-family: Juni,'Mongolian Baiti';
+          margin-left: 1.6rem;
+          font-size: 1.75rem;
+          border-radius: 0.25rem;
+          text-shadow: 0 0 3px transparent, 0 0 5px transparent;
+          transition: text-shadow 0.30s ease-in-out;
+      }
+            .contactButton:hover{
+              text-shadow:  0 0 3px #0a95ff, 0 0 6px #444546;
+            }
 
-        .noStyleLink {
-            color: inherit;
-            text-decoration: none;
-        }
+      .noStyleLink {
+          color: inherit;
+          text-decoration: none;
+      }
 
-        .noStyleLink {
-            color: inherit;
-            text-decoration: none;
-        }
+      .noStyleLink {
+          color: inherit;
+          text-decoration: none;
+      }
 
     </style>
 
@@ -361,7 +379,7 @@
                             <span class="offset-0 offset-lg-1" style="display:block; font-family:Juni; padding-bottom:50px; font-size:x-large; ">
                                 <br>
 
-                            </span>
+
                             <div class="offset-0 offset-lg-2 bbplayer">
                                <span class="bb-rewind"></span>
                                <span class="bb-play"></span>
@@ -376,14 +394,25 @@
                                  -->
                                  <source src="int/media/WelcomeMessage.mp3"/>
                                </audio>
+
                             </div>
+                            <span class="offset-0 offset-lg-2" style="display:block; font-family:Juni; padding-bottom:50px; font-size:x-large; ">
 
-                            <span class="offset-0 offset-lg-1" style="display:block; font-family:Juni; padding-bottom:50px; font-size:x-large; ">
+                              <button class="contactButton" onclick="scrolldiv()"><p>Click here to contact</p></button>
+
+
                                 <br>
-
+                                <br>
                             </span>
 
-                            <h4 class="display-4 offset-0 offset-lg-1 flex-grow-1" style="font-family:Garamond;  font-variant:small-caps; text-shadow: 2px 2px 30px white;">because you matter ...</h4>
+
+                            <script>
+                                function scrolldiv() {
+                                    var elem = document.getElementById("fcf-form");
+                                    elem.scrollIntoView();
+                                }
+                            </script>
+
 
                         </div>
                     </div>
@@ -565,7 +594,7 @@
                         </div>
                     </div>
                 </section>
-<!--
+<!--CURRENTLY WIP, FOR LATER RE-USE!
                 <section>
                     <div class="container-fluid">
                         <div class="row justify-content-center pt-5 pb-5">
@@ -627,7 +656,7 @@
                                 <link href="css/contact-form.css" rel="stylesheet">
                                 <div class="col-12 col-sm-8 col-xl-10 fcf-body">
                                   <div id="fcf-form">
-                                  <h3 class="fcf-h3">Contact me!</h3>
+                                  <h3 class="fcf-h3">Contact me</h3>
 
                                   <form id="fcf-form-id" class="fcf-form-class" method="post" action="php/contact-form-process.php">
 
@@ -680,7 +709,7 @@
                     </div>
                 </section>
 
-<!--
+<!--CURRENTLY WIP, FOR LATER RE-USE!
                 <section>
                     <div class="container-fluid">
                         <div class="row justify-content-center pt-5 pb-5">
@@ -987,7 +1016,7 @@
                                 <link href="css/contact-form.css" rel="stylesheet">
                                 <div class="col-12 col-sm-8 col-xl-10 fcf-body">
                                   <div id="fcf-form">
-                                  <h3 class="fcf-h3">Contact me!</h3>
+                                  <h3 class="fcf-h3">Contact me</h3>
 
                                   <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-orig.php">
 
