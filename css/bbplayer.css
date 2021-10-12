@@ -11,18 +11,20 @@ Optional styling for bbplayer elements.
   border-radius: 5px;
   display: inline-block;
   padding: 5px;
-  box-shadow: 0 0 5px rgba(100,100,100,0.2);
+  box-shadow: 0 0 5px rgba(100,100,100,0.5);
+  background-color: white;
+  length:300px;
 }
 
 .bb-play {
   display: inline-block;
   vertical-align: middle;
-  height: 32px;
-  width:  32px;
+  height: 50px;
+  width:  50px;
   border: 6px solid #CFCFCF;
   border-radius: 50%;
   background: transparent;
-  background-image: url('/int/structure/bbplayer/pause_med.png');
+  background-image: url('/int/structure/bbplayer/pause.png');
   background-repeat: no-repeat;
   background-position: 7px center;
   cursor: pointer;
@@ -30,7 +32,7 @@ Optional styling for bbplayer elements.
 
 .bb-playing {
   vertical-align: middle;
-  background-image: url('int/structure/bbplayer/play.png');
+  background-image: url('/int/structure/bbplayer/play.png');
   background-position: center center;
 }
 
@@ -40,7 +42,7 @@ Optional styling for bbplayer elements.
   height: 32px;
   width:  32px;
   background: transparent;
-  background-image: url('int/structure/bbplayer/forward.png');
+  background-image: url('/int/structure/bbplayer/forward.png');
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -52,7 +54,7 @@ Optional styling for bbplayer elements.
   height: 32px;
   width:  32px;
   background: transparent;
-  background-image: url('int\structure\bbplayer\rewind.png');
+  background-image: url('/int/structure/bbplayer/rewind.png');
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -60,19 +62,21 @@ Optional styling for bbplayer elements.
 
 .bb-trackTime {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   font-size: 14px;
+  font-weight: 300;
 }
 
 .bb-trackLength {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   font-size: 14px;
+  font-weight: 300;
 }
 
 .bb-trackTitle {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   font-weight: bold;
   width: 8em;
   overflow: hidden;
