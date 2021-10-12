@@ -52,7 +52,7 @@ Optional styling for bbplayer elements.
   height: 32px;
   width:  32px;
   background: transparent;
-  background-image: url('int/structure/bbplayer/rewind.png');
+  background-image: url('int\structure\bbplayer\rewind.png');
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
