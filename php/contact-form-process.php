@@ -3,7 +3,7 @@ if (isset($_POST['Phone'])) {
 
     // Stolen from https://www.freecontactform.com/form-guides/html-email-form
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "gabriel.sutton@knights.ucf.edu";
+    $email_to = "mail@corneliagilbert.com";
     $email_subject = "New form submissions";
 
     function problem($error)
@@ -60,7 +60,7 @@ if (isset($_POST['Phone'])) {
     $email_message .= "Message: " . clean_string($message) . "\n";
 
     // create email headers
-    $headers = 
+    $headers =
         'X-Mailer: PHP/' . phpversion();
     @mail($email_to, $email_subject, $email_message, $headers);
 ?>
