@@ -184,13 +184,9 @@
         .contactButton{
           background-color: transparent;
           border: none;
-          display:block;
           font-family:Juni;
           color: white;
-          padding-left: 0;
-          margin-left: 0;
           font-family: Juni,'Mongolian Baiti';
-          margin-left: 1.6rem;
           font-size: 1.75rem;
           border-radius: 0.25rem;
           text-shadow: 0 0 3px transparent, 0 0 5px transparent;
@@ -375,37 +371,33 @@
                         </div>
                         <div class="col-11 col-lg-6 mt-lg-5" style="font-family: Juni; font-style: normal; color: lavenderblush;">
 
-                            <h2 class="display-5 offset-0 offset-lg-1" style="padding-bottom: 50px;">Transformative <wbr>Guide</h2>
+                            <h2 class="display-5 offset-0 offset-lg-1 text-center text-lg-left" style="padding-bottom: 50px;">Transformative <wbr>Guide</h2>
 
-                            <span class="offset-0 offset-lg-1" style="display:block; font-family:Juni; padding-bottom:50px; font-size:x-large; ">
-                                <br>
+                            <div class="offset-0 offset-lg-1 text-center text-lg-left" style="display:block; font-family:Juni; padding-bottom:50px; font-size:x-large; ">
+                              <br>
+                              <div class="offset-0 offset-lg-2 bbplayer text-center text-lg-left">
+                                 <span class="bb-rewind"></span>
+                                 <span class="bb-play"></span>
+                                 <span class="bb-forward"></span>
+                                 <span class="bb-trackTime"></span>
+                                 <span class="bb-trackLength"></span>
+                                 <span class="bb-trackTitle"></span>
+                                 <audio>
+                                   <!--
+                                   playlist of audio files in MP3 and
+                                   OGG format for cross browser support
+                                   -->
+                                   <source src="int/media/Welcome.mp3"/>
+                                 </audio>
 
+                              </div><br>
 
-                            <div class="offset-0 offset-lg-2 bbplayer">
-                               <span class="bb-rewind"></span>
-                               <span class="bb-play"></span>
-                               <span class="bb-forward"></span>
-                               <span class="bb-trackTime"></span>
-                               <span class="bb-trackLength"></span>
-                               <span class="bb-trackTitle"></span>
-                               <audio>
-                                 <!--
-                                 playlist of audio files in MP3 and
-                                 OGG format for cross browser support
-                                 -->
-                                 <source src="int/media/Welcome.mp3"/>
-                               </audio>
-
-                            </div>
-                            <span class="offset-0 offset-lg-2" style="display:block; font-family:Juni; padding-bottom:50px; font-size:x-large; ">
-
-                              <button class="contactButton" onclick="scrolldiv()"><p>Contact</p></button>
-
+                                <button class="contactButton" onclick="scrolldiv()"><p>Contact</p></button>
 
                                 <br>
                                 <br>
-                            </span>
 
+                              </div>
 
                             <script>
                                 function scrolldiv() {
