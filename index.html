@@ -1,1142 +1,1141 @@
 <!doctype html>
 <html lang="en" mlns="http://www.w3.org/1999/xhtml"
-xmlns:fb="http://ogp.me/ns/fb#">
+      xmlns:fb="http://ogp.me/ns/fb#">
 <head>
-  <!-- OG Meta tags -->
-  <meta charset="utf-8">
-  <title>Transformative Guide | Cornelia Gilbert</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content="Cornelia provides Transformative Guidance during times of personal challenges">
-  <meta name="copyright" content="Cornelia Gilbert">
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbar-static/">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <link rel="stylesheet" href="css/bbplayer.css">
+    <!-- OG Meta tags -->
+    <meta charset="utf-8">
+    <title>Transformative Guide | Cornelia Gilbert</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Cornelia provides Transformative Guidance during times of personal challenges">
+    <meta name="copyright" content="Cornelia Gilbert">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbar-static/">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="css/bbplayer.css">
 
-  <!-- Newschool Tagging for Open Graph, and Twitter card Support -->
-  <meta property="og:image" content="int/images/OGBannerImage1.png" />
-  <meta property="og:type" content="Website" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Transformative Guide | Cornelia Gilbert" />
-  <meta name="twitter:description" content="Cornelia provides Transformative Guidance during times of personal challenges" />
-  <meta name="google-site-verification" content="HEIZe07MA5qAggn7guhenccriSkYXamu0bYkLLBZ8T8" />
-
-
-  <!-- Bootstrap core CSS and Styling -->
-  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <style>
-  .bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-
-  /* unga*/
-
-  .img-fluid {
-    object-fit: cover;
-    object-position: center;
-    max-height: 600px;
-  }
+    <!-- Newschool Tagging for Open Graph, and Twitter card Support -->
+    <meta property="og:image" content="int/images/OGBannerImage1.png" />
+    <meta property="og:type" content="Website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Transformative Guide | Cornelia Gilbert" />
+    <meta name="twitter:description" content="Cornelia provides Transformative Guidance during times of personal challenges" />
+    <meta name="google-site-verification" content="HEIZe07MA5qAggn7guhenccriSkYXamu0bYkLLBZ8T8" />
 
 
+    <!-- Bootstrap core CSS and Styling -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
 
-  /*this is the styling for the navbar ok*/
+        /* unga*/
 
-
-  li.nav-item {
-    text-align: center;
-    border-right: 4px purple;
-  }
-
-  li.nav-item > a.nav-link {
-    border-radius: 0;
-    color: #653f55;
-    font-family: Juni;
-    font-size: larger;
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-  }
-
-  li.nav-item > a.nav-link.active,
-  li.nav-item > a.nav-link:hover {
-    color: white;
-    text-shadow: 2px 2px 6px black;
-    background: linear-gradient(to top, #7b4f6a 10%, #d6c6d1 100%);
-    opacity: 0.85;
-  }
-
-  /*this is the styling for the Pages TEST*/
-  div.tab-content-layer1 {
-    background: -webkit-linear-gradient(152deg, rgba(216,203,212,1) 0%, rgba(214,198,209,1) 42%, rgba(100,62,85,1) 89%, rgba(100,62,85,1) 100%);
-  }
-
-  div.layer2 {
-    background: -webkit-linear-gradient(21deg, rgba(216,203,212,0) 0%, rgba(216,203,212,0) 75%, rgba(136,103,123,0.5) 90%, rgba(136,103,123,0.8) 100%);
-  }
-
-  /*div.container{
-  margin-left:0px;
-  margin-right:0px;
-  }*/
-
-  div.tab-pane > div.row {
-    width: 100%;
-  }
-
-  div.TabTextContent {
-    padding: 20px;
-    padding-top: 100px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-variant: normal;
-    width: 100%;
-    height: 100%;
-    background: -webkit-radial-gradient(left, ellipse cover, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.25) 75%, rgba(255,255,255,0) 90%);
-    color: #47283a;
-    display: block;
-  }
-
-  p {
-    margin-top: 1rem;
-  }
-
-  p.QuickList {
-    margin-top: 0rem;
-    padding-left: 30px;
-  }
-
-
-  @font-face {
-    font-family: Juni;
-    src: url('int/structure/JUNISBI_.TTF');
-  }
-
-  @font-face {
-    font-family: Garamond;
-    src: url('int/structure/EBGaramond-Regular.ttf')
-  }
+        .img-fluid {
+            object-fit: cover;
+            object-position: center;
+            max-height: 600px;
+        }
 
 
 
-  .layer-1 {
-    width: 200px;
-    height: 200px;
-  }
 
-  .layer-1 {
-    width: 100%;
-    height: 100%;
-    background: -moz-linear-gradient(230deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
-    background: -webkit-linear-gradient(230deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
-    background: -o-linear-gradient(230deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
-    background: -ms-linear-gradient(230deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
-    background: linear-gradient(220deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
-  }
-
-  .layer-2 {
-    width: 100%;
-    height: 100%;
-    background: -moz-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 49%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 49%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
-    background: -o-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 49%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
-    background: -ms-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 49%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
-    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 49%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
-  }
+        /*this is the styling for the navbar ok*/
 
 
+        li.nav-item {
+            text-align: center;
+            border-right: 4px purple;
+        }
 
-  .style-4 {
-    background: #643e55;
-    color: white;
-    font: bold 25px verdana;
-    padding: 11px;
-    text-shadow: 2px 2px 6px black;
-    font-weight: 300;
-    max-width: 250px;
-    display: block;
-    text-align: center;
-    margin: 10px auto;
-    position: relative;
-    border-radius: 10px;
-  }
+            li.nav-item > a.nav-link {
+                border-radius: 0;
+                color: #653f55;
+                font-family: Juni;
+                font-size: larger;
+                padding-left: 16px !important;
+                padding-right: 16px !important;
+            }
 
-    .style-4:hover {
-      -webkit-box-shadow: inset 0 0 10px 25px #b098a7;
-      box-shadow: inset 0 0 10px 25px #b098a7;
-      border-color: white;
-      color: #fff;
-    }
+                li.nav-item > a.nav-link.active,
+                li.nav-item > a.nav-link:hover {
+                    color: white;
+                    text-shadow: 2px 2px 6px black;
+                    background: linear-gradient(to top, #7b4f6a 10%, #d6c6d1 100%);
+                    opacity: 0.85;
+                }
 
-  .noStyleButton {
-    background-color: transparent;
-    border: none;
-    font-weight: lighter;
-    color: #47283a;
-    padding-left: 0;
-    margin-left: 0;
-    font-family: Juni,'Mongolian Baiti';
-  }
+        /*this is the styling for the Pages TEST*/
+        div.tab-content-layer1 {
+            background: -webkit-linear-gradient(152deg, rgba(216,203,212,1) 0%, rgba(214,198,209,1) 42%, rgba(100,62,85,1) 89%, rgba(100,62,85,1) 100%);
+        }
 
-  .contactButton{
-    background-color: transparent;
-    border: none;
-    font-family:Juni;
-    color: white;
-    font-family: Juni,'Mongolian Baiti';
-    font-size: 1.75rem;
-    border-radius: 0.25rem;
-    text-shadow: 0 0 3px transparent, 0 0 5px transparent;
-    transition: text-shadow 0.30s ease-in-out;
-  }
-    .contactButton:hover{
-      text-shadow:  0 0 3px #0a95ff, 0 0 6px #444546;
-    }
+        div.layer2 {
+            background: -webkit-linear-gradient(21deg, rgba(216,203,212,0) 0%, rgba(216,203,212,0) 75%, rgba(136,103,123,0.5) 90%, rgba(136,103,123,0.8) 100%);
+        }
 
-  .noStyleLink {
-    color: inherit;
-    text-decoration: none;
-  }
+        /*div.container{
+        margin-left:0px;
+        margin-right:0px;
+        }*/
 
-  .noStyleLink {
-    color: inherit;
-    text-decoration: none;
-  }
+        div.tab-pane > div.row {
+            width: 100%;
+        }
 
-  </style>
+        div.TabTextContent {
+            padding: 20px;
+            padding-top: 100px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-variant: normal;
+            width: 100%;
+            height: 100%;
+            background: -webkit-radial-gradient(left, ellipse cover, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.25) 75%, rgba(255,255,255,0) 90%);
+            color: #47283a;
+            display: block;
+        }
 
+        p {
+            margin-top: 1rem;
+        }
 
-  <!-- Custom styles for this template -->
-  <link href="navbar-top.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/maudio.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type="text/javascript">
-
-  $(document).ready(function () {
-    // Handler for .ready() called.
-    try {
-
-      window.history.replaceState({
-        sender: true,
-        tab_item: "#pills-home-tab"
-      }, null);
+            p.QuickList {
+                margin-top: 0rem;
+                padding-left: 30px;
+            }
 
 
-    } catch (e) {
-      alert("An error occoured while trying to load the home container in document.ready: " + e.message);
-    };
-  });
+        @font-face {
+            font-family: Juni;
+            src: url('int/structure/JUNISBI_.TTF');
+        }
 
-  function navigateToPage(elem, destinationPage) {
-
-    try {
-      //debugger;
-      var someTabTriggerEl = $(elem).is("button");
-
-      history.pushState({
-        sender: $(elem).is("button"),
-        tab_item: destinationPage
-      }, null, "/" + $(destinationPage).attr('href'));
-
-      loadPage(someTabTriggerEl, destinationPage);
+        @font-face {
+            font-family: Garamond;
+            src: url('int/structure/EBGaramond-Regular.ttf')
+        }
 
 
-    } catch (e) {
-      alert("An error occurred in navigateToPage! " + e.message + "      | Input: " + destinationPage);
-    };
-  }
 
-  function loadPage(elem, destinationPage) {
-    try {
-      var tid;
+        .layer-1 {
+            width: 200px;
+            height: 200px;
+        }
 
-      $(".nav-link").removeClass('active');
-      $(destinationPage).addClass('active');
-      tid = $(destinationPage).attr('href');
-      $('.tab-pane').removeClass('active');
-      $('.tab-pane').removeClass('show');
+        .layer-1 {
+            width: 100%;
+            height: 100%;
+            background: -moz-linear-gradient(230deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
+            background: -webkit-linear-gradient(230deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
+            background: -o-linear-gradient(230deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
+            background: -ms-linear-gradient(230deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
+            background: linear-gradient(220deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
+        }
 
-      $(tid).addClass('active show');
+        .layer-2 {
+            width: 100%;
+            height: 100%;
+            background: -moz-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 49%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+            background: -webkit-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 49%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+            background: -o-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 49%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+            background: -ms-linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 49%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+            background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 49%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+        }
 
-      if (elem) {
-        setTimeout(window.scrollTo(0, 340),100);
-      };
-    } catch (e) {
-      alert("An error occurred in loadPage! " + e.message + "      | Input: " + destinationPage);
-    };
-  }
 
-  window.onpopstate = function (event) {
-    try {
-      var sender;
-      var destinationPage = "";
-      if (event.state) {
-        sender = event.state.sender;
-        destinationPage = event.state.tab_item;
-      }
-      loadPage(sender, destinationPage);
-    } catch (e) {
-      alert("An error occurred in popstate! " + e.message);
-    };
-  }
 
-  </script>
+        .style-4 {
+            background: #643e55;
+            color: white;
+            font: bold 25px verdana;
+            padding: 11px;
+            text-shadow: 2px 2px 6px black;
+            font-weight: 300;
+            max-width: 250px;
+            display: block;
+            text-align: center;
+            margin: 10px auto;
+            position: relative;
+            border-radius: 10px;
+        }
+
+            .style-4:hover {
+                -webkit-box-shadow: inset 0 0 10px 25px #b098a7;
+                box-shadow: inset 0 0 10px 25px #b098a7;
+                border-color: white;
+                color: #fff;
+            }
+
+        .noStyleButton {
+            background-color: transparent;
+            border: none;
+            font-weight: lighter;
+            color: #47283a;
+            padding-left: 0;
+            margin-left: 0;
+            font-family: Juni,'Mongolian Baiti';
+        }
+
+        .contactButton {
+            background-color: transparent;
+            border: none;
+            font-family: Juni;
+            color: white;
+            font-family: Juni,'Mongolian Baiti';
+            font-size: 1.75rem;
+            border-radius: 0.25rem;
+            text-shadow: 0 0 3px transparent, 0 0 5px transparent;
+            transition: text-shadow 0.30s ease-in-out;
+        }
+
+            .contactButton:hover {
+                text-shadow: 0 0 3px #0a95ff, 0 0 6px #444546;
+            }
+
+        .noStyleLink {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .noStyleLink {
+            color: inherit;
+            text-decoration: none;
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="navbar-top.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/maudio.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            // Handler for .ready() called.
+            try {
+
+                window.history.replaceState({
+                    sender: true,
+                    tab_item: "#pills-home-tab"
+                }, null);
+
+
+            } catch (e) {
+                alert("An error occoured while trying to load the home container in document.ready: " + e.message);
+            };
+        });
+
+        function navigateToPage(elem, destinationPage) {
+
+            try {
+                //debugger;
+                var someTabTriggerEl = $(elem).is("button");
+
+                history.pushState({
+                    sender: $(elem).is("button"),
+                    tab_item: destinationPage
+                }, null, "/" + $(destinationPage).attr('href'));
+
+                loadPage(someTabTriggerEl, destinationPage);
+
+
+            } catch (e) {
+                alert("An error occurred in navigateToPage! " + e.message + "      | Input: " + destinationPage);
+            };
+        }
+
+        function loadPage(elem, destinationPage) {
+            try {
+                var tid;
+
+                $(".nav-link").removeClass('active');
+                $(destinationPage).addClass('active');
+                tid = $(destinationPage).attr('href');
+                $('.tab-pane').removeClass('active');
+                $('.tab-pane').removeClass('show');
+
+                $(tid).addClass('active show');
+
+                if (elem) {
+                    setTimeout(window.scrollTo(0, 340), 100);
+                };
+            } catch (e) {
+                alert("An error occurred in loadPage! " + e.message + "      | Input: " + destinationPage);
+            };
+        }
+
+        window.onpopstate = function (event) {
+            try {
+                var sender;
+                var destinationPage = "";
+                if (event.state) {
+                    sender = event.state.sender;
+                    destinationPage = event.state.tab_item;
+                }
+                loadPage(sender, destinationPage);
+            } catch (e) {
+                alert("An error occurred in popstate! " + e.message);
+            };
+        }
+
+    </script>
 </head>
 <body style="background-color:#653f55;">
 
-  <div id="Header" style="width:100%; height:250px; text-shadow: 4px 4px 6px black; display:-webkit-inline-box; background:#eaeff6; overflow:hidden;">
-    <img src="int/images/CG-Flowers-DSC03100-extended.jpg" height="426" width="1704" style="top:-100px; position:relative;" />
-    <a class="d-none d-lg-block" style="font-family:Garamond;  text-decoration: none;font-variant:small-caps; font-size: 45px; position:absolute; left: 80px; top:80px; color:white;">Cornelia Gilbert</a>
-    <a class="d-block d-lg-none" style="font-family:Garamond; text-decoration: none; font-variant:small-caps; font-size: 45px; position:absolute; left: 20px; top:80px; color:white;">Cornelia Gilbert</a>
-    <div id="HeaderTransition" style="display:block; width:600px; margin-left: -600px; background: -webkit-linear-gradient(bottom, #eaeff6, #eaeff6); background: -moz-linear-gradient(bottom, #D8CBD4, #653F55); -webkit-mask-image: -webkit-gradient(linear, left top , right top, from(rgba(228,203,212,0)), to(rgba(101,63,85,1))) "></div>
+    <div id="Header" style="width:100%; height:250px; text-shadow: 4px 4px 6px black; display:-webkit-inline-box; background:#eaeff6; overflow:hidden;">
+        <img src="int/images/CG-Flowers-DSC03100-extended.jpg" height="426" width="1704" style="top:-100px; position:relative;" />
+        <a class="d-none d-lg-block" style="font-family:Garamond;  text-decoration: none;font-variant:small-caps; font-size: 45px; position:absolute; left: 80px; top:80px; color:white;">Cornelia Gilbert</a>
+        <a class="d-block d-lg-none" style="font-family:Garamond; text-decoration: none; font-variant:small-caps; font-size: 45px; position:absolute; left: 20px; top:80px; color:white;">Cornelia Gilbert</a>
+        <div id="HeaderTransition" style="display:block; width:600px; margin-left: -600px; background: -webkit-linear-gradient(bottom, #eaeff6, #eaeff6); background: -moz-linear-gradient(bottom, #D8CBD4, #653F55); -webkit-mask-image: -webkit-gradient(linear, left top , right top, from(rgba(228,203,212,0)), to(rgba(101,63,85,1))) "></div>
 
-  </div>
+    </div>
 
-  <nav class="navbar navbar-expand-lg p-lg-0" style="padding:0px; margin-top: -44px; margin-bottom:0px; background-color: rgba(255, 255, 255, 0.65); width:100%;">
-    <!-- Container wrapper -->
-    <div class="container-fluid">
-      <!-- Navbar brand -->
-
-      <!-- Toggle button -->
-      <button class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation">
-      <i style="padding-top:7px; padding-bottom:7px;" class="fas fa-bars"></i>
-    </button>
-
-    <!-- Collapsible wrapper -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <!-- Left links -->
-      <ul class="navbar-nav me-auto" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <a class="nav-link active" onclick="navigateToPage(this, '#' + id)" id="pills-home-tab" data-bs-toggle="pill" href="#HomeContainer" role="tab" aria-controls="pills-home" aria-selected="false">Home</a>
-        </li>
-        <li class="nav-item" role="presentation">
-          <a class="nav-link"  onclick="navigateToPage(this, '#' + id)" id="pills-work-tab" data-bs-toggle="pill" href="#WorkContainer" role="tab" aria-controls="pills-profile" aria-selected="false" title="Click to show Cornelia's work information">Work</a>
-        </li>
-        <li class="nav-item" role="presentation">
-          <a class="nav-link"  onclick="navigateToPage(this, '#' + id)" id="pills-biography-tab" data-bs-toggle="pill" href="#BioContainer" role="tab" aria-controls="pills-contact" aria-selected="false">Biography</a>
-        </li>
-        <li class="nav-item" role="presentation">
-          <a class="nav-link" onclick="navigateToPage(this, '#' + id)" id="pills-energywork-tab" data-bs-toggle="pill" href="#PhilContainer" role="tab" aria-controls="pills-contact" aria-selected="false">Energy Work</a>
-        </li>
-        <li class="nav-item" role="presentation">
-          <a class="nav-link" onclick="navigateToPage(this, '#' + id)" id="pills-testimonials-tab" data-bs-toggle="pill" href="#TestimonialContainer" role="tab" aria-controls="pills-contact" aria-selected="false">Testimonials</a>
-        </li>
-        <!--<li class="nav-item" role="presentation">
-        <a class="nav-link" onclick="navigateToPage(this, '#' + id)" id="pills-courses-tab" data-bs-toggle="pill" href="#CoursesContainer" role="tab" aria-controls="pills-contact" aria-selected="false">Courses</a>
-      </li>-->
-      <li class="nav-item" role="presentation">
-        <a class="nav-link" onclick="navigateToPage(this, '#' + id)" id="pills-contact-tab" data-bs-toggle="pill" href="#ContactContainer" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
-      </li>
-
-    </ul>
-    <!-- Left links -->
-
-  </div>
-  <!-- Collapsible wrapper -->
-</div>
-<!-- Container wrapper -->
-</nav>
-<!-- Navbar -->
-
-
-<div class="tab-content-layer1 ">
-  <div class="tab-content layer2"  style="font-family:Verdana, Geneva, Tahoma, sans-serif; color:#47283a;">
-
-    <div class="tab-pane fade active show" id="HomeContainer" role="tabpanel" aria-labelledby="pills-home-tab">
-
-      <div class="container-fluid pt-5 pb-5">
-        <div class="row justify-content-center pt-lg-3 pb-lg-3" style="opacity:1;">
-          <div class="d-none d-lg-block col-lg-3" style="height:65vh; text-align:left;">
-
-
-            <img class="img-fluid" src="int/images/HomeImage.jpg"><br>
-            <span style="font-size:11px; text-align:left;"><a class="noStyleLink" href="https://www.comstockphotography.net"> Photo by Chris Comstock Photography</a></span>
-
-          </div>
-          <div class="d-block d-lg-none col-8" style="text-align:center; margin-bottom:40px;">
-
-            <img class="img-fluid" src="int/images/HomeImage.jpg"><br>
-            <span style="font-size:11px; text-align:left;"><a class="noStyleLink" href="https://www.comstockphotography.net"> Photo by Chris Comstock Photography</a></span>
-
-          </div>
-          <div class="col-11 col-lg-6 mt-lg-5" style="font-family: Juni; font-style: normal; color: lavenderblush;">
-
-            <h2 class="display-5 offset-0 offset-lg-1 text-center text-lg-left" style="padding-bottom: 50px;">Transformative <wbr>Guide</h2>
-
-              <div class="offset-0 offset-lg-1 text-center text-lg-left" style="display:block; font-family:Juni; padding-bottom:50px; font-size:x-large; ">
-                <br>
-                <div class="offset-0 offset-lg-2 bbplayer text-center text-lg-left">
-                  <span class="bb-rewind"></span>
-                  <span class="bb-play"></span>
-                  <span class="bb-forward"></span>
-                  <span class="bb-trackTime"></span>
-                  <span class="bb-trackLength"></span>
-                  <span class="bb-trackTitle"></span>
-                  <audio>
-                    <!--
-                    playlist of audio files in MP3 and
-                    OGG format for cross browser support
-                  -->
-                  <source src="int/media/Welcome.mp3"/>
-                </audio>
-
-              </div><br>
-
-              <button class="contactButton" onclick="scrolldiv()"><p>Contact</p></button>
-
-              <br>
-              <br>
-
-            </div>
-
-            <script>
-            function scrolldiv() {
-              var elem = document.getElementById("fcf-form");
-              elem.scrollIntoView();
-            }
-            </script>
-
-
-          </div>
-        </div>
-      </div>
-      <section>
-        <div class="row" style="width:100%;">
-          <div class="col-12" style="height:35px; background:-webkit-radial-gradient(top, ellipse cover, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0) 83%, rgba(255,255,255,0) 100%); margin-right:-20px;"></div>
-        </div>
-      </section>
-
-      <section>
+    <nav class="navbar navbar-expand-lg p-lg-0" style="padding:0px; margin-top: -44px; margin-bottom:0px; background-color: rgba(255, 255, 255, 0.65); width:100%;">
+        <!-- Container wrapper -->
         <div class="container-fluid">
-          <div class="row justify-content-center pt-5 pb-5">
-            <div class="text-center text-lg-start col-12 col-lg-3 pb-3 pb-lg-0 mt-auto mb-auto">
-              <div>
-                <img class="img-fluid" src="int/images/WorkImage.jpg" alt="">
-              </div>
-              <span style="font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by javardh on Unsplash</a></span>
-            </div>
+            <!-- Navbar brand -->
+            <!-- Toggle button -->
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <i style="padding-top:7px; padding-bottom:7px;" class="fas fa-bars"></i>
+            </button>
 
-            <div class="col-10 col-lg-5 d-flex align-items-start flex-column " style="height:auto;">
-              <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
-                <h4 class="display-3">Work</h4>
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" onclick="navigateToPage(this, '#' + id)" id="pills-home-tab" data-bs-toggle="pill" href="#HomeContainer" role="tab" aria-controls="pills-home" aria-selected="false">Home</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" onclick="navigateToPage(this, '#' + id)" id="pills-work-tab" data-bs-toggle="pill" href="#WorkContainer" role="tab" aria-controls="pills-profile" aria-selected="false" title="Click to show Cornelia's work information">Work</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" onclick="navigateToPage(this, '#' + id)" id="pills-biography-tab" data-bs-toggle="pill" href="#BioContainer" role="tab" aria-controls="pills-contact" aria-selected="false">Biography</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" onclick="navigateToPage(this, '#' + id)" id="pills-energywork-tab" data-bs-toggle="pill" href="#PhilContainer" role="tab" aria-controls="pills-contact" aria-selected="false">Energy Work</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" onclick="navigateToPage(this, '#' + id)" id="pills-testimonials-tab" data-bs-toggle="pill" href="#TestimonialContainer" role="tab" aria-controls="pills-contact" aria-selected="false">Testimonials</a>
+                    </li>
+                    <!--<li class="nav-item" role="presentation">
+                      <a class="nav-link" onclick="navigateToPage(this, '#' + id)" id="pills-courses-tab" data-bs-toggle="pill" href="#CoursesContainer" role="tab" aria-controls="pills-contact" aria-selected="false">Courses</a>
+                    </li>-->
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" onclick="navigateToPage(this, '#' + id)" id="pills-contact-tab" data-bs-toggle="pill" href="#ContactContainer" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+                    </li>
 
-                Cornelia provides Transformative Guidance during times of personal challenges. <br />
+                </ul>
+                <!-- Left links -->
 
-                <br />
-                Special areas include:<br />
-                <p class="QuickList">
-                  ⦁	Find your authentic direction in life<br />
-                  ⦁	Raise your energetic frequency<br />
-                  ⦁	Write a new story of hope, possibilities and self-empowerment<br />
-                  ⦁	Resolve karmic wounds affecting your current life<br />
-                  ⦁	Chakra, aura, and energy cleansing<br />
-                  ⦁	Revocation of past promises and pledges<br />
-                  ⦁	Refocus and reset your intentions<br />
-                  ⦁	Alignment of body, mind, and spirit<br />
-                  ⦁	Raise your consciousness<br />
-                  ⦁	Personal growth<br />
-                </p>
-              </div>
-              <div class="display-6 pt-5 ps-lg-5" style=" height:auto;">
-                <button type="button" onclick="navigateToPage( this, '#pills-work-tab' );" title="Click to read more" class="noStyleButton">
-                  Read More ...
-                </button>
-              </div>
             </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-8">
-              <div>
-                <hr />
-              </div>
-            </div>
-          </div>
+            <!-- Collapsible wrapper -->
         </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
 
-      </section>
 
-      <section>
-        <div class="container-fluid">
-          <div class="row justify-content-center pt-5 pb-5">
-            <div class="text-center text-lg-start pb-3 col-lg-3 pb-lg-0 order-lg-2 mt-auto mb-auto">
-              <div >
-                <img class="img-fluid" src="int/images/BiographyImage.jpg" alt="">
-              </div>
-              <span style="text-align:left; font-size:11px;">Photo by Cornelia Gilbert</span>
-            </div>
-            <div class="col-10 col-lg-5 d-flex align-items-start flex-column order-lg-1" style="height:auto;">
-              <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
+    <div class="tab-content-layer1 ">
+        <div class="tab-content layer2" style="font-family:Verdana, Geneva, Tahoma, sans-serif; color:#47283a;">
 
-                <h2 class="display-4">Biography</h2>
-                <p>Cornelia was born and raised in Munich, Germany. Soon life's journey took her to London UK, Spain, and the US.</p>
-              </div>
-              <div class="display-6 ps-lg-5 pt-5" style=" height:auto;">
-                <button type="button" onclick="navigateToPage( this, '#pills-biography-tab' );" title="Click to read more" class="noStyleButton">
-                  Read More ...
-                </button>
-              </div>
-            </div>
+            <div class="tab-pane fade active show" id="HomeContainer" role="tabpanel" aria-labelledby="pills-home-tab">
 
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-8">
-              <div>
-                <hr />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                <div class="container-fluid pt-5 pb-5">
+                    <div class="row justify-content-center pt-lg-3 pb-lg-3" style="opacity:1;">
+                        <div class="d-none d-lg-block col-lg-3" style="height:65vh; text-align:left;">
 
-      <section>
-        <div class="container-fluid">
-          <div class="row justify-content-center pt-5 pb-5 pb-5">
-            <div class="text-center text-lg-start pb-3 col-lg-3 pb-lg-0 mt-auto mb-auto">
-              <div >
-                <img class="img-fluid" src="int/images/EnergyWorkImage.jpg" alt="">
-              </div>
-              <span style="text-align:left; font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by javardh on Unsplash</a></span>
-            </div>
-            <div class="col-10 col-lg-5 d-flex align-items-start flex-column " style="height:auto;">
-              <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
 
-                <h2 class="display-4">Energy Work</h2>
-                <p>A lasting healing process depends upon the integration of physical, emotional, mental, and spiritual aspects. Changes in the subtle energy systems (i.e. chakras, auras, meridians) have a direct impact on the physical body, on our feelings, and ultimately on our thoughts …<br>
+                            <img class="img-fluid" src="int/images/HomeImage.jpg"><br>
+                            <span style="font-size:11px; text-align:left;"><a class="noStyleLink" href="https://www.comstockphotography.net"> Photo by Chris Comstock Photography</a></span>
+
+                        </div>
+                        <div class="d-block d-lg-none col-8" style="text-align:center; margin-bottom:40px;">
+
+                            <img class="img-fluid" src="int/images/HomeImage.jpg"><br>
+                            <span style="font-size:11px; text-align:left;"><a class="noStyleLink" href="https://www.comstockphotography.net"> Photo by Chris Comstock Photography</a></span>
+
+                        </div>
+                        <div class="col-11 col-lg-6 mt-lg-5" style="font-family: Juni; font-style: normal; color: lavenderblush;">
+
+                            <h2 class="display-5 offset-0 offset-lg-1 text-center text-lg-left" style="padding-bottom: 50px;">Transformative <wbr>Guide</h2>
+
+                            <div class="offset-0 offset-lg-1 text-center text-lg-left" style="display:block; font-family:Juni; padding-bottom:50px; font-size:x-large; ">
+                                <br>
+                                <div class="offset-0 offset-lg-2 bbplayer text-center text-lg-left">
+                                    <span class="bb-rewind"></span>
+                                    <span class="bb-play"></span>
+                                    <span class="bb-forward"></span>
+                                    <span class="bb-trackTime"></span>
+                                    <span class="bb-trackLength"></span>
+                                    <span class="bb-trackTitle"></span>
+                                    <audio>
+                                        <!--
+                                          playlist of audio files in MP3 and
+                                          OGG format for cross browser support
+                                        -->
+                                        <source src="int/media/Welcome.mp3" />
+                                    </audio>
+
+                                </div><br>
+
+                                <button class="contactButton" onclick="scrolldiv()"><p>Contact</p></button>
+
+                                <br>
+                                <br>
+
+                            </div>
+
+                            <script>
+                                function scrolldiv() {
+                                    var elem = document.getElementById("fcf-form");
+                                    elem.scrollIntoView();
+                                }
+                            </script>
+
+
+                        </div>
+                    </div>
                 </div>
-                <div class="display-6 ps-lg-5 pt-5" style=" height:auto;">
-                  <button type="button" onclick="navigateToPage( this, '#pills-energywork-tab' );" title="Click to read more" class="noStyleButton">
-                    Read More ...
-                  </button>
-                </div>
+                <section>
+                    <div class="row" style="width:100%;">
+                        <div class="col-12" style="height:35px; background:-webkit-radial-gradient(top, ellipse cover, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0) 83%, rgba(255,255,255,0) 100%); margin-right:-20px;"></div>
+                    </div>
+                </section>
 
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-8">
-                <div>
-                  <hr />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+                <section>
+                    <div class="container-fluid">
+                        <div class="row justify-content-center pt-5 pb-5">
+                            <div class="text-center text-lg-start col-12 col-lg-3 pb-3 pb-lg-0 mt-auto mb-auto">
+                                <div>
+                                    <img class="img-fluid" src="int/images/WorkImage.jpg" alt="">
+                                </div>
+                                <span style="font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by javardh on Unsplash</a></span>
+                            </div>
 
-        <section>
-          <div>
-            <div class="container-fluid">
-              <div class="row justify-content-center pt-5 pb-5">
-                <div class="text-center text-lg-start pb-3 col-lg-3 order-lg-2 pb-lg-0 mt-auto mb-auto order-lg-2">
-                  <div >
-                    <img class="img-fluid" src="int/images/TestimonialImage.jpg">
-                  </div>
-                  <span style="text-align:left; font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by nima-sarram  on Unsplash</a></span>
-                </div>
-                <div class="col-10 col-lg-5 d-flex align-items-start flex-column order-lg-1" style="height:auto;">
-                  <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
-                    <h4 class="display-3">Testimonials</h4>
-                    <p>
-                      « Cornelia has a special gift to coalesce her energies with nature and the divine principle.
-                      Therefore, she mediates the truth of the Higher Self. This is how people, who come into contact
-                      with her, are able to profoundly connect with their hearts. »
-                      <br />
-                      <br />
+                            <div class="col-10 col-lg-5 d-flex align-items-start flex-column " style="height:auto;">
+                                <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
+                                    <h4 class="display-3">Work</h4>
 
-                      <i>
-                        Pat Edith Werner<br />
-                        Psychotherapist and Medium<br />
-                        Berlin, Germany<br />
-                      </i>
-                      <br>
-                      <img src="int/structure/47283A.gif" width="100" height="1" alt=""><br>
-                      <br>
+                                    Cornelia provides Transformative Guidance during times of personal challenges. <br />
 
-                      « Through Cornelia’s intuitive and empathetic guidance, clients are able to identify and release
-                      the root cause of any obstacles that may stand in their way. Her technique is not only subtle and
-                      far reaching, it’s also profoundly effective. Highly recommended! »
-                      <br>
-                      <br />
-                      <i>
-                        Dr. Kevin Poulston BS, DC<br />
-                        Indian Harbour Beach, Florida<br />
-                      </i>
-                    </p>
+                                    <br />
+                                    Special areas include:<br />
+                                    <p class="QuickList">
+                                        ⦁	Find your authentic direction in life<br />
+                                        ⦁	Raise your energetic frequency<br />
+                                        ⦁	Write a new story of hope, possibilities and self-empowerment<br />
+                                        ⦁	Resolve karmic wounds affecting your current life<br />
+                                        ⦁	Chakra, aura, and energy cleansing<br />
+                                        ⦁	Revocation of past promises and pledges<br />
+                                        ⦁	Refocus and reset your intentions<br />
+                                        ⦁	Alignment of body, mind, and spirit<br />
+                                        ⦁	Raise your consciousness<br />
+                                        ⦁	Personal growth<br />
+                                    </p>
+                                </div>
+                                <div class="display-6 pt-5 ps-lg-5" style=" height:auto;">
+                                    <button type="button" onclick="navigateToPage( this, '#pills-work-tab' );" title="Click to read more" class="noStyleButton">
+                                        Read More ...
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <div>
+                                    <hr />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section>
+                    <div class="container-fluid">
+                        <div class="row justify-content-center pt-5 pb-5">
+                            <div class="text-center text-lg-start pb-3 col-lg-3 pb-lg-0 order-lg-2 mt-auto mb-auto">
+                                <div>
+                                    <img class="img-fluid" src="int/images/BiographyImage.jpg" alt="">
+                                </div>
+                                <span style="text-align:left; font-size:11px;">Photo by Cornelia Gilbert</span>
+                            </div>
+                            <div class="col-10 col-lg-5 d-flex align-items-start flex-column order-lg-1" style="height:auto;">
+                                <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
+
+                                    <h2 class="display-4">Biography</h2>
+                                    <p>Cornelia was born and raised in Munich, Germany. Soon life's journey took her to London UK, Spain, and the US.</p>
+                                </div>
+                                <div class="display-6 ps-lg-5 pt-5" style=" height:auto;">
+                                    <button type="button" onclick="navigateToPage( this, '#pills-biography-tab' );" title="Click to read more" class="noStyleButton">
+                                        Read More ...
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <div>
+                                    <hr />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="container-fluid">
+                        <div class="row justify-content-center pt-5 pb-5 pb-5">
+                            <div class="text-center text-lg-start pb-3 col-lg-3 pb-lg-0 mt-auto mb-auto">
+                                <div>
+                                    <img class="img-fluid" src="int/images/EnergyWorkImage.jpg" alt="">
+                                </div>
+                                <span style="text-align:left; font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by javardh on Unsplash</a></span>
+                            </div>
+                            <div class="col-10 col-lg-5 d-flex align-items-start flex-column " style="height:auto;">
+                                <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
+
+                                    <h2 class="display-4">Energy Work</h2>
+                                    <p>A lasting healing process depends upon the integration of physical, emotional, mental, and spiritual aspects. Changes in the subtle energy systems (i.e. chakras, auras, meridians) have a direct impact on the physical body, on our feelings, and ultimately on our thoughts …<br>
+                                </div>
+                                <div class="display-6 ps-lg-5 pt-5" style=" height:auto;">
+                                    <button type="button" onclick="navigateToPage( this, '#pills-energywork-tab' );" title="Click to read more" class="noStyleButton">
+                                        Read More ...
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <div>
+                                    <hr />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div>
+                        <div class="container-fluid">
+                            <div class="row justify-content-center pt-5 pb-5">
+                                <div class="text-center text-lg-start pb-3 col-lg-3 order-lg-2 pb-lg-0 mt-auto mb-auto order-lg-2">
+                                    <div>
+                                        <img class="img-fluid" src="int/images/TestimonialImage.jpg">
+                                    </div>
+                                    <span style="text-align:left; font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by nima-sarram  on Unsplash</a></span>
+                                </div>
+                                <div class="col-10 col-lg-5 d-flex align-items-start flex-column order-lg-1" style="height:auto;">
+                                    <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
+                                        <h4 class="display-3">Testimonials</h4>
+                                        <p>
+                                            « Cornelia has a special gift to coalesce her energies with nature and the divine principle.
+                                            Therefore, she mediates the truth of the Higher Self. This is how people, who come into contact
+                                            with her, are able to profoundly connect with their hearts. »
+                                            <br />
+                                            <br />
+
+                                            <i>
+                                                Pat Edith Werner<br />
+                                                Psychotherapist and Medium<br />
+                                                Berlin, Germany<br />
+                                            </i>
+                                            <br>
+                                            <img src="int/structure/47283A.gif" width="100" height="1" alt=""><br>
+                                            <br>
+
+                                            « Through Cornelia’s intuitive and empathetic guidance, clients are able to identify and release
+                                            the root cause of any obstacles that may stand in their way. Her technique is not only subtle and
+                                            far reaching, it’s also profoundly effective. Highly recommended! »
+                                            <br>
+                                            <br />
+                                            <i>
+                                                Dr. Kevin Poulston BS, DC<br />
+                                                Indian Harbour Beach, Florida<br />
+                                            </i>
+                                        </p>
+                                    </div>
+                                    <div class="display-6 ps-lg-5 pt-5" style=" height:auto;">
+                                        <button type="button" onclick="navigateToPage( this, '#pills-testimonials-tab' );" title="Click to read more" class="noStyleButton">
+                                            Read More ...
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-center">
+                                <div class="col-8">
+                                    <div>
+                                        <hr />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--CURRENTLY WIP, FOR LATER RE-USE!
+                        <section>
+                        <div class="container-fluid">
+                        <div class="row justify-content-center pt-5 pb-5">
+                        <div class="text-center text-lg-start pb-3 col-lg-3 pb-lg-0 mt-auto mb-auto">
+                        <div >
+                        <img class="img-fluid" src="int/images/CoursesImage.jpg" aria-hidden="true">
+                      </div>
+                      <span style="text-align:left; font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by andre-tan on Unsplash</a></span>
+                    </div>
+                    <div class="col-10 col-lg-5 d-flex align-items-start flex-column " style="height:auto;">
+
+                    <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
+
+                    <h2 class="display-4">Courses</h2>
+                    <p>Due to Covid-19, no group work or workshops are currently offered. </p>
                   </div>
                   <div class="display-6 ps-lg-5 pt-5" style=" height:auto;">
-                    <button type="button" onclick="navigateToPage( this, '#pills-testimonials-tab' );" title="Click to read more" class="noStyleButton">
-                      Read More ...
-                    </button>
-                  </div>
+                  <button type="button" onclick="navigateToPage( this, '#pills-courses-tab' );" title="Click to read more" class="style-4">
+                  Read More ...
+                </button>
                 </div>
-              </div>
-
-              <div class="row justify-content-center">
+                </div>
+                </div>
+                <div class="row justify-content-center">
                 <div class="col-8">
-                  <div>
-                    <hr />
-                  </div>
+                <div>
+                <hr />
                 </div>
-              </div>
+                </div>
+                </div>
+                </div>
+                </section>
+                -->
+
+                <section>
+                    <div class="container-fluid">
+                        <div class="row justify-content-center pt-5 pb-5">
+                            <div class="text-center text-lg-start pb-3 col-lg-3 pb-lg-0 mt-auto mb-auto">
+                                <div>
+                                    <img class="img-fluid" src="int/images/ContactImage.jpg" aria-hidden="true">
+                                </div>
+                                <span style="text-align:left; font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by andre-tan on Unsplash</a></span>
+                            </div>
+                            <div class="col-10 col-lg-5 d-flex align-items-start flex-column " style="height:auto;">
+
+                                <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
+
+                                    <h2 class="display-4">Contact</h2>
+                                    <p>
+                                        <br />
+                                        Cornelia Gilbert<br />
+                                        <br />
+
+                                        <a class="noStyleLink" href="mailto:mail@corneliagilbert.com">mail@corneliagilbert.com</a><br />
+                                        <br />
+                                        <b>Free 1st Consultation (15 min)</b>
+                                    </p>
+                                </div>
+                                <link href="css/contact-form.css" rel="stylesheet">
+                                <div class="col-12 col-sm-8 col-xl-10 fcf-body">
+                                    <div id="fcf-form">
+                                        <h3 class="fcf-h3">Contact me</h3>
+
+                                        <form id="fcf-form-id" class="fcf-form-class" method="post" action="php/contact-form-process.php">
+
+                                            <div class="fcf-form-group">
+                                                <label for="Name" class="fcf-label">Your name</label>
+                                                <div class="fcf-input-group">
+                                                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="fcf-form-group">
+                                                <label for="Phone" class="fcf-label">Your phone number</label>
+                                                <div class="fcf-input-group">
+                                                    <input type="tel" id="Phone" name="Phone" class="fcf-form-control" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="fcf-form-group">
+                                                <label for="Message" class="fcf-label">Your message</label>
+                                                <div class="fcf-input-group">
+                                                    <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="fcf-form-group">
+                                                <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                                            </div>
+
+                                            <div class="fcf-credit" id="fcf-credit">
+                                                Simple HTML email form provided by: <a href="https://www.freecontactform.com" target="_blank">FreeContactForm.com</a>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="display-6 ps-lg-5 pt-5" style=" height:auto;">
+                                    <button type="button" onclick="navigateToPage( this, '#pills-contact-tab' );" title="Click to read more" class="noStyleButton">
+                                        Read More ...
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <div>
+                                    <hr />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--CURRENTLY WIP, FOR LATER RE-USE!
+                <section>
+                <div class="container-fluid">
+                <div class="row justify-content-center pt-5 pb-5">
+                <div class=" text-center text-lg-start pb-3 col-lg-3 pb-lg-0 order-lg-2 mt-auto mb-auto">
+                <div >
+                <img class="img-fluid" src="int/images/ContactImage.jpg" alt="">
+                </div>
+                <span class="text-center text-lg-start" style="font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by dave-hoefler on Unsplash</a></span>
+                </div>
+                <div class="col-10 col-lg-5 d-flex align-items-start flex-column order-lg-1" style="height:auto;">
+                <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
+
+                <h2 class="display-4">Contact</h2>
+                <p>
+                <br />
+                Cornelia Gilbert<br />
+                <br />
+                Tel: 321 504 8188<br />
+                <a class="noStyleLink" href="mailto:mail@corneliagilbert.com">mail@corneliagilbert.com</a><br />
+                <br />
+                <b>Free 1st Consultation (15 min)</b>
+                </p>
+                </div>
+                <div class="display-6 ps-lg-5 pt-5" style=" height:auto;">
+                <button type="button" onclick="navigateToPage( this, '#pills-contact-tab' );" title="Click to read more" class="noStyleButton">
+                Read More ...
+                </button>
+                </div>
+
+                </div>
+
+                </div>
+                <div class="row justify-content-center">
+                <div class="col-8">
+                <div>
+                <hr />
+                </div>
+                </div>
+                </div>
+                </div>
+                </section>
+
+
+                <br />
+                <br />
+                -->
+
             </div>
-          </div>
-        </section>
-        <!--CURRENTLY WIP, FOR LATER RE-USE!
-        <section>
-        <div class="container-fluid">
-        <div class="row justify-content-center pt-5 pb-5">
-        <div class="text-center text-lg-start pb-3 col-lg-3 pb-lg-0 mt-auto mb-auto">
-        <div >
-        <img class="img-fluid" src="int/images/CoursesImage.jpg" aria-hidden="true">
-      </div>
-      <span style="text-align:left; font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by andre-tan on Unsplash</a></span>
-    </div>
-    <div class="col-10 col-lg-5 d-flex align-items-start flex-column " style="height:auto;">
 
-    <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
 
-    <h2 class="display-4">Courses</h2>
-    <p>Due to Covid-19, no group work or workshops are currently offered. </p>
-  </div>
-  <div class="display-6 ps-lg-5 pt-5" style=" height:auto;">
-  <button type="button" onclick="navigateToPage( this, '#pills-courses-tab' );" title="Click to read more" class="style-4">
-  Read More ...
-</button>
-</div>
-</div>
-</div>
-<div class="row justify-content-center">
-<div class="col-8">
-<div>
-<hr />
-</div>
-</div>
-</div>
-</div>
-</section>
--->
+            <div class="tab-pane fade" id="WorkContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="row" style="min-height: calc(100vh - 225px);">
+                    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; overflow-x:hidden;">
+                        <img src="int/images/WorkImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
+                        <span class="d-block mx-auto float-none float-xl-end mx-xl-0" style="text-align:center; font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by javardh on Unsplash</a></span>
 
-<section>
-  <div class="container-fluid">
-    <div class="row justify-content-center pt-5 pb-5">
-      <div class="text-center text-lg-start pb-3 col-lg-3 pb-lg-0 mt-auto mb-auto">
-        <div >
-          <img class="img-fluid" src="int/images/ContactImage.jpg" aria-hidden="true">
-        </div>
-        <span style="text-align:left; font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by andre-tan on Unsplash</a></span>
-      </div>
-      <div class="col-10 col-lg-5 d-flex align-items-start flex-column " style="height:auto;">
 
-        <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
+                    </div>
+                    <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
+                    <div class="col-12 col-xl-6" style="padding-top:30px;">
+                        <div class="d-none d-xl-block" style="pointer-events: none; background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
 
-          <h2 class="display-4">Contact</h2>
-          <p>
-            <br />
-            Cornelia Gilbert<br />
-            <br />
+                        <div class="offset-xl-1">
+                            <div class="TabTextContent">
+                                <h1><b>Work</b></h1>
+                                <br />
+                                <br />
+                                I subscribe to an interdisciplinary approach and was trained both in Europe and the US and use a variety of techniques: energy work, cognitive behavioral coaching, breath work, therapeutic metaphors, guided visualization, guided imagery, thought refocusing, positive affirmation, effective goal-setting, gratitude and appreciation.<br />
+                                <br />
+                                In my work with people for over 15 years, my main focus has always been creating alignment between the physical, emotional, mental, and spiritual bodies.
+                                When tapping into these dimensions in their entirety, we are able to become integral and authentic beings, and truly
+                                healthy on every level. This enables us to live fulfilled lives, by feeling connected, and ultimately follow our life’s direction, or the written plan of why we are here at this specific time.<br />
+                                <br />
+                                </p>
 
-            <a class="noStyleLink" href="mailto:mail@corneliagilbert.com">mail@corneliagilbert.com</a><br />
-            <br />
-            <b>Free 1st Consultation (15 min)</b>
-          </p>
-        </div>
-        <link href="css/contact-form.css" rel="stylesheet">
-        <div class="col-12 col-sm-8 col-xl-10 fcf-body">
-          <div id="fcf-form">
-            <h3 class="fcf-h3">Contact me</h3>
+                                Individual sessions can help you with:<br />
+                                <p class="QuickList">
+                                    • Increasing your mental and physcial energy level<br />
+                                    • Becoming aware of self-induced obstacles<br />
+                                    • Creating boundaries, emotionally and energetically<br />
+                                    • Gaining clarity in your thoughts and feelings<br />
+                                    • Managing inner conflicts<br />
+                                    • Personal growth & direction<br />
+                                    • Unlocking self-limiting beliefs<br />
+                                </p>
+                                <br />
 
-            <form id="fcf-form-id" class="fcf-form-class" method="post" action="php/contact-form-process.php">
+                                </p>
 
-              <div class="fcf-form-group">
-                <label for="Name" class="fcf-label">Your name</label>
-                <div class="fcf-input-group">
-                  <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </div>
 
-              <div class="fcf-form-group">
-                <label for="Phone" class="fcf-label">Your phone number</label>
-                <div class="fcf-input-group">
-                  <input type="tel" id="Phone" name="Phone" class="fcf-form-control" required>
+            <div class="tab-pane fade" id="BioContainer" style="min-height: calc(100vh - 225px);" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="row">
+                    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; overflow-x:hidden;">
+                        <img src="int/images/BiographyImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
+                        <span class="d-block mx-auto float-none float-xl-end mx-xl-0" style="text-align:center; font-size:11px;">Photo by Cornelia Gilbert</span>
+                    </div>
+                    <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
+                    <div class="col-12 col-xl-6" style="padding-top:30px;">
+                        <div class="d-none d-xl-block" style="pointer-events: none; background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
+                        <div class="offset-xl-1">
+                            <div class="TabTextContent">
+                                <h1><b>Biography</b></h1>
+
+                                <span class="text-normal">
+
+                                    Cornelia has over 15 years experience working with clients individually and in groups. Her group work includes running inner child workshops, women's shamanic groups, meditation groups, chakra and energy work groups.
+                                    <br />
+                                    <br />
+                                    She has a unique ability to accelerate the individual's healing process, and she is dedicated to helping people of all backgrounds finding the best version of themselves, with unconditional and positive regard.
+                                    <br />
+                                    <br />
+                                    Cornelia is an ICU and hospice nurse, certified life coach, and ordained minister. She lives in Florida, enjoys the outdoors, meditation, and cooking.
+
+                                    <br />
+                                    <br />
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </div>
 
-              <div class="fcf-form-group">
-                <label for="Message" class="fcf-label">Your message</label>
-                <div class="fcf-input-group">
-                  <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            <div class="tab-pane fade" id="PhilContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="row" style="min-height: calc(100vh - 225px);">
+                    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; overflow-x:hidden;">
+                        <img src="int/images/EnergyWorkImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
+                        <span class="d-block mx-auto float-none float-xl-end mx-xl-0" style="text-align:center; font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by javardh on Unsplash</a></span>
+                    </div>
+                    <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
+                    <div class="col-12 col-xl-6" style="padding-top:30px;">
+                        <div class="d-none d-xl-block" style="pointer-events: none; background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
+                        <div class="offset-xl-1">
+                            <div class="TabTextContent">
+                                <h1><b>Energy Work</b></h1>
+                                <span class="text-normal">
+                                    <br>
+                                    <br>
+                                    Once working with these subtle energy organs and they return back to harmony and balance, you increase your energy level, chaos can turn into clarity, and anxiety into calm, and often true emotions are able to come to the surface and find their true voice.<br>
+                                    <br>
+                                    Part of my journey is to share my gifts with you and work intuitively, which allows you to connect with your innate self-healing abilities. I will provide guidance during this unique and personal process. It has been my experience that quite often clients discover, or re-discover their own creative gifts while on this path. Let’s take the leap together.<br />
+                                    <br />
+                                    This work does not require us to be in the same room and can be conducted via Zoom, Skype, FaceTime, or even telephone.
+                                    <br>
+                                    <br>
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-              </div>
+            </div>
 
-              <div class="fcf-form-group">
-                <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
-              </div>
+            <div class="tab-pane fade" id="TestimonialContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="row" style="min-height: calc(100vh - 225px);">
+                    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; overflow-x:hidden;">
+                        <img src="int/images/TestimonialImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
+                        <span class="d-block mx-auto float-none float-xl-end mx-xl-0" style="text-align:center; font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by nima-sarram  on Unsplash</a></span>
+                    </div>
+                    <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
+                    <div class="col-12 col-xl-6" style="padding-top:30px;">
+                        <div class="d-none d-xl-block" style="pointer-events: none; background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
+                        <div class="offset-xl-1">
+                            <div class="TabTextContent">
+                                <h1><b>Testimonials</b></h1>
+                                <span class="text-normal">
+                                    <br>
+                                    <br>
+                                    &laquo; Cornelia has a unique metaphysical approach towards Life Coaching
+                                    that she complements with her warm and healing presence. &raquo;<br>
+                                    <br>
+                                    <i>
+                                        Anne Geraghty,
+                                        <br>
+                                        Psychotherapist and Author of        &#8249;
+                                        How Loving Relationships Work: Understanding Love's Living Force&#8250;<br>Cumbria,
+                                        UK
+                                    </i>
+                                    <br>
+                                    <br>
+                                    <img src="int/structure/47283A.gif" width="100" height="1" alt=""><br>
+                                    <br>
+                                    &laquo; I met Cornelia through her London based practice in the mid 1990s.
+                                    I attended groups she facilitated as well as individual sessions with
+                                    her &#8211; she
+                                    was skilled, experienced and extremely supportive at a time when I was
+                                    experiencing quite a bit of change and difficulty in my life. I particularly
+                                    appreciated
+                                    that Cornelia trained overseas in an established and respected school
+                                    with which I had not become familiar through working in the UK caring
+                                    professions. The freshness of the approach and the warmth, skill, humour
+                                    and	patience
+                                    Cornelia
+                                    brings to her work with me helped me to find my feet after a very &quot;rough
+                                    patch&quot;. It's a pleasure to recommend her services to other people. &raquo;
+                                    <br>
+                                    <br>
+                                    <i>
+                                        Diana Breadmore<br>
+                                        Administrator<br>
+                                        Southampton, UK
+                                    </i>
+                                    <br>
+                                    <br>
+                                    <img src="../int/structure/47283A.gif" width="100" height="1" alt=""><br>
+                                    <br>
+                                    &laquo; I met Cornelia when she lived in Minneapolis, US. She first became
+                                    a customer of mine thru my hair salon. As time went on I turned to her and
+                                    started Life Coaching when I was in need of lots of help and she helped me get
+                                    thru some very tough and difficult moments. She took the time to listen when
+                                    I needed it the most even when I did not have an appointment or when I called
+                                    she was always willing and able to listen. I miss her support very much and
+                                    I know who ever looks for her services will be grateful for the help and understanding
+                                    she will give. &raquo;<br>
+                                    <br>
+                                    <i>
+                                        Aleata Dauwalter<br>
+                                        Hair Stylist<br>
+                                        Minneapolis, USA
+                                    </i>		<br>
+                                    <img src="int/structure/47283A.gif" width="100" height="1" alt=""><br>
+                                    <span class="text-normal">
+                                        <br>
 
-              <div class="fcf-credit" id="fcf-credit">
-                Simple HTML email form provided by: <a href="https://www.freecontactform.com" target="_blank">FreeContactForm.com</a>
-              </div>
+                                        <br>
 
-            </form>
-          </div>
-        </div>
-        <div class="display-6 ps-lg-5 pt-5" style=" height:auto;">
-          <button type="button" onclick="navigateToPage( this, '#pills-contact-tab' );" title="Click to read more" class="noStyleButton">
-            Read More ...
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-8">
-        <div>
-          <hr />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+                                        </i>		<br>
+                                        <br>
+                                    </span>
+                                </span>
 
-<!--CURRENTLY WIP, FOR LATER RE-USE!
-<section>
-<div class="container-fluid">
-<div class="row justify-content-center pt-5 pb-5">
-<div class=" text-center text-lg-start pb-3 col-lg-3 pb-lg-0 order-lg-2 mt-auto mb-auto">
-<div >
-<img class="img-fluid" src="int/images/ContactImage.jpg" alt="">
-</div>
-<span class="text-center text-lg-start" style="font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by dave-hoefler on Unsplash</a></span>
-</div>
-<div class="col-10 col-lg-5 d-flex align-items-start flex-column order-lg-1" style="height:auto;">
-<div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-<h2 class="display-4">Contact</h2>
-<p>
-<br />
-Cornelia Gilbert<br />
-<br />
-Tel: 321 504 8188<br />
-<a class="noStyleLink" href="mailto:mail@corneliagilbert.com">mail@corneliagilbert.com</a><br />
-<br />
-<b>Free 1st Consultation (15 min)</b>
-</p>
-</div>
-<div class="display-6 ps-lg-5 pt-5" style=" height:auto;">
-<button type="button" onclick="navigateToPage( this, '#pills-contact-tab' );" title="Click to read more" class="noStyleButton">
-Read More ...
-</button>
-</div>
-
-</div>
-
-</div>
-<div class="row justify-content-center">
-<div class="col-8">
-<div>
-<hr />
-</div>
-</div>
-</div>
-</div>
-</section>
-
-
-<br />
-<br />
--->
-
-</div>
-
-
-<div class="tab-pane fade" id="WorkContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
-  <div class="row" style="min-height: calc(100vh - 225px);">
-    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; overflow-x:hidden;">
-      <img src="int/images/WorkImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
-      <span class="d-block mx-auto float-none float-xl-end mx-xl-0" style="text-align:center; font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by javardh on Unsplash</a></span>
-
-
-    </div>
-    <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
-    <div class="col-12 col-xl-6" style="padding-top:30px;">
-      <div class="d-none d-xl-block" style="pointer-events: none; background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
-
-      <div class="offset-xl-1">
-        <div class="TabTextContent">
-          <h1><b>Work</b></h1>
-          <br />
-          <br />
-          I subscribe to an interdisciplinary approach and was trained both in Europe and the US and use a variety of techniques: energy work, cognitive behavioral coaching, breath work, therapeutic metaphors, guided visualization, guided imagery, thought refocusing, positive affirmation, effective goal-setting, gratitude and appreciation.<br />
-          <br />
-          In my work with people for over 15 years, my main focus has always been creating alignment between the physical, emotional, mental, and spiritual bodies.
-          When tapping into these dimensions in their entirety, we are able to become integral and authentic beings, and truly
-          healthy on every level. This enables us to live fulfilled lives, by feeling connected, and ultimately follow our life’s direction, or the written plan of why we are here at this specific time.<br />
-          <br />
-        </p>
-
-        Individual sessions can help you with:<br />
-        <p class="QuickList">
-          • Increasing your mental and physcial energy level<br />
-          • Becoming aware of self-induced obstacles<br />
-          • Creating boundaries, emotionally and energetically<br />
-          • Gaining clarity in your thoughts and feelings<br />
-          • Managing inner conflicts<br />
-          • Personal growth & direction<br />
-          • Unlocking self-limiting beliefs<br />
-        </p>
-        <br />
-
-      </p>
-
-    </div>
-  </div>
-</div>
-</div>
-</div>
-
-<div class="tab-pane fade"  id="BioContainer" style="min-height: calc(100vh - 225px);" role="tabpanel" aria-labelledby="pills-contact-tab">
-  <div class="row">
-    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; overflow-x:hidden;">
-      <img src="int/images/BiographyImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
-      <span class="d-block mx-auto float-none float-xl-end mx-xl-0" style="text-align:center; font-size:11px;">Photo by Cornelia Gilbert</span>
-    </div>
-    <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
-    <div class="col-12 col-xl-6" style="padding-top:30px;">
-      <div class="d-none d-xl-block" style="pointer-events: none; background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
-      <div class="offset-xl-1">
-        <div class="TabTextContent">
-          <h1><b>Biography</b></h1>
-
-          <span class="text-normal">
-
-            Cornelia has over 15 years experience working with clients individually and in groups. Her group work includes running inner child workshops, women's shamanic groups, meditation groups, chakra and energy work groups.
-            <br />
-            <br />
-            She has a unique ability to accelerate the individual's healing process, and she is dedicated to helping people of all backgrounds finding the best version of themselves, with unconditional and positive regard.
-            <br />
-            <br />
-            Cornelia is an ICU and hospice nurse, certified life coach, and ordained minister. She lives in Florida, enjoys the outdoors, meditation, and cooking.
-
-            <br />
-            <br />
-          </span>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="tab-pane fade" id="PhilContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
-  <div class="row" style="min-height: calc(100vh - 225px);">
-    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; overflow-x:hidden;">
-      <img src="int/images/EnergyWorkImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
-      <span class="d-block mx-auto float-none float-xl-end mx-xl-0" style="text-align:center; font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by javardh on Unsplash</a></span>
-    </div>
-    <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
-    <div class="col-12 col-xl-6" style="padding-top:30px;">
-      <div class="d-none d-xl-block" style="pointer-events: none; background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
-      <div class="offset-xl-1">
-        <div class="TabTextContent">
-          <h1><b>Energy Work</b></h1>
-          <span class="text-normal">
-            <br>
-            <br>
-            Once working with these subtle energy organs and they return back to harmony and balance, you increase your energy level, chaos can turn into clarity, and anxiety into calm, and often true emotions are able to come to the surface and find their true voice.<br>
-            <br>
-            Part of my journey is to share my gifts with you and work intuitively, which allows you to connect with your innate self-healing abilities. I will provide guidance during this unique and personal process. It has been my experience that quite often clients discover, or re-discover their own creative gifts while on this path. Let’s take the leap together.<br />
-            <br />
-            This work does not require us to be in the same room and can be conducted via Zoom, Skype, FaceTime, or even telephone.
-            <br>
-            <br>
-          </span>
-
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div class="tab-pane fade" id="TestimonialContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
-  <div class="row" style="min-height: calc(100vh - 225px);">
-    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; overflow-x:hidden;">
-      <img src="int/images/TestimonialImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
-      <span class="d-block mx-auto float-none float-xl-end mx-xl-0" style="text-align:center; font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by nima-sarram  on Unsplash</a></span>
-    </div>
-    <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
-    <div class="col-12 col-xl-6" style="padding-top:30px;">
-      <div class="d-none d-xl-block" style="pointer-events: none; background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
-      <div class="offset-xl-1">
-        <div class="TabTextContent">
-          <h1><b>Testimonials</b></h1>
-          <span class="text-normal">
-            <br>
-            <br>
-            &laquo; Cornelia has a unique metaphysical approach towards Life Coaching
-            that she complements with her warm and healing presence. &raquo;<br>
-            <br>
-            <i>
-              Anne Geraghty,
-              <br>
-              Psychotherapist and Author of        &#8249;
-              How Loving Relationships Work: Understanding Love's Living Force&#8250;<br>Cumbria,
-              UK
-            </i>
-            <br>
-            <br>
-            <img src="int/structure/47283A.gif" width="100" height="1" alt=""><br>
-            <br>
-            &laquo; I met Cornelia through her London based practice in the mid 1990s.
-            I attended groups she facilitated as well as individual sessions with
-            her &#8211; she
-            was skilled, experienced and extremely supportive at a time when I was
-            experiencing quite a bit of change and difficulty in my life. I particularly
-            appreciated
-            that Cornelia trained overseas in an established and respected school
-            with which I had not become familiar through working in the UK caring
-            professions. The freshness of the approach and the warmth, skill, humour
-            and	patience
-            Cornelia
-            brings to her work with me helped me to find my feet after a very &quot;rough
-            patch&quot;. It's a pleasure to recommend her services to other people. &raquo;
-            <br>
-            <br>
-            <i>
-              Diana Breadmore<br>
-              Administrator<br>
-              Southampton, UK
-            </i>
-            <br>
-            <br>
-            <img src="../int/structure/47283A.gif" width="100" height="1" alt=""><br>
-            <br>
-            &laquo; I met Cornelia when she lived in Minneapolis, US. She first became
-            a customer of mine thru my hair salon. As time went on I turned to her and
-            started Life Coaching when I was in need of lots of help and she helped me get
-            thru some very tough and difficult moments. She took the time to listen when
-            I needed it the most even when I did not have an appointment or when I called
-            she was always willing and able to listen. I miss her support very much and
-            I know who ever looks for her services will be grateful for the help and understanding
-            she will give. &raquo;<br>
-            <br>
-            <i>
-              Aleata Dauwalter<br>
-              Hair Stylist<br>
-              Minneapolis, USA
-            </i>		<br>
-            <img src="int/structure/47283A.gif" width="100" height="1" alt=""><br>
+            <!--
+            <div class="tab-pane fade" id="CoursesContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="row" style="min-height: calc(100vh - 225px);">
+            <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; overflow-x:hidden;">
+            <img src="int/images/CoursesImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
+            <span class="d-block mx-auto float-none float-xl-end mx-xl-0" style="text-align:center; font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by andre-tan on Unsplash</a></span>
+            </div>
+            <div class="col-12 col-xl-6" style="padding-top:30px;">
+            <div class="d-none d-xl-block" style="pointer-events: none; background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
+            <div class="offset-xl-1">
+            <div class="TabTextContent">
+            <h1><b>Courses</b></h1>
             <span class="text-normal">
-              <br>
-
-              <br>
-
-            </i>		<br>
-            <br>
-          </span>
-        </span>
-
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<!--
-<div class="tab-pane fade" id="CoursesContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
-<div class="row" style="min-height: calc(100vh - 225px);">
-<div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; overflow-x:hidden;">
-<img src="int/images/CoursesImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
-<span class="d-block mx-auto float-none float-xl-end mx-xl-0" style="text-align:center; font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by andre-tan on Unsplash</a></span>
-</div>
-<div class="col-12 col-xl-6" style="padding-top:30px;">
-<div class="d-none d-xl-block" style="pointer-events: none; background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
-<div class="offset-xl-1">
-<div class="TabTextContent">
-<h1><b>Courses</b></h1>
-<span class="text-normal">
-Watch this space for continuous news and updates.
-</span>
-</div>
-</div>
-</div>
-</div>
-</div>
--->
-
-<div class="tab-pane fade" id="ContactContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
-  <div class="row" style="min-height: calc(100vh - 225px);">
-    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; overflow-x:hidden;">
-      <img src="int/images/ContactImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
-      <span class="d-block mx-auto float-none float-xl-end mx-xl-0" style="text-align:center; font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by dave-hoefler on Unsplash</a></span>
-    </div>
-    <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
-    <div class="col-12 col-xl-6" style="padding-top:30px;">
-      <div class="d-none d-xl-block" style="pointer-events: none; background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
-      <div class="offset-xl-1 TabTextContent">
-        <div class="row">
-          <h1><b>Contact</b></h1>
-          <span class="text-normal">
-            <br />
-            Cornelia Gilbert<br />
-            <br />
-            Office in Indian Harbour Beach, FL<br>
-            <br />
-            <b>Free 1st Consultation (15 min)</b><br />
-            Individual Session (70 min) - $ 85<br>
-            <br>
-            Discounts for block sessions available upon inquiry.<br>
-            <br>
-            <img src="int/structure/47283A.gif" width="100" height="1" alt=""><br>
-            <br>
-            Sessions can be conducted via phone, Zoom, Skype, FaceTime, or in person and are available in English or German.<br>
-
-            <br>
-          </span>
-        </div>
-        <div class="row">
-          <link href="css/contact-form.css" rel="stylesheet">
-          <div class="col-12 col-sm-8 col-xl-10 fcf-body">
-            <div id="fcf-form">
-              <h3 class="fcf-h3">Contact me</h3>
-
-              <form id="fcf-form-id" class="fcf-form-class" method="post" action="php/contact-form-process.php">
-
-                <div class="fcf-form-group">
-                  <label for="Name" class="fcf-label">Your name</label>
-                  <div class="fcf-input-group">
-                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-                  </div>
-                </div>
-
-                <div class="fcf-form-group">
-                  <label for="Email" class="fcf-label">Your phone number</label>
-                  <div class="fcf-input-group">
-                    <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-                  </div>
-                </div>
-
-                <div class="fcf-form-group">
-                  <label for="Message" class="fcf-label">Your message</label>
-                  <div class="fcf-input-group">
-                    <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-                  </div>
-                </div>
-
-                <div class="fcf-form-group">
-                  <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
-                </div>
-
-                <div class="fcf-credit" id="fcf-credit">
-                  Simple HTML email form provided by: <a href="https://www.freecontactform.com" target="_blank">FreeContactForm.com</a>
-                </div>
-
-              </form>
+            Watch this space for continuous news and updates.
+            </span>
             </div>
-          </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            -->
+
+            <div class="tab-pane fade" id="ContactContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="row" style="min-height: calc(100vh - 225px);">
+                    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; overflow-x:hidden;">
+                        <img src="int/images/ContactImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
+                        <span class="d-block mx-auto float-none float-xl-end mx-xl-0" style="text-align:center; font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by dave-hoefler on Unsplash</a></span>
+                    </div>
+                    <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
+                    <div class="col-12 col-xl-6" style="padding-top:30px;">
+                        <div class="d-none d-xl-block" style="pointer-events: none; background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
+                        <div class="offset-xl-1 TabTextContent">
+                            <div class="row">
+                                <h1><b>Contact</b></h1>
+                                <span class="text-normal">
+                                    <br />
+                                    Cornelia Gilbert<br />
+                                    <br />
+                                    Office in Indian Harbour Beach, FL<br>
+                                    <br />
+                                    <b>Free 1st Consultation (15 min)</b><br />
+                                    Individual Session (70 min) - $ 85<br>
+                                    <br>
+                                    Discounts for block sessions available upon inquiry.<br>
+                                    <br>
+                                    <img src="int/structure/47283A.gif" width="100" height="1" alt=""><br>
+                                    <br>
+                                    Sessions can be conducted via phone, Zoom, Skype, FaceTime, or in person and are available in English or German.<br>
+
+                                    <br>
+                                </span>
+                            </div>
+                            <div class="row">
+                                <link href="css/contact-form.css" rel="stylesheet">
+                                <div class="col-12 col-sm-8 col-xl-10 fcf-body">
+                                    <div id="fcf-form">
+                                        <h3 class="fcf-h3">Contact me</h3>
+
+                                        <form id="fcf-form-id" class="fcf-form-class" method="post" action="php/contact-form-process.php">
+
+                                            <div class="fcf-form-group">
+                                                <label for="Name" class="fcf-label">Your name</label>
+                                                <div class="fcf-input-group">
+                                                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="fcf-form-group">
+                                                <label for="Email" class="fcf-label">Your phone number</label>
+                                                <div class="fcf-input-group">
+                                                    <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="fcf-form-group">
+                                                <label for="Message" class="fcf-label">Your message</label>
+                                                <div class="fcf-input-group">
+                                                    <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="fcf-form-group">
+                                                <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                                            </div>
+
+                                            <div class="fcf-credit" id="fcf-credit">
+                                                Simple HTML email form provided by: <a href="https://www.freecontactform.com" target="_blank">FreeContactForm.com</a>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <footer class="text-center text-white" style="background-color: rgba(241, 241, 241, 0)">
+                <!-- Grid container -->
+                <div class="container pt-4">
+                    <!-- Section: Social media -->
+                    <section class="mb-4">
+                        <!-- Facebook -->
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+                           href="https://www.facebook.com/CorneliaGilbertLLC/"
+                           role="button"
+                           data-mdb-ripple-color="dark">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <!-- Twitter -->
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+                           href="https://twitter.com/CorneliaGilbert"
+                           role="button"
+                           data-mdb-ripple-color="dark">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <!-- Google -->
+                        <a class="d-none btn btn-link btn-floating btn-lg text-dark m-1"
+                           href="#!"
+                           role="button"
+                           data-mdb-ripple-color="dark">
+                            <i class="fab fa-google"></i>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a class="d-none btn btn-link btn-floating btn-lg text-dark m-1"
+                           href="#!"
+                           role="button"
+                           data-mdb-ripple-color="dark">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <!-- Linkedin -->
+                        <a class="d-none btn btn-link btn-floating btn-lg text-dark m-1"
+                           href="#!"
+                           role="button"
+                           data-mdb-ripple-color="dark">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <!-- Github -->
+                        <a class="d-none btn btn-link btn-floating btn-lg text-dark m-1"
+                           href="#!"
+                           role="button"
+                           data-mdb-ripple-color="dark">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <!-- Pintrest -->
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+                           href="https://www.pinterest.com/corneliagilbert/_saved/"
+                           role="button"
+                           data-mdb-ripple-color="dark">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </section>
+                    <!-- Section: Social media -->
+                </div>
+                <!-- Grid container -->
+                <!-- Copyright -->
+                <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    <span style="font-size:0.75rem;">© 2021 Cornelia Gilbert LLC | Headshot Photograph by Chris Comstock Photography | Bootstrap Design by Gabriel Sutton</span>
+
+                </div>
+                <!-- Copyright -->
+            </footer>
 
 
         </div>
-
-      </div>
     </div>
-  </div>
-
-
-
-
-  <footer class="text-center text-white" style="background-color: rgba(241, 241, 241, 0)">
-    <!-- Grid container -->
-    <div class="container pt-4">
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="https://www.facebook.com/CorneliaGilbertLLC/"
-        role="button"
-        data-mdb-ripple-color="dark">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-
-      <!-- Twitter -->
-      <a class="btn btn-link btn-floating btn-lg text-dark m-1"
-      href="https://twitter.com/CorneliaGilbert"
-      role="button"
-      data-mdb-ripple-color="dark">
-      <i class="fab fa-twitter"></i>
-    </a>
-
-    <!-- Google -->
-    <a class="d-none btn btn-link btn-floating btn-lg text-dark m-1"
-    href="#!"
-    role="button"
-    data-mdb-ripple-color="dark">
-    <i class="fab fa-google"></i>
-  </a>
-
-  <!-- Instagram -->
-  <a class="d-none btn btn-link btn-floating btn-lg text-dark m-1"
-  href="#!"
-  role="button"
-  data-mdb-ripple-color="dark">
-  <i class="fab fa-instagram"></i>
-</a>
-
-<!-- Linkedin -->
-<a class="d-none btn btn-link btn-floating btn-lg text-dark m-1"
-href="#!"
-role="button"
-data-mdb-ripple-color="dark">
-<i class="fab fa-linkedin"></i>
-</a>
-<!-- Github -->
-<a class="d-none btn btn-link btn-floating btn-lg text-dark m-1"
-href="#!"
-role="button"
-data-mdb-ripple-color="dark">
-<i class="fab fa-github"></i>
-</a>
-
-<!-- Pintrest -->
-<a class="btn btn-link btn-floating btn-lg text-dark m-1"
-href="https://www.pinterest.com/corneliagilbert/_saved/"
-role="button"
-data-mdb-ripple-color="dark">
-<i class="fab fa-pinterest"></i>
-</a>
-</section>
-<!-- Section: Social media -->
-</div>
-<!-- Grid container -->
-<!-- Copyright -->
-<div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-  <span style="font-size:0.75rem;">© 2021 Cornelia Gilbert LLC | Headshot Photograph by Chris Comstock Photography | Bootstrap Design by Gabriel Sutton</span>
-
-</div>
-<!-- Copyright -->
-</footer>
-
-
-</div>
-</div>
 
 
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<script src="js/bbplayer.js"></script>
+    <script src="js/bbplayer.js"></script>
 
 
 
-<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
