@@ -322,16 +322,19 @@
                         <a class="nav-link" onclick="navigateToPage(this, '#' + id)" id="pills-work-tab" data-bs-toggle="pill" href="#WorkContainer" role="tab" aria-controls="pills-profile" aria-selected="false" title="Click to show Cornelia's work information">Work</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" onclick="navigateToPage(this, '#' + id)" id="pills-biography-tab" data-bs-toggle="pill" href="#BioContainer" role="tab" aria-controls="pills-contact" aria-selected="false">Biography</a>
+                        <a class="nav-link" onclick="navigateToPage(this, '#' + id)" id="pills-biography-tab" data-bs-toggle="pill" href="#BioContainer" role="tab" aria-controls="pills-biography" aria-selected="false">Biography</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" onclick="navigateToPage(this, '#' + id)" id="pills-energywork-tab" data-bs-toggle="pill" href="#EnergyContainer" role="tab" aria-controls="pills-contact" aria-selected="false">Energy</a>
+                        <a class="nav-link" onclick="navigateToPage(this, '#' + id)" id="pills-energywork-tab" data-bs-toggle="pill" href="#EnergyContainer" role="tab" aria-controls="pills-energy" aria-selected="false">Energy</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" onclick="navigateToPage(this, '#' + id)" id="pills-testimonials-tab" data-bs-toggle="pill" href="#TestimonialContainer" role="tab" aria-controls="pills-contact" aria-selected="false">Testimonials</a>
+                        <a class="nav-link" onclick="navigateToPage(this, '#' + id)" id="pills-courses-tab" data-bs-toggle="pill" href="#CoursesContainer" role="tab" aria-controls="pills-courses" aria-selected="false">Courses</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" onclick="navigateToPage(this, '#' + id)" id="pills-courses-tab" data-bs-toggle="pill" href="#CoursesContainer" role="tab" aria-controls="pills-contact" aria-selected="false">Courses</a>
+                        <a class="nav-link" onclick="navigateToPage(this, '#' + id)" id="pills-podcast-tab" data-bs-toggle="pill" href="#PodcastContainer" role="tab" aria-controls="pills-podcast" aria-selected="false">Podcast</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" onclick="navigateToPage(this, '#' + id)" id="pills-testimonials-tab" data-bs-toggle="pill" href="#TestimonialContainer" role="tab" aria-controls="pills-testimonials" aria-selected="false">Testimonials</a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" onclick="navigateToPage(this, '#' + id)" id="pills-contact-tab" data-bs-toggle="pill" href="#ContactContainer" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
@@ -383,9 +386,9 @@
                                     <span class="bb-trackTitle"></span>
                                     <audio>
                                         <!--
-                                          playlist of audio files in MP3 and
-                                          OGG format for cross browser support
-                                        -->
+                              playlist of audio files in MP3 and
+                              OGG format for cross browser support
+                            -->
                                         <source src="int/media/Welcome.mp3" />
                                     </audio>
 
@@ -531,6 +534,72 @@
                 </section>
 
                 <section>
+                    <div class="container-fluid">
+                        <div class="row justify-content-center pt-5 pb-5">
+                            <div class="text-center text-lg-start pb-3 col-lg-3 pb-lg-0 order-lg-2 mt-auto mb-auto">
+                                <div>
+                                    <img class="img-fluid" src="int/images/CoursesImage.jpg" aria-hidden="true">
+                                </div>
+                                <span style="text-align:left; font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by andre-tan on Unsplash</a></span>
+                            </div>
+                            <div class="col-10 col-lg-5 d-flex align-items-start flex-column order-lg-1" style="height:auto;">
+                                <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
+                                    <h2 class="display-4">Courses</h2>
+                                    <br />
+                                    <p>Course offers change and vary, please continue to check this space. All courses are virtual and attended from the comfort of your home. Please see current course offers… </p>
+                                </div>
+                                <div class="display-6 ps-lg-5 pt-5" style=" height:auto;">
+                                    <button type="button" onclick="navigateToPage( this, '#pills-courses-tab' );" title="Click to read more" class="noStyleButton">
+                                        Read More ...
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <div>
+                                    <hr />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="container-fluid">
+                        <div class="row justify-content-center pt-5 pb-5 pb-5">
+                            <div class="text-center text-lg-start pb-3 col-lg-3 pb-lg-0 mt-auto mb-auto">
+                                <div>
+                                    <img class="img-fluid" src="int/images/EnergyWorkImage.jpg" alt="">
+                                </div>
+                                <span style="text-align:left; font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by javardh on Unsplash</a></span>
+                            </div>
+                            <div class="col-10 col-lg-5 d-flex align-items-start flex-column " style="height:auto;">
+                                <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
+
+                                    <h2 class="display-4">Podcast</h2>
+                                    <p>der beeee a podcast<br>
+                                </div>
+                                <div class="display-6 ps-lg-5 pt-5" style=" height:auto;">
+                                    <button type="button" onclick="navigateToPage( this, '#pills-energywork-tab' );" title="Click to read more" class="noStyleButton">
+                                        Read More ...
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <div>
+                                    <hr />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
                     <div>
                         <div class="container-fluid">
                             <div class="row justify-content-center pt-5 pb-5">
@@ -588,38 +657,7 @@
                         </div>
                     </div>
                 </section>
-                <section>
-                    <div class="container-fluid">
-                        <div class="row justify-content-center pt-5 pb-5">
-                            <div class="text-center text-lg-start pb-3 col-lg-3 pb-lg-0 mt-auto mb-auto">
-                                <div>
-                                    <img class="img-fluid" src="int/images/CoursesImage.jpg" aria-hidden="true">
-                                </div>
-                                <span style="text-align:left; font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by andre-tan on Unsplash</a></span>
-                            </div>
-                            <div class="col-10 col-lg-5 d-flex align-items-start flex-column " style="height:auto;">
 
-                                <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
-
-                                    <h2 class="display-4">Courses</h2>
-                                    <p>Course offers change and vary, please continue to check this space. All courses are virtual and attended from the comfort of your home. Please see current course offers… </p>
-                                </div>
-                                <div class="display-6 ps-lg-5 pt-5" style=" height:auto;">
-                                    <button type="button" onclick="navigateToPage( this, '#pills-courses-tab' );" title="Click to read more" class="noStyleButton">
-                                        Read More ...
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-8">
-                                <div>
-                                    <hr />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
                 <section>
                     <div class="container-fluid">
                         <div class="row justify-content-center pt-5 pb-5">
@@ -635,14 +673,10 @@
 
                                     <h2 class="display-4">Contact</h2>
                                     <p>
-
                                         <br />
-
                                         Cornelia Gilbert<br />
                                         321 - 504 8188<br />
-
                                         <br />
-
                                     </p>
                                 </div>
 
@@ -703,52 +737,52 @@
                 </section>
 
                 <!--CURRENTLY WIP, FOR LATER RE-USE!
-                <section>
-                <div class="container-fluid">
-                <div class="row justify-content-center pt-5 pb-5">
-                <div class=" text-center text-lg-start pb-3 col-lg-3 pb-lg-0 order-lg-2 mt-auto mb-auto">
-                <div >
-                <img class="img-fluid" src="int/images/ContactImage.jpg" alt="">
-                </div>
-                <span class="text-center text-lg-start" style="font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by dave-hoefler on Unsplash</a></span>
-                </div>
-                <div class="col-10 col-lg-5 d-flex align-items-start flex-column order-lg-1" style="height:auto;">
-                <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
+    <section>
+    <div class="container-fluid">
+    <div class="row justify-content-center pt-5 pb-5">
+    <div class=" text-center text-lg-start pb-3 col-lg-3 pb-lg-0 order-lg-2 mt-auto mb-auto">
+    <div >
+    <img class="img-fluid" src="int/images/ContactImage.jpg" alt="">
+    </div>
+    <span class="text-center text-lg-start" style="font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by dave-hoefler on Unsplash</a></span>
+    </div>
+    <div class="col-10 col-lg-5 d-flex align-items-start flex-column order-lg-1" style="height:auto;">
+    <div class="mb-auto ps-lg-5 pe-lg-5" style="height:auto;">
 
-                <h2 class="display-4">Contact</h2>
-                <p>
-                <br />
-                Cornelia Gilbert<br />
-                <br />
-                Tel: 321 504 8188<br />
-                <a class="noStyleLink" href="mailto:mail@corneliagilbert.com">mail@corneliagilbert.com</a><br />
-                <br />
-                <b>Free 1st Consultation (15 min)</b>
-                </p>
-                </div>
-                <div class="display-6 ps-lg-5 pt-5" style=" height:auto;">
-                <button type="button" onclick="navigateToPage( this, '#pills-contact-tab' );" title="Click to read more" class="noStyleButton">
-                Read More ...
-                </button>
-                </div>
+    <h2 class="display-4">Contact</h2>
+    <p>
+    <br />
+    Cornelia Gilbert<br />
+    <br />
+    Tel: 321 504 8188<br />
+    <a class="noStyleLink" href="mailto:mail@corneliagilbert.com">mail@corneliagilbert.com</a><br />
+    <br />
+    <b>Free 1st Consultation (15 min)</b>
+    </p>
+    </div>
+    <div class="display-6 ps-lg-5 pt-5" style=" height:auto;">
+    <button type="button" onclick="navigateToPage( this, '#pills-contact-tab' );" title="Click to read more" class="noStyleButton">
+    Read More ...
+    </button>
+    </div>
 
-                </div>
+    </div>
 
-                </div>
-                <div class="row justify-content-center">
-                <div class="col-8">
-                <div>
-                <hr />
-                </div>
-                </div>
-                </div>
-                </div>
-                </section>
+    </div>
+    <div class="row justify-content-center">
+    <div class="col-8">
+    <div>
+    <hr />
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
 
 
-                <br />
-                <br />
-                -->
+    <br />
+    <br />
+    -->
 
             </div>
 
@@ -867,6 +901,28 @@
                 </div>
             </div>
 
+            <div class="tab-pane fade" id="PodcastContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="row" style="min-height: calc(100vh - 225px);">
+                    <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; overflow-x:hidden;">
+                        <img src="int/images/TestimonialImage.jpg" class="d-block mx-auto float-none float-xl-end mx-xl-0" width="360" height="440" alt="">
+                        <span class="d-block mx-auto float-none float-xl-end mx-xl-0" style="text-align:center; font-size:11px;"><a class="noStyleLink" href="https://unsplash.com">Photo by nima-sarram  on Unsplash</a></span>
+                    </div>
+                    <!--<div class="col d-none d-xl-block col-xl-1" style="width:300px; height:180px; background: -webkit-linear-gradient(125deg, rgba(0,0,0,0) 20%, rgba(255,255,255,1) 200%);"></div>-->
+                    <div class="col-12 col-xl-6" style="padding-top:30px;">
+                        <div class="d-none d-xl-block" style="pointer-events: none; background: -webkit-linear-gradient(115deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.65) 100%); height: 300px; width: 400px; position: absolute; margin-left: -24px;"></div>
+                        <div class="offset-xl-1">
+                            <div class="TabTextContent">
+                                <h1><b>Podcast</b></h1>
+                                <span class="text-normal">
+
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="tab-pane fade" id="TestimonialContainer" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <div class="row" style="min-height: calc(100vh - 225px);">
                     <div class="col-12 col-xl-3 justify-content-center" style="padding-top:30px; overflow-x:hidden;">
@@ -938,7 +994,7 @@
                                     <span class="text-normal">
                                         <br>
                                         <br>
-                                        </i>		
+                                        </i>
                                         <br>
                                         <br>
                                     </span>
