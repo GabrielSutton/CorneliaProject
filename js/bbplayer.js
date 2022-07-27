@@ -111,8 +111,9 @@
     var duration  = toTimeString(Math.ceil(audioElem.duration));
     var elapsed   = toTimeString(Math.ceil(audioElem.currentTime));
     var title     = parseTitle(audioElem.currentSrc);
-    this.bbplayer.getElementsByClassName('bb-trackLength').item(0).innerHTML = duration;
-    this.bbplayer.getElementsByClassName('bb-trackTime').item(0).innerHTML = elapsed;
+    //Disables by customer request 2/17/2022. Also removed CSS Styling
+    // this.bbplayer.getElementsByClassName('bb-trackLength').item(0).innerHTML = duration;
+    // this.bbplayer.getElementsByClassName('bb-trackTime').item(0).innerHTML = elapsed;
     this.bbplayer.getElementsByClassName('bb-trackTitle').item(0).innerHTML = title;
     var playButton = this.bbplayer.getElementsByClassName("bb-play").item(0);
     if (this.bbaudio.paused) {
@@ -132,7 +133,7 @@
     // don't autoplay if bbplayer state is paused
     if (this.state === 'paused') {
       this.bbaudio.pause();
-    } 
+    }
     this.currentTrack = trackNumber;
     this.log('func: loadTrack: loaded ' + source);
   };
@@ -272,15 +273,16 @@
     var audioElem = self.bbaudio;
 
     // Activate fast-forward
-    [].forEach.call(
-      self.bbplayer.getElementsByClassName('bb-forward'),
-      function (el) {
-        el.addEventListener('click', function () {
-          self.log('event: click .bb-forward');
-          self.loadNext();          
-        });
-      }
-    );
+    //disabled at customer reqeust
+    // [].forEach.call(
+    //   self.bbplayer.getElementsByClassName('bb-forward'),
+    //   function (el) {
+    //     el.addEventListener('click', function () {
+    //       self.log('event: click .bb-forward');
+    //       self.loadNext();
+    //     });
+    //   }
+    // );
 
     // Toggle play / pause
     [].forEach.call(

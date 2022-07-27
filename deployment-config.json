@@ -1,8 +1,8 @@
 {
     "type": "sftp",
-    "host": "",
-    "username": "",
-    "password": "",
+    "host": "home205782388.1and1-data.host",
+    "username": "u45287835",
+    "password": "Unten&ist%er)drauf946^739z",
     "port": 22,
     "remotePath": "",
     "uploadOnSave": false

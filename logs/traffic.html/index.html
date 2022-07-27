@@ -1,1 +1,168 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>traffic.html</title><style type="text/css"><!--  em,h1,h2,h3,h4,h5,h6,form,input,br,hr,p,td,th,li,ul {  font-family:Verdana,Arial,Helvetica,sans-serif; }  td {color:#000000; background-color:#cccccc;}  th {color:#000000; background-color:#999999;}--></style></head><body bgcolor="#FFFFFF"><!-- HEADER --><h1>Traffic analysis for HTTP, FTP/SFTP, e-mail and WebDAV</h1><p>The following analysis shows your monthly data transfer volumes forthe current year, divided up into HTTP, FTP, e-mail and WebDAV.A summary is shown in the first two columns.</p><p>HTTP, WebDAV and FTP/SFTP traffic is based on the access.log.&lt;week&gt;.&lt;weekday&gt;,dav.log.&lt;week&gt;.&lt;weekday&gt;, ftp.xferlog and sftp.log filesrespectively, located in your '/logs' directory (separate FTP transfer logsapply to packages with a non-shared IP address only).</p><p>The column labeled "quantity" of the category mail indicates the numberof e-mails that originated from scripts running on your virtual host.This does not include e-mails sent via mailing lists.</p><p>The number of megabytes in each category indicates how many megabyteswere actually consumed by the specified number of requests.</p><table border="0" cellspacing="2" cellpadding="3"><thead><tr><th></th><th colspan="2">Total</th><th colspan="2">HTTP</th><th colspan="2">FTP/SFTP</th><th colspan="2">Mail</th></tr></thead><tbody><tr><th>Month</th><th>Megabytes</th><th>Requests</th><th>Megabytes</th><th>Requests</th><th>Megabytes</th><th>Requests</th><th>Megabytes</th><th>Quantity</th></tr><tr><th><a href="06.html">2007-06</a></th><td align="right">0.0</td><td align="right" style="border-left:0px;">22</td> <td align="right">0.0</td><td align="right" style="border-left:0px;">22</td><td align="right">0.0</td><td align="right" style="border-left:0px;">0</td><td align="right">0.0</td><td align="right" style="border-left:0px;">0</td></tr><!-- 2007-06 0.040 22 0.040 22 0.000 0 0.000 0 --><tr><th><a href="05.html">2007-05</a></th><td align="right">0.1</td><td align="right" style="border-left:0px;">37</td> <td align="right">0.1</td><td align="right" style="border-left:0px;">37</td><td align="right">0.0</td><td align="right" style="border-left:0px;">0</td><td align="right">0.0</td><td align="right" style="border-left:0px;">0</td></tr><!-- 2007-05 0.118 37 0.118 37 0.000 0 0.000 0 --></tbody></table><!-- FOOTER --><pre>1 kB = 1000 Bytes1 MB = 1000 kB1 GB = 1000 MB</pre><!-- 2007-06-06 00:13 CEST --></body></html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>traffic.html</title>
+<style type="text/css">
+<!--
+  em,h1,h2,h3,h4,h5,h6,form,input,br,hr,p,td,th,li,ul {
+  font-family:Verdana,Arial,Helvetica,sans-serif; }
+
+  td {color:#000000; background-color:#cccccc;}
+
+  th {color:#000000; background-color:#999999;}
+-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+
+<!-- HEADER -->
+<h1>Traffic analysis for HTTP, FTP/SFTP, e-mail and WebDAV</h1>
+<p>
+The following analysis shows your monthly data transfer volumes for
+the current year, divided up into HTTP, FTP, e-mail and WebDAV.
+A summary is shown in the first two columns.
+</p>
+
+<p>
+HTTP, WebDAV and FTP/SFTP traffic is based on the access.log.&lt;week&gt;.&lt;weekday&gt;,
+dav.log.&lt;week&gt;.&lt;weekday&gt;, ftp.xferlog and sftp.log files
+respectively, located in your '/logs' directory (separate FTP transfer logs
+apply to packages with a non-shared IP address only).
+</p>
+
+<p>
+The column labeled "quantity" of the category mail indicates the number
+of e-mails that originated from scripts running on your virtual host.
+This does not include e-mails sent via mailing lists.
+</p>
+
+<p>
+The number of megabytes in each category indicates how many megabytes
+were actually consumed by the specified number of requests.
+</p>
+
+<table border="0" cellspacing="2" cellpadding="3">
+<thead>
+<tr>
+<th></th>
+<th colspan="2">Total</th>
+<th colspan="2">HTTP</th>
+<th colspan="2">FTP/SFTP</th>
+<th colspan="2">Mail</th>
+<th colspan="2">WebDAV</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>Month</th>
+<th>Megabytes</th><th>Requests</th>
+<th>Megabytes</th><th>Requests</th>
+<th>Megabytes</th><th>Requests</th>
+<th>Megabytes</th><th>Quantity</th>
+<th>Megabytes</th><th>Requests</th>
+</tr>
+<tr><th><a href="01.html">2022-01</a></th>
+<td align="right">161.2</td><td align="right" style="border-left:0px;">1,369</td>
+<td align="right">161.2</td><td align="right" style="border-left:0px;">1,369</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+</tr>
+<!-- 2022-01 161.249 1369 161.249 1369 0.000 0 0.000 0 0.000 0 -->
+<tr><th><a href="12.html">2021-12</a></th>
+<td align="right">3,084.1</td><td align="right" style="border-left:0px;">9,824</td>
+<td align="right">3,084.1</td><td align="right" style="border-left:0px;">9,824</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+</tr>
+<!-- 2021-12 3084.070 9824 3084.070 9824 0.000 0 0.000 0 0.000 0 -->
+<tr><th><a href="11.html">2021-11</a></th>
+<td align="right">1,204.6</td><td align="right" style="border-left:0px;">7,575</td>
+<td align="right">1,204.6</td><td align="right" style="border-left:0px;">7,575</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+</tr>
+<!-- 2021-11 1204.604 7575 1204.604 7575 0.000 0 0.000 0 0.000 0 -->
+<tr><th><a href="10.html">2021-10</a></th>
+<td align="right">1,218.3</td><td align="right" style="border-left:0px;">7,614</td>
+<td align="right">1,218.3</td><td align="right" style="border-left:0px;">7,614</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+</tr>
+<!-- 2021-10 1218.297 7614 1218.297 7614 0.000 0 0.000 0 0.000 0 -->
+<tr><th><a href="09.html">2021-09</a></th>
+<td align="right">577.5</td><td align="right" style="border-left:0px;">5,221</td>
+<td align="right">577.5</td><td align="right" style="border-left:0px;">5,221</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+</tr>
+<!-- 2021-09 577.504 5221 577.504 5221 0.000 0 0.000 0 0.000 0 -->
+<tr><th><a href="08.html">2021-08</a></th>
+<td align="right">1,420.0</td><td align="right" style="border-left:0px;">6,621</td>
+<td align="right">1,420.0</td><td align="right" style="border-left:0px;">6,621</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+</tr>
+<!-- 2021-08 1420.023 6621 1420.023 6621 0.000 0 0.000 0 0.000 0 -->
+<tr><th><a href="07.html">2021-07</a></th>
+<td align="right">1,399.4</td><td align="right" style="border-left:0px;">6,347</td>
+<td align="right">1,399.4</td><td align="right" style="border-left:0px;">6,347</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+</tr>
+<!-- 2021-07 1399.418 6347 1399.418 6347 0.000 0 0.000 0 0.000 0 -->
+<tr><th><a href="06.html">2021-06</a></th>
+<td align="right">856.2</td><td align="right" style="border-left:0px;">6,736</td>
+<td align="right">856.2</td><td align="right" style="border-left:0px;">6,736</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+</tr>
+<!-- 2021-06 856.220 6736 856.220 6736 0.000 0 0.000 0 0.000 0 -->
+<tr><th><a href="05.html">2021-05</a></th>
+<td align="right">2,853.3</td><td align="right" style="border-left:0px;">10,841</td>
+<td align="right">2,853.3</td><td align="right" style="border-left:0px;">10,835</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">6</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+</tr>
+<!-- 2021-05 2853.286 10841 2853.277 10835 0.009 6 0.000 0 0.000 0 -->
+<tr><th><a href="04.html">2021-04</a></th>
+<td align="right">1,455.1</td><td align="right" style="border-left:0px;">6,211</td>
+<td align="right">1,455.1</td><td align="right" style="border-left:0px;">6,211</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+</tr>
+<!-- 2021-04 1455.054 6211 1455.054 6211 0.000 0 0.000 0 0.000 0 -->
+<tr><th><a href="03.html">2021-03</a></th>
+<td align="right">7.5</td><td align="right" style="border-left:0px;">2,929</td>
+<td align="right">7.5</td><td align="right" style="border-left:0px;">2,929</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+<td align="right">0.0</td><td align="right" style="border-left:0px;">0</td>
+</tr>
+<!-- 2021-03 7.549 2929 7.549 2929 0.000 0 0.000 0 0.000 0 -->
+</tbody>
+</table>
+
+<!-- FOOTER -->
+<pre>
+1 kB = 1000 Bytes
+1 MB = 1000 kB
+1 GB = 1000 MB
+</pre>
+
+
+</body>
+</html>
