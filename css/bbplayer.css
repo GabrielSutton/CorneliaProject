@@ -24,7 +24,7 @@ Optional styling for bbplayer elements.
   border: 6px solid #CFCFCF;
   border-radius: 50%;
   background: transparent;
-  background-image: url('/int/structure/bbplayer/pause.png');
+  background-image: url('/int/structure/bbplayer/play.png');
   background-repeat: no-repeat;
   background-position: 7px center;
   cursor: pointer;
@@ -32,7 +32,7 @@ Optional styling for bbplayer elements.
 
 .bb-playing {
   vertical-align: middle;
-  background-image: url('/int/structure/bbplayer/play.png');
+  background-image: url('/int/structure/bbplayer/pause.png');
   background-position: center center;
 }
 
